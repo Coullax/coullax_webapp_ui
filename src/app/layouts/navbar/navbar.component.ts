@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { gsap } from 'gsap';
+
+import { gsap } from "gsap-trial";
 import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
 
 @Component({
@@ -31,30 +32,30 @@ export class NavbarComponent implements OnInit{
 //                   return target[key]
 //               }
 //           })
-  
+
 //       pathProgress.y = 16
-  
+
 //       label.innerHTML = ''
-  
+
 //       function elements(letter, index, array) {
-  
+
 //           let element = document.createElement('span'),
 //               part = (index >= array.length / 2) ? -1 : 1,
 //               position = (index >= array.length / 2) ? array.length / 2 - index + (array.length / 2 - 1) : index,
 //               move = position / (array.length / 2),
 //               rotate = 1 - move
-  
+
 //           element.innerHTML = !letter.trim() ? '&nbsp;' : letter
 //           element.style.setProperty('--move', move.toString())
 //           element.style.setProperty('--rotate', rotate.toString())
 //           element.style.setProperty('--part', part.toString())
-  
+
 //           label.appendChild(element)
-  
+
 //       }
-  
+
 //       letters.forEach(elements);
-  
+
 //       button.addEventListener('mouseenter', e => {
 //           if(button.classList.contains('active')) {
 //               return
@@ -69,7 +70,7 @@ export class NavbarComponent implements OnInit{
 //               '--letters-r': '8deg'
 //           })
 //       })
-  
+
 //       button.addEventListener('mouseleave', e => {
 //           if(button.classList.contains('active')) {
 //               return
@@ -84,7 +85,7 @@ export class NavbarComponent implements OnInit{
 //               '--letters-r': '0deg'
 //           })
 //       })
-  
+
 //       button.addEventListener('click', e => {
 //           if(button.classList.contains('active')) {
 //               return
@@ -144,9 +145,9 @@ export class NavbarComponent implements OnInit{
 //               }]
 //           })
 //       })
-  
+
 //   })
-  
+
 //   function getPoint(point, i, a, smoothing) {
 //       let cp = (current, previous, next, reverse) => {
 //               let p = previous || current,
@@ -163,7 +164,7 @@ export class NavbarComponent implements OnInit{
 //           cpe = cp(point, a[i - 1], a[i + 1], true);
 //       return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
 //   }
-  
+
 //   function getPath(update, smoothing) {
 //       let points = [
 //               [3.5, 16],
