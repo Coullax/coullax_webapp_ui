@@ -12,6 +12,7 @@ import { BannerComponent } from './layouts/banner/banner.component';
 import {NgOptimizedImage} from "@angular/common";
 import { ProcessComponent } from './layouts/process/process.component';
 import {MatCardModule} from '@angular/material/card';
+import { ServicesbarComponent } from './layouts/servicesbar/servicesbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,8 @@ import {MatCardModule} from '@angular/material/card';
     NavbarComponent,
     FooterComponent,
     BannerComponent,
+    ProcessComponent,
+    ServicesbarComponent,
     ProcessComponent,
     CallComponent
   ],
