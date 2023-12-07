@@ -1,0 +1,104 @@
+.process-card1 .process-card2 .process-card3{
+
+}
+
+.mat-mdc-card{
+  max-width: 394px;
+  height: 125px;
+  box-shadow: none !important;
+}
+
+.process-card1{
+  $border: 3px;
+  color: #004288;
+  background: #fff;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 18px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(90deg, rgba(34,112,227,1) 0%, rgba(14,48,95,1) 100%);
+  }
+}
+
+.process-card2{
+  $border: 3px;
+  color: #008746;
+  background: #fff;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 18px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background:linear-gradient(90deg, rgba(2,108,79,1) 0%, rgba(2,132,75,1) 100%);
+  }
+}
+
+.process-card3{
+  $border: 3px;
+  color: #B70000;
+  background: #fff;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 18px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(90deg, rgba(254,169,3,1) 0%, rgba(166,0,0,1) 100%, rgba(241,46,27,1) 100%);
+  }
+
+}
+
+
+.icon-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 38px;
+}
+
+.card-text1{
+  padding-left: 40px;
+  color: #144183;
+  font-size: 21px;
+  line-height: 103.6%;
+  font-weight: 500;
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif;
+}
+.card-text2{
+  padding-left: 40px;
+  color: #03844c;
+  font-size: 21px;
+  line-height: 103.6%;
+  font-weight: 500;
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif;
+}
+.card-text3{
+  padding-left: 40px;
+  color: #A70201;
+  font-size: 21px;
+  line-height: 103.6%;
+  font-weight: 500;
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif;
+}

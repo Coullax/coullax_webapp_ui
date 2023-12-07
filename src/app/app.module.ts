@@ -8,6 +8,9 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import {FooterComponent} from "./layouts/footer/footer.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './layouts/banner/banner.component';
+import {NgOptimizedImage} from "@angular/common";
+import { ProcessComponent } from './layouts/process/process.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { BannerComponent } from './layouts/banner/banner.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    ProcessComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgOptimizedImage,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
