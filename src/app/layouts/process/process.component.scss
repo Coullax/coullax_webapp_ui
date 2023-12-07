@@ -1,10 +1,8 @@
-.process-card1 .process-card2 .process-card3{
-
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
 
 .mat-mdc-card{
   max-width: 394px;
-  height: 125px;
+  height: 115px;
   box-shadow: none !important;
 }
 
@@ -16,6 +14,17 @@
   border: solid $border transparent;
   border-radius: 18px;
 
+  .card-text1{
+    margin-left: 2.083vw;
+    color: #144183;
+    font-size: 21px;
+    line-height: 103.6%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+  }
+
+
   &:before {
     content: '';
     position: absolute;
@@ -24,6 +33,26 @@
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
     background: linear-gradient(90deg, rgba(34,112,227,1) 0%, rgba(14,48,95,1) 100%);
+  }
+
+  &:hover{
+    transition: all ease 40ms;
+    background: linear-gradient(157deg, #0072EB 5.01%, #003063 84.48%);
+    border: none;
+    .card-text1{
+      margin-left: 2.083vw;
+      color: #ffffff;
+      font-size: 21px;
+      line-height: 103.6%;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      text-align: start;
+    }
+
+    .icons path{
+      fill: #fff;
+    }
+
   }
 }
 
@@ -35,6 +64,16 @@
   border: solid $border transparent;
   border-radius: 18px;
 
+  .card-text2{
+    margin-left: 2.083vw;
+    color: #03844c;
+    font-size: 21px;
+    line-height: 103.6%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -43,6 +82,26 @@
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
     background:linear-gradient(90deg, rgba(2,108,79,1) 0%, rgba(2,132,75,1) 100%);
+  }
+
+  &:hover{
+    transition: all ease 40ms;
+    background: radial-gradient(50% 50% at 50% 50%, #006E4D 0%, #008745 100%);
+    border: none;
+    .card-text2{
+      margin-left: 2.083vw;
+      color: #ffffff;
+      font-size: 21px;
+      line-height: 103.6%;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      text-align: start;
+    }
+
+    .icons path{
+      fill: #fff;
+    }
+
   }
 }
 
@@ -54,6 +113,16 @@
   border: solid $border transparent;
   border-radius: 18px;
 
+  .card-text3{
+    margin-left: 2.083vw;
+    color: #A70201;
+    font-size: 21px;
+    line-height: 103.6%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -64,6 +133,25 @@
     background: linear-gradient(90deg, rgba(254,169,3,1) 0%, rgba(166,0,0,1) 100%, rgba(241,46,27,1) 100%);
   }
 
+  &:hover{
+    transition: all ease 40ms;
+    background: linear-gradient(90deg, rgba(254,169,3,1) 0%, rgba(166,0,0,1) 100%, rgba(241,46,27,1) 100%);
+    border: none;
+    .card-text3{
+      margin-left: 2.083vw;
+      color: #ffffff;
+      font-size: 21px;
+      line-height: 103.6%;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      text-align: start;
+    }
+
+    .icons path{
+      fill: #fff;
+    }
+  }
+
 }
 
 
@@ -72,33 +160,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 38px;
+  top: 33px;
 }
 
-.card-text1{
-  padding-left: 40px;
-  color: #144183;
-  font-size: 21px;
-  line-height: 103.6%;
-  font-weight: 500;
-  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-  'Liberation Sans', sans-serif;
-}
-.card-text2{
-  padding-left: 40px;
-  color: #03844c;
-  font-size: 21px;
-  line-height: 103.6%;
-  font-weight: 500;
-  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-  'Liberation Sans', sans-serif;
-}
-.card-text3{
-  padding-left: 40px;
-  color: #A70201;
-  font-size: 21px;
-  line-height: 103.6%;
-  font-weight: 500;
-  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-  'Liberation Sans', sans-serif;
-}
+
+
+
+
