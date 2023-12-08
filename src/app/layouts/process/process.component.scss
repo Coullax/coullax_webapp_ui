@@ -36,12 +36,14 @@
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
     background: linear-gradient(90deg, rgba(34,112,227,1) 0%, rgba(14,48,95,1) 100%);
+
   }
 
   &:hover{
-    transition: all ease 40ms;
+    transition: all 0.5s ease-in-out;
     background: linear-gradient(157deg, #0072EB 5.01%, #003063 84.48%);
     border: none;
+
     .card-text1{
       margin-left: 2.083vw;
       color: #ffffff;

@@ -3,7 +3,12 @@
 
 .container{
   max-width: 1220px;
+}
 
+.grid-items{
+  display: grid;
+  grid-template-columns: repeat(3, 390px);
+  gap: 12px;
 }
 .service-card{
   width: 394.194px;
@@ -12,6 +17,7 @@
   border-radius: 18px;
   box-shadow: none;
   padding: 15px;
+
 }
 
 .service-title{
@@ -37,6 +43,14 @@
   font-style: normal;
   font-weight: 500;
   line-height: 103.6%;
+
+
+
+  &:hover{
+    border: none;
+    background: radial-gradient(86.92% 80.73% at 47.25% 19.32%, #58D35A 0%, #00A587 100%);
+    color: #fff;
+  }
 }
 
 

@@ -14,7 +14,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  font-family: "Cal Sans-SemiBold", Helvetica;
+  font-family: "Cal Sans-SemiBold", Helvetica, serif;
   font-weight: 600;
   color: transparent;
   font-size: 64px;
@@ -46,6 +46,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  //opacity: 1;
+  //transform: translate3d(0px, -274px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(358deg) rotateZ(0deg) skew(0deg, 0deg);
+  //transform-style: preserve-3d;
+
 }
 
 //.hero-image{
@@ -54,12 +58,17 @@
 //  height: 400px;
 //}
 
-.hero-image{
-  //background: url("assets/svg/banner_bg.svg");
+//.hero-image{
+//  //background: url("assets/svg/banner_bg.svg");
+//  width: 100%;
+//}
+.coullax-svg{
   width: 100%;
 }
-
-
+.hero-image path{
+  fill-opacity: var(--opacity);
+  width: 100%;
+}
 
 .sign-up-btn{
   width: 140.541px;

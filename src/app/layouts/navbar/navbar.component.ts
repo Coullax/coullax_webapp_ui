@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { gsap } from "gsap-trial";
 import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
+import {ThemeService} from "../../_Services/theme/theme.service";
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,22 @@ import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit{
-
+  constructor(private themeService: ThemeService) {
+    this.themeService.setTheme('light');
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+  toggle() {
+    const active = this.themeService.getActiveTheme() ;
+    if (active.name === 'light') {
+      this.themeService.setTheme('dark');
+      document.body.setAttribute('data-theme', 'dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      this.themeService.setTheme('light');
+      document.body.setAttribute('data-theme', 'light');
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  }
   ngOnInit(){
 //     gsap.registerPlugin(MorphSVGPlugin)
 //     document.querySelectorAll('.button').forEach(button => {
@@ -176,5 +192,4 @@ export class NavbarComponent implements OnInit{
 //   }
   }
 
-  toggle(){}
 }

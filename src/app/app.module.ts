@@ -13,6 +13,10 @@ import {NgOptimizedImage} from "@angular/common";
 import { ProcessComponent } from './layouts/process/process.component';
 import {MatCardModule} from '@angular/material/card';
 import { ServicesbarComponent } from './layouts/servicesbar/servicesbar.component';
+import {ThemeModule} from "./_Services/theme/theme.module";
+import {lightTheme} from "./_Services/theme/light-theme";
+import {darkTheme} from "./_Services/theme/dark-theme";
+import { SuperpowersComponent } from './layouts/superpowers/superpowers.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +28,19 @@ import { ServicesbarComponent } from './layouts/servicesbar/servicesbar.componen
     ProcessComponent,
     ServicesbarComponent,
     ProcessComponent,
-    CallComponent
+    CallComponent,
+    SuperpowersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgOptimizedImage,
-    MatCardModule
+    MatCardModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'light'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
