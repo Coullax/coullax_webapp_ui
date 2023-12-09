@@ -18,19 +18,19 @@
   width: 215px;
   height: 44px;
   border-radius: 22px;
-  background: #FFF;
-  color: #0A59A5;
+  background: var(--call-bar-btn-bg-color);
+  color: var(--call-bar-btn-text-color);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 103.6%;
   margin-top: 29px;
+  border: var(--call-bar-btn-border-color);
 }
 
 .call-container{
-  background: radial-gradient(1850.04% 110.71% at 41.69% 8.95%, #0963B7 0%, #093059 100%);
-
-
+  background: var(--call-bar-background-color);
+  width: 1222px;
   border-radius: 18px;
 }

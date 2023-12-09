@@ -19,6 +19,7 @@ import {darkTheme} from "./_Services/theme/dark-theme";
 import { SuperpowersComponent } from './layouts/superpowers/superpowers.component';
 import {RedirectCardsComponent} from './layouts/redirect-cards/redirect-cards.component';
 import { ContactusComponent } from './layouts/contactus/contactus.component';
+import { SliderBarComponent } from './layouts/slider-bar/slider-bar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactusComponent } from './layouts/contactus/contactus.component';
     CallComponent,
     SuperpowersComponent,
     RedirectCardsComponent,
-    ContactusComponent
+    ContactusComponent,
+    SliderBarComponent
   ],
   imports: [
     BrowserModule,

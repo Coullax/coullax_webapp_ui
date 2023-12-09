@@ -50,5 +50,8 @@ html, body { height: 100%; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: var(--main-content-background-color);
+  background-image: var(--main-content-background-color) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }

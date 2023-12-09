@@ -8,16 +8,17 @@
 
 .grid-items{
   display: grid;
-  grid-template-columns: repeat(3, 390px);
-  gap: 12px;
+  grid-template-columns: repeat(3, 394px);
+  gap: 20px;
 }
 .service-card{
   width: 394.194px;
   height: 261px;
-  background: radial-gradient(50% 50% at 50% 50%, #FBFFFE 0%, #E3F2EE 100%);
+  background: var(--service-bar-card-background-color);
   border-radius: 18px;
-  box-shadow: none;
+  box-shadow: var(--service-bar-card-shadow);
   padding: 15px;
+  border: var(--service-bar-card-border);
 
   &:hover{
     border: 3px solid #4CD05F;;
@@ -32,7 +33,7 @@
 }
 
 .service-title{
-  color: #24252A;
+  color: var(--service-bar-card-text-color);
   font-family: 'Poppins', sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -47,7 +48,7 @@
   width: 150.779px;
   height: 44px;
   border-radius: 22px;
-  color: #24252A;
+  color: var(--service-bar-card-text-color);
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -58,7 +59,7 @@
 
 
 .price{
-  color: #232323;
+  color: var(--service-bar-card-text-color);
   font-family: 'Poppins', sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -74,11 +75,11 @@ ul{
 }
 ul li {
   float: left;
-  margin-right: 14px;
+  margin-right: 11px;
 }
 li{
   margin-left: 5px;
-  color: #24252A;
+  color: var(--service-bar-card-text-color);
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-style: normal;

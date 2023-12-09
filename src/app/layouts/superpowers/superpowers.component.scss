@@ -56,3 +56,10 @@
   border-radius: 18px;
   background: radial-gradient(154.87% 130.07% at 23.65% 25.99%, #FFC319 0%, #FF1017 61.46%);
 }
+
+
+.gird-items{
+  display: grid;
+  grid-template-columns:  420.992px auto 232px;
+  gap: 17px;
+}

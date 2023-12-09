@@ -5,3 +5,28 @@
   min-width: 1220px;
 
 }
+
+.items-row{
+  display: grid;
+  grid-template-columns: repeat(3 ,395px);
+  gap: 20px;
+}
+
+.item{
+  background: var(--main-content-background-color);
+  display: grid;
+  border-radius: 18px;
+  border: var(--redirect-card-border);
+  box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.05);
+  width: 395px;
+  height: 88px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--redirect-card-text-color);
+  font-family: 'Poppins', serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
+}
