@@ -17,6 +17,7 @@ import {ThemeModule} from "./_Services/theme/theme.module";
 import {lightTheme} from "./_Services/theme/light-theme";
 import {darkTheme} from "./_Services/theme/dark-theme";
 import { SuperpowersComponent } from './layouts/superpowers/superpowers.component';
+import {RedirectCardsComponent} from './layouts/redirect-cards/redirect-cards.component';
 import { ContactusComponent } from './layouts/contactus/contactus.component';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ContactusComponent } from './layouts/contactus/contactus.component';
     ProcessComponent,
     CallComponent,
     SuperpowersComponent,
+    RedirectCardsComponent,
     ContactusComponent
   ],
   imports: [
