@@ -17,6 +17,7 @@ import {ThemeModule} from "./_Services/theme/theme.module";
 import {lightTheme} from "./_Services/theme/light-theme";
 import {darkTheme} from "./_Services/theme/dark-theme";
 import { SuperpowersComponent } from './layouts/superpowers/superpowers.component';
+import { ContactusComponent } from './layouts/contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SuperpowersComponent } from './layouts/superpowers/superpowers.componen
     ServicesbarComponent,
     ProcessComponent,
     CallComponent,
-    SuperpowersComponent
+    SuperpowersComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

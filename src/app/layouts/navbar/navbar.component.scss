@@ -5,15 +5,15 @@
 //}
 
 .container{
-  max-width: 1220px;
+  min-width: 1220px;
 }
 
 .sign-in-btn{
-  width: 140.541px;
+  width: 153px;
   height: 44px;
   border-radius: 33px;
-  background-color: black;
-
+  background: var(--nav-signin-btn-background-color);
+  color: var(--nav-signin-btn-text-color);
 }
 
 
@@ -84,3 +84,7 @@ input:checked + label svg.moon {
   fill:#fff;
 }
 
+
+.coullax-logo path {
+  fill: var(--nav-coullax-logo-color);
+}

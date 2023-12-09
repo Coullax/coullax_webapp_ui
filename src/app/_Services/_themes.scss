@@ -8,7 +8,10 @@
 
   --main-content-background-color: #fff;
   --main-content-text-color: #231f20;
-  --opacity: 0.06
+  --opacity: 0.06;
+  --nav-signin-btn-background-color:#232323;
+  --nav-signin-btn-text-color:#fff;
+  --nav-coullax-logo-color: black;
 }
 
 [data-theme="dark"] {
@@ -21,5 +24,8 @@
 
   --main-content-background-color: #231f20;
   --main-content-text-color: #ffffff;
-  --opacity: 19
+  --opacity: 19;
+  --nav-signin-btn-background-color:#fff;
+  --nav-signin-btn-text-color:#151515;
+  --nav-coullax-logo-color: #fff;
 }
