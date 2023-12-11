@@ -1,12 +1,4 @@
-//@media (min-width: 1400px){
-//  .container, .container-lg, .container-md, .container-sm, .container-xl {
-//    max-width: 1220px;
-//  }
-//}
 
-.container{
-  min-width: 1220px;
-}
 
 .sign-in-btn{
   width: 153px;
@@ -83,7 +75,6 @@ input:checked + label svg.sun {
 input:checked + label svg.moon {
   fill:#fff;
 }
-
 
 .coullax-logo path {
   fill: var(--nav-coullax-logo-color);

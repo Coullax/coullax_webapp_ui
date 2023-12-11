@@ -1,7 +1,4 @@
-.container{
-  min-width: 1220px;
 
-}
 
 .card1{
   width: 420.992px;
@@ -70,6 +67,38 @@
   gap: 22px;
 }
 
-.card2{
 
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.grid-item p {
+  margin-top: 10px;
+}
+
+.grid-item.wide {
+  grid-column: span 1;
+}
+
+.grid-item.small {
+  grid-column: span 1;
 }

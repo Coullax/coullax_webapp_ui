@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
 
-.container{
-  min-width: 1220px;
 
-}
 
 .items-row{
   display: grid;
-  grid-template-columns: repeat(3 ,395px);
-  gap: 20px;
+  grid-template-columns: repeat(2 ,438.94px);
+  gap: 22px;
 }
 
 .item{
@@ -18,8 +15,8 @@
   border-radius: 18px;
   border: var(--redirect-card-border);
   box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.05);
-  width: 395px;
-  height: 88px;
+  width: 438.94px;
+  height: 98px;
   text-align: center;
   justify-content: center;
   align-items: center;

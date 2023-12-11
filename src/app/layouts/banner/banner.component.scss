@@ -1,8 +1,5 @@
 @import "cal-sans";
-.container{
-  min-width: 1220px;
 
-}
 .label {
   width: 468px;
   height: 124px;
@@ -50,8 +47,9 @@
   //transform: translate(-50%, -50%);
 
   opacity: 1;
-  transform: translate3d(0px, -274px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(358deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(4px, -248px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(358deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
+  text-align: center;
 
 }
 
@@ -66,7 +64,7 @@
 //  width: 100%;
 //}
 .coullax-svg{
-  width: 1220px;
+  width: 900px;
 }
 .hero-image path{
   fill-opacity: var(--opacity);
@@ -81,7 +79,4 @@
   background: radial-gradient(50% 50% at 50% 50%, #4D4D55 0%, #232326 100%);
   margin-top: 41px;
 }
-.container{
-  max-width: 1220px;
-  text-align: center;
-}
+
