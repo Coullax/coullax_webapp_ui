@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
 
-.container{
-  min-width: 1220px;
 
-}
 
 .grid-items{
   display: grid;
-  grid-template-columns: repeat(3, 394px);
-  gap: 20px;
+  grid-template-columns: 438.056px 438.056px;
+  gap: 21px;
 }
 .service-card{
-  width: 394.194px;
+  width: 438.056px;
   height: 261px;
   background: var(--service-bar-card-background-color);
   border-radius: 18px;

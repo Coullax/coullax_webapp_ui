@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
-.container{
-  min-width: 1220px;
 
-}
 
 .up-text{
   color: #F5F5F7;
@@ -31,6 +28,7 @@
 
 .call-container{
   background: var(--call-bar-background-color);
-  width: 1222px;
+  width: 900px;
+  height: 190px;
   border-radius: 18px;
 }
