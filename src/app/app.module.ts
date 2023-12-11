@@ -20,6 +20,7 @@ import { SuperpowersComponent } from './layouts/superpowers/superpowers.componen
 import {RedirectCardsComponent} from './layouts/redirect-cards/redirect-cards.component';
 import { ContactusComponent } from './layouts/contactus/contactus.component';
 import { SliderBarComponent } from './layouts/slider-bar/slider-bar.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -37,17 +38,18 @@ import { SliderBarComponent } from './layouts/slider-bar/slider-bar.component';
     ContactusComponent,
     SliderBarComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    NgOptimizedImage,
-    MatCardModule,
-    ThemeModule.forRoot({
-      themes: [lightTheme, darkTheme],
-      active: 'light'
-    })
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        NgOptimizedImage,
+        MatCardModule,
+        ThemeModule.forRoot({
+            themes: [lightTheme, darkTheme],
+            active: 'light'
+        }),
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

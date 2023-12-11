@@ -13,11 +13,20 @@ export class ThemeService{
   ) {
   }
 
+  initTheme(){
+    this.getActiveTheme();
+    document.body.setAttribute('data-theme', this.theme);
+    document.documentElement.setAttribute('data-theme', this.theme);
+  }
+
+  isDarkMode(){
+    return this.theme === 'dark'
+  }
   getActiveTheme() {
     if (localStorage.getItem('user-theme')) {
       this.theme = String(localStorage.getItem('user-theme'));
     } else {
-      this.theme = 'light-mode';
+      this.theme = 'light';
     }
     const theme = this.themes.find(t => t.name === this.theme);
     if (!theme) {

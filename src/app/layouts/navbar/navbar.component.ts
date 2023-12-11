@@ -10,13 +10,15 @@ import {ThemeService} from "../../_Services/theme/theme.service";
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit{
+
+  isDarkMode:boolean;
   constructor(private themeService: ThemeService) {
-    this.themeService.setTheme('light');
-    document.documentElement.setAttribute('data-theme', 'light');
+    this.themeService.initTheme();
+    this.isDarkMode = this.themeService.isDarkMode();
   }
   toggle() {
-    const active = this.themeService.getActiveTheme() ;
-    if (active.name === 'light') {
+    const active = this.themeService.isDarkMode() ;
+    if (!active) {
       this.themeService.setTheme('dark');
       document.body.setAttribute('data-theme', 'dark');
       document.documentElement.setAttribute('data-theme', 'dark');
