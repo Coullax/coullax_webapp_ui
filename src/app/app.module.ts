@@ -21,6 +21,8 @@ import {RedirectCardsComponent} from './layouts/redirect-cards/redirect-cards.co
 import { ContactusComponent } from './layouts/contactus/contactus.component';
 import { SliderBarComponent } from './layouts/slider-bar/slider-bar.component';
 import {FormsModule} from "@angular/forms";
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import {FormsModule} from "@angular/forms";
     SuperpowersComponent,
     RedirectCardsComponent,
     ContactusComponent,
-    SliderBarComponent
+    SliderBarComponent,
+    LoginComponent,
+    RegisterComponent
   ],
     imports: [
         BrowserModule,

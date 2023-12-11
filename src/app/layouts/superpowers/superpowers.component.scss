@@ -58,8 +58,18 @@
 }
 
 
-.gird-items{
+.gird-items1{
   display: grid;
   grid-template-columns:  420.992px auto 232px;
   gap: 17px;
+}
+
+.gird-items2{
+  display: grid;
+  grid-template-columns:  767px 433px;
+  gap: 22px;
+}
+
+.card2{
+
 }
