@@ -8,13 +8,17 @@
   grid-template-columns: 438.056px 438.056px;
   gap: 21px;
 }
+
+.mat-mdc-card-content{
+  padding: 0 5px 0 16px;
+}
 .service-card{
   width: 438.056px;
   height: 261px;
   background: var(--service-bar-card-background-color);
   border-radius: 18px;
   box-shadow: var(--service-bar-card-shadow);
-  padding: 15px;
+  padding: 15px 10px 15px 15px;
   border: var(--service-bar-card-border);
 
   &:hover{
