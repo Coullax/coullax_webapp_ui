@@ -31,3 +31,11 @@
 .redirect {
   margin-top: 30px;
 }
+
+
+@media screen and (max-width: 900px) {
+  .containers{
+    max-width: 370px;
+    margin: auto;
+  }
+}
