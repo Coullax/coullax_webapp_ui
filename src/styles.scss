@@ -38,7 +38,6 @@ $coullax_webapp_ui-theme: mat.define-light-theme((
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "../src/app/layouts/banner/banner.component";
 @import "src/app/_Services/themes";
 *{
   margin: 0;

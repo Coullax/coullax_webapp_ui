@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
 
 .mat-mdc-card{
-  max-width: 394px;
-  height: 115px;
+  max-width: 290.18px;
+  height: 84.791px;
   box-shadow: none !important;
 }
 
@@ -13,9 +13,6 @@
   background-clip: padding-box;
   border: solid $border transparent;
   border-radius: 18px;
-
-
-
 
   &:before {
     content: '';
@@ -28,9 +25,9 @@
 
   }
   .card-text1{
-    margin-left: 2.083vw;
+    margin-left: 1.083vw;
     color: var(--process-bar-card1-text-color);
-    font-size: 21px;
+    font-size: 16px;
     line-height: 103.6%;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -45,9 +42,10 @@
     border: none;
 
     .card-text1{
-      margin-left: 2.083vw;
+      margin-top: 5px;
+      margin-left: 1.083vw;
       color: #ffffff;
-      font-size: 21px;
+      font-size: 16px;
       line-height: 103.6%;
       font-weight: 500;
       font-family: 'Poppins', sans-serif;
@@ -70,9 +68,9 @@
   border-radius: 18px;
 
   .card-text2{
-    margin-left: 2.083vw;
+    margin-left: 1.083vw;
     color: var(--process-bar-card2-text-color);
-    font-size: 21px;
+    font-size: 16px;
     line-height: 103.6%;
     font-weight: 500;
     font-family: 'Poppins', serif;
@@ -98,9 +96,10 @@
     background: var(--process-bar-card2-bg-hover-color);
     border: none;
     .card-text2{
-      margin-left: 2.083vw;
+      margin-top: 5px;
+      margin-left: 1.083vw;
       color: #ffffff;
-      font-size: 21px;
+      font-size: 16px;
       line-height: 103.6%;
       font-weight: 500;
       font-family: 'Poppins', serif;
@@ -123,9 +122,9 @@
   border-radius: 18px;
 
   .card-text3{
-    margin-left: 2.083vw;
+    margin-left: 1.083vw;
     color: var(--process-bar-card3-text-color);
-    font-size: 21px;
+    font-size: 16px;
     line-height: 103.6%;
     font-weight: 500;
     font-family: 'Poppins', serif;
@@ -147,13 +146,14 @@
   }
 
   &:hover{
-    transition: all ease 40ms;
     background: var(--process-bar-card3-bg-hover-color);
     border: none;
+
     .card-text3{
-      margin-left: 2.083vw;
+      margin-top: 5px;
+      margin-left: 1.083vw;
       color: #ffffff;
-      font-size: 21px;
+      font-size: 16px;
       line-height: 103.6%;
       font-weight: 500;
       font-family: 'Poppins', sans-serif;
@@ -173,7 +173,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 33px;
+  top: 20px;
 }
 
 
@@ -185,6 +185,6 @@
 }
 
 .item{
-  width: 394px;
-  height: 115px;
+  width: 290.18px;
+  height: 84.791px;
 }
