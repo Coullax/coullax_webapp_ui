@@ -7,10 +7,17 @@
   --nav-signin-btn-text-color:#fff;
   --nav-coullax-logo-color: black;
 
+  --nav-mobile-container-bg-color:#EDEDED;
+
   --banner-text-color:linear-gradient(180deg, rgb(35, 100, 132) 0%, rgb(125.19, 196.56, 7.37) 100%);
+  --banner-dashboard-btn:radial-gradient(50% 50% at 50% 50%, #007A37 0%, #004E53 100%);
 
   --contact-bar-background-color:#E5F3F1;
   --contact-bar-text-color:#090A09;
+
+  --contact-bar-bookcall-btn-bg-color: transparent;
+  --contact-bar-bookcall-btn-text-color:#000;
+  --contact-bar-bookcall-btn-border: 2px solid #4D4D4F;
 
   --process-bar-card1-text-color:#144183;
   --process-bar-card2-text-color:#03844c;
@@ -19,13 +26,37 @@
   --process-bar-card2-bg-hover-color:radial-gradient(50% 50% at 50% 50%, #006E4D 0%, #008745 100%);
   --process-bar-card3-bg-hover-color:linear-gradient(90deg, rgba(254,169,3,1) 0%, rgba(166,0,0,1) 100%, rgba(241,46,27,1) 100%);
 
+  --process-bar-mobile-card1-bg-color:#E9F1FF;
+  --process-bar-mobile-card2-bg-color:#E5F0ED;
+  --process-bar-mobile-card3-bg-color:#FFEEEF;
+
+  --process-bar-mobile-card1-text-color:#0073EC;
+  --process-bar-mobile-card2-text-color:#006F4E;
+  --process-bar-mobile-card3-text-color:#B70000;
+
+  --process-bar-mobile-card1-icon:#0073EC;
+  --process-bar-mobile-card2-icon:#006F4E;
+  --process-bar-mobile-card3-icon:#B70000;
+
+
+  --process-bar-mobile-card1-border:none;
+  --process-bar-mobile-card2-border:none;
+  --process-bar-mobile-card3-border:none;
+
   --service-bar-card-background-color:radial-gradient(50% 50% at 50% 50%, #FBFFFE 0%, #E3F2EE 100%);
   --service-bar-card-shadow: none;
   --service-bar-card-text-color: #24252A;
-  --service-bar-card-border: none;
+  --service-bar-card-border: 2px solid #FBFFFE;
+
+  --service-bar-mobile-card-background-color:#F3F3F3;
+  --service-bar-mobile-arrow-light:block;
+  --service-bar-mobile-arrow-dark:none;
+
+
 
   --redirect-card-text-color:#24252A;
   --redirect-card-border:3px solid #CBE8E2;
+  --redirect-mobile-card-border:1px solid #CBE8E2;
 
   --call-bar-background-color:radial-gradient(1850.04% 110.71% at 41.69% 8.95%, #0963B7 0%, #093059 100%);
   --call-bar-btn-text-color: #0A59A5;
@@ -49,18 +80,27 @@
 }
 
 [data-theme="dark"] {
-  --main-content-background-color: linear-gradient(180deg, #070707 0%, #171C19 100%);;
+  --main-content-background-color: linear-gradient(180deg, #070707 0%, #171C19 100%);
   --main-content-text-color: #ffffff;
-  --opacity: 19;
+  --opacity: 0.4;
 
   --nav-signin-btn-background-color:#fff;
   --nav-signin-btn-text-color:#151515;
   --nav-coullax-logo-color: #fff;
 
+  --nav-mobile-container-bg-color:#232323;
+
+
+
   --banner-text-color:linear-gradient(180deg, #0078A1 0%, #609F00 125%);
+  --banner-dashboard-btn:radial-gradient(50% 50% at 50% 50%, #4DCB3D 0%, #009635 100%);
 
   --contact-bar-background-color:#1E1E20;
   --contact-bar-text-color:#fff;
+
+  --contact-bar-bookcall-btn-bg-color: #fff;
+  --contact-bar-bookcall-btn-text-color:#000;
+  --contact-bar-bookcall-btn-border: none;
 
   --process-bar-card1-text-color:#fff;
   --process-bar-card2-text-color:#fff;
@@ -69,14 +109,35 @@
   --process-bar-card2-bg-hover-color:linear-gradient(180deg, #007A6E 0%, #004B46 100%);
   --process-bar-card3-bg-hover-color:linear-gradient(180deg, #985A2B 0%, #54341C 100%);
 
+  --process-bar-mobile-card1-bg-color:linear-gradient(180deg, #070707 0%, #171C19 100%);
+  --process-bar-mobile-card2-bg-color:linear-gradient(180deg, #070707 0%, #171C19 100%);
+  --process-bar-mobile-card3-bg-color:linear-gradient(180deg, #070707 0%, #171C19 100%);
+
+  --process-bar-mobile-card1-text-color:#fff;
+  --process-bar-mobile-card2-text-color:#fff;
+  --process-bar-mobile-card3-text-color:#fff;
+
+  --process-bar-mobile-card1-border:2px solid #0965BC;
+  --process-bar-mobile-card2-border:2px solid #007A6E;
+  --process-bar-mobile-card3-border:2px solid #875028;
+
+  --process-bar-mobile-card1-icon:#0965BC;
+  --process-bar-mobile-card2-icon:#007A6E;
+  --process-bar-mobile-card3-icon:#875028;
+
   --service-bar-card-background-color:radial-gradient(60.59% 47.26% at 50% 50%, #252525 0%, #18171A 100%);
   --service-bar-card-shadow:0px 4px 20.1px 0px rgba(0, 0, 0, 0.25);
   --service-bar-card-text-color: #E9E9E9;
   --service-bar-card-border: 2px solid #3F3E41;
 
+  --service-bar-mobile-card-background-color:#232323;
+  --service-bar-mobile-arrow-light:none;
+  --service-bar-mobile-arrow-dark:block;
+
 
   --redirect-card-text-color:#F5F5F7;
   --redirect-card-border:2px solid #4D4D4F;
+  --redirect-mobile-card-border:1px solid #232323;
 
   --call-bar-background-color:radial-gradient(120.07% 92.39% at 42.09% 42.63%, rgba(0, 121, 93, 0.31) 0%, rgba(4, 35, 57, 0.31) 100%);
   --call-bar-btn-text-color: #F5F5F7;

@@ -13,7 +13,7 @@
   margin-top: 42px;
 }
 .footer{
-  margin-top: 56px;
+  margin-top: 22px;
 }
 
 .services{
@@ -35,7 +35,11 @@
 
 @media screen and (max-width: 900px) {
   .containers{
-    max-width: 370px;
+    max-width: 300px;
     margin: auto;
+  }
+
+  .process-bar{
+    margin-top: -2px;
   }
 }

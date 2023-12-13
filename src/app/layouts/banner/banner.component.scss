@@ -65,10 +65,14 @@
   width: 276px;
   height: 52px;
   border-radius: 26px;
-  background: radial-gradient(50% 50% at 50% 50%, #FFC200 0%, #F2AD13 100%);
+  background: var(--banner-dashboard-btn);
   margin-top: 38px;
-  color: #000;
+  color: #fff;
   border: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
 }
 
 
@@ -137,9 +141,9 @@
     width: 179px;
     height: 38px;
     border-radius: 19.186px;
-    background: radial-gradient(50% 50% at 50% 50%, #FFC200 0%, #F2AD13 100%);
+    background: var(--banner-dashboard-btn);
     margin-top: 20px;
-    color: #000;
+    color: #fff;
     border: none;
     text-align: center;
     font-family: Poppins, serif;
