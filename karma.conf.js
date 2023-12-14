@@ -31,10 +31,16 @@ module.exports = function (config) {
       reporters: [
         { type: 'html' },
         { type: 'text-summary' }
-      ]
+      ],
+      fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
     browsers: ['Chrome'],
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+    autoWatch: true,
+    singleRun: false,
   });
 };
