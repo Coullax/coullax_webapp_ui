@@ -27,11 +27,14 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -94,11 +97,13 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

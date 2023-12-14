@@ -1,0 +1,20 @@
+
+.coullax-logo path {
+  fill: var(--nav-coullax-logo-color);
+}
+.footer-container{
+  padding-bottom: 20px;
+}
+
+.footer-container-mobile{
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .footer-container{
+    display: none;
+  }
+
+  .footer-container-mobile{
+    display: block;
+  }
+}

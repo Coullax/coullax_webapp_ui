@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
+
+
+
+.items-row{
+  display: grid;
+  grid-template-columns: repeat(2 ,438.94px);
+  gap: 22px;
+}
+
+.item{
+  background: var(--main-content-background-color);
+  display: grid;
+  border-radius: 18px;
+  border: var(--redirect-card-border);
+  box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.05);
+  width: 438.94px;
+  height: 98px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--redirect-card-text-color);
+  font-family: 'Poppins', serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
+}
+
+
+
+.redirect-bar-mobile{
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .redirect-bar-mobile{
+    display: block;
+  }
+  .redirect-bar-web{
+    display: none;
+  }
+  .items-row{
+    display: grid;
+    grid-template-columns: repeat(2 ,146.231px);
+    gap: 7px;
+  }
+
+  .item{
+    background: var(--main-content-background-color);
+    display: grid;
+    border-radius: 6.67px;
+    border:var(--redirect-mobile-card-border) !important;
+    box-shadow: 0 3.706px 10.747px 0 rgba(0, 0, 0, 0.05);
+    width: 146.231px;
+    height: 58.028px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--redirect-card-text-color);
+    font-family: 'Poppins', serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 103.6%;
+    border: 1.112px solid #232323;
+  }
+}
