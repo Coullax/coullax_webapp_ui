@@ -9,6 +9,10 @@
 .footer-container-mobile{
   display: none;
 }
+
+.footer-sco{
+  cursor: pointer;
+}
 @media screen and (max-width: 900px) {
   .footer-container{
     display: none;

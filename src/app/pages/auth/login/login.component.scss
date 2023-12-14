@@ -1,0 +1,103 @@
+@import "cal-sans";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500&display=swap');
+
+
+.login-container{
+  background: #F3F3F3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loin-card{
+  margin: auto;
+  background: #fff;
+  width: 611px;
+  height: 739px;
+  border-radius: 36px;
+  box-shadow: 10px 9px 41px -9px rgba(0, 0, 0, 0.11);
+  align-items: center;
+  position: relative;
+  padding: 55px 65px 55px 65px;
+}
+
+
+.title{
+  color: #24252A;
+  font-family: Cal Sans, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.login-content{
+  margin-top: 96px;
+}
+
+.form-control{
+  border-radius: 9px;
+  background: #F9F9F9;
+  width: 482px;
+  height: 57px;
+  color: #808080;
+  font-family: Poppins, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+.mt-password{
+  margin-top: 18px;
+}
+.login-btn{
+  width: 482px;
+  height: 62px;
+  border-radius: 31px;
+  background: #24252A;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 136px;
+}
+
+
+.small-text{
+  margin-top: 10px;
+  color: #808080;
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.link{
+  color: color(display-p3 0.2588 0.5216 0.9569);
+  font-family: Poppins, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+
+.small-text2{
+  margin-top: 25px;
+  color: #808080;
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

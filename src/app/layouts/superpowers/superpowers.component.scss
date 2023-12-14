@@ -104,7 +104,7 @@
   font-weight: 600;
   line-height: 103.6%; /* 37.296px */
   letter-spacing: -1.8px;
-  padding: 28px 0 0 19px;
+  padding: 28px 0 0 14px;
 }
 .des1{
   color: var(--supper-power-cards-text-color);
@@ -115,7 +115,15 @@
   line-height: 103.6%;
   padding: 10px 0 0 25px;
 }
-
+.des1-world{
+  color: var(--supper-power-cards-text-color);
+  font-family: Poppins, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.6%;
+  padding: 10px 0 0 14px;
+}
 .text-row-1{
   color: var(--supper-power-cards-text-color);
   font-family: Poppins, serif;
@@ -131,7 +139,7 @@
 .piggy-image{
   position: relative;
   top: -38px;
-  left: 46px;
+  left: 52px;
 }
 
 .title{
@@ -210,7 +218,7 @@
 
   .piggy-image{
     position: relative;
-    top: -40px;
+    top: -7px;
     left: 63px;
   }
 

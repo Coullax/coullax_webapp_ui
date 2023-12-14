@@ -24,6 +24,7 @@ import {FormsModule} from "@angular/forms";
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import {NgxSpinnerModule} from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -44,18 +45,19 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     RegisterComponent,
     DashboardComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        NgOptimizedImage,
-        MatCardModule,
-        ThemeModule.forRoot({
-            themes: [lightTheme, darkTheme],
-            active: 'light'
-        }),
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgOptimizedImage,
+    MatCardModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'light'
+    }),
+    FormsModule,
+    NgxSpinnerModule
+  ],
   providers: [],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
