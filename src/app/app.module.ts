@@ -23,6 +23,7 @@ import { SliderBarComponent } from './layouts/slider-bar/slider-bar.component';
 import {FormsModule} from "@angular/forms";
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RegisterComponent } from './pages/auth/register/register.component';
     ContactusComponent,
     SliderBarComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent
   ],
     imports: [
         BrowserModule,
