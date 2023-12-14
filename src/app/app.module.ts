@@ -25,6 +25,7 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import {NgxSpinnerModule} from "ngx-spinner";
+import { ReviewBarComponent } from './layouts/review-bar/review-bar.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {NgxSpinnerModule} from "ngx-spinner";
     SliderBarComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ReviewBarComponent
   ],
   imports: [
     BrowserModule,
