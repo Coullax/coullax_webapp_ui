@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
 import AOS from "aos";
 @Component({
   selector: 'app-process',
