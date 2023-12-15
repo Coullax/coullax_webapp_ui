@@ -1,1 +1,29 @@
-<p>slider-bar works!</p>
+<div class="video_wrapper">
+  <div class="video_container" *ngFor="let data of videoList">
+      <input type="text" value="" hidden>
+      <div class="image_wrapper">
+          <img 
+              src="../../../assets/youtube_circle.png" 
+              class="youtube_icon" alt="youtubeIcon" 
+              (click)="playVideo(data.id)"
+          >
+          <img 
+              [src]="data.id | getThumbnail"
+              class="glightbox"  
+              alt=""
+              (click)="playVideo(data.id)"
+          >
+      </div>
+  </div>
+</div>
+
+<!-- <div class="video_wrapper">
+  <div class="video_container" *ngFor="let data of videoList">
+    <input type="text" value="" hidden>
+    <div class="image_wrapper">
+      <img src="assets/youtube/youtube_circle.png" class="youtube_icon" alt="youtubeIcon" >
+      <img src="" class="glightbox"
+        alt="" (click)="playVideo(data.id)">
+    </div>
+  </div>
+</div> -->

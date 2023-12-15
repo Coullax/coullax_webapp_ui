@@ -26,6 +26,7 @@ import { RegisterComponent } from './pages/auth/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import {NgxSpinnerModule} from "ngx-spinner";
 import { ReviewBarComponent } from './layouts/review-bar/review-bar.component';
+import { GetThumbnailPipe } from './pipes/get-thumbnail.pipe';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ReviewBarComponent } from './layouts/review-bar/review-bar.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    ReviewBarComponent
+    ReviewBarComponent,
+    GetThumbnailPipe
   ],
   imports: [
     BrowserModule,

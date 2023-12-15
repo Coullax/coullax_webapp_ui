@@ -7,6 +7,16 @@ import {NgxSpinnerService} from "ngx-spinner";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit{
+
+  isModalOpen = false;
+
+ openModal() {
+   this.isModalOpen = true;
+ }
+
+ closeModal() {
+   this.isModalOpen = false;
+ }
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
