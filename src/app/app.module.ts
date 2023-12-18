@@ -29,6 +29,7 @@ import { ReviewBarComponent } from './layouts/review-bar/review-bar.component';
 import { GetThumbnailPipe } from './pipes/get-thumbnail.pipe';
 import { BlockchaindevComponent } from './pages/blockchaindev/blockchaindev.component';
 import { ArtModelComponent } from './pages/blockchaindev/art-model/art-model.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ArtModelComponent } from './pages/blockchaindev/art-model/art-model.com
       active: 'light'
     }),
     FormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MatExpansionModule
   ],
   providers: [],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
