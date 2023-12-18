@@ -3,6 +3,10 @@
   --main-content-text-color: #231f20;
   --opacity: 0.06;
 
+  --web-scroller-track: #f5f5f5;
+  --web-scroller-track-thumb: #fff;
+  --web-scroller-track-thumb-hover:#fff;
+
   --nav-signin-btn-background-color:#232323;
   --nav-signin-btn-text-color:#fff;
   --nav-coullax-logo-color: black;
@@ -77,12 +81,26 @@
 
 
 
+  --body-color: white;
+  --font-color: #475569;
+  --icon-inactive-color: #94a3b8;
+  --switch-background-color: #f1f5f9;
+  --switch-shadow: inset 0px 0px 0.125em rgba(0, 0, 0, 0.06),
+  inset 0px 0px 0.0625em rgba(0, 0, 0, 0.04);
+  --switch-button-shadow: 0px 0px 0.125em rgba(0, 0, 0, 0.06),
+  0px 0px 0.0625em rgba(0, 0, 0, 0.04);
+
+
 }
 
 [data-theme="dark"] {
   --main-content-background-color: linear-gradient(180deg, #070707 0%, #171C19 100%);
   --main-content-text-color: #ffffff;
   --opacity: 0.4;
+
+  --web-scroller-track: black;
+  --web-scroller-track-thumb: #000;
+  --web-scroller-track-thumb-hover:#000;
 
   --nav-signin-btn-background-color:#fff;
   --nav-signin-btn-text-color:#151515;
@@ -156,4 +174,21 @@
   --supper-power-cards-text-color:#D0D0D0;
   --supper-power-title-color:#FFF;
 
+
+
+
+
+  --body-color: #475569;
+  --font-color: #f8fafc;
+  --icon-inactive-color: #cbd5e1;
+  --switch-background-color: #64748b;
+  --switch-shadow: inset 0px 0px 0.125em rgba(0, 0, 0, 0.16),
+  inset 0px 0px 0.0625em rgba(0, 0, 0, 0.24);
+  --switch-button-shadow: 0px 0px 0.125em rgba(0, 0, 0, 0.16),
+  0px 0px 0.0625em rgba(0, 0, 0, 0.14);
+  --left: calc(0.25em + calc(2.5em - 2 * 0.25em));
+}
+
+[data-theme="auto"]{
+  --left: calc(0.25em + 2 * calc(2.5em - 2 * 0.25em));
 }

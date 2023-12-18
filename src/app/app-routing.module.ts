@@ -5,6 +5,7 @@ import {LoginComponent} from "./pages/auth/login/login.component";
 import {RegisterComponent} from "./pages/auth/register/register.component";
 import {NavbarComponent} from "./layouts/navbar/navbar.component";
 import {DashboardComponent} from "./pages/dashboard/dashboard.component";
+import {BlockchaindevComponent} from "./pages/blockchaindev/blockchaindev.component";
 
 const routes: Routes = [
 
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path:'personal/dashboard',
     component: DashboardComponent
+  },
+  {
+    path:'app/blockchain-dev',
+    component: BlockchaindevComponent
   },
   {
     path: '',

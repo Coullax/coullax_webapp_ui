@@ -27,6 +27,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import {NgxSpinnerModule} from "ngx-spinner";
 import { ReviewBarComponent } from './layouts/review-bar/review-bar.component';
 import { GetThumbnailPipe } from './pipes/get-thumbnail.pipe';
+import { BlockchaindevComponent } from './pages/blockchaindev/blockchaindev.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { GetThumbnailPipe } from './pipes/get-thumbnail.pipe';
     RegisterComponent,
     DashboardComponent,
     ReviewBarComponent,
-    GetThumbnailPipe
+    GetThumbnailPipe,
+    BlockchaindevComponent
   ],
   imports: [
     BrowserModule,

@@ -54,3 +54,25 @@ body {
   background-attachment: fixed;
 
 }
+
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--web-scroller-track);
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: var(--web-scroller-track-thumb);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--web-scroller-track-thumb-hover);
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
+@import "cal-sans";
+
+
+.blockchaindev{
+  background: #E6ECFF;
+}
+.blockchaindev-container{
+  margin: auto;
+  max-width: 900px;
+  //height: 100vh;
+}
+
+.hero-title{
+  color: #1C212A;
+  font-family: Cal Sans, serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 102.1%;
+  margin: 142px 0 4px 56px;
+}
+
+.highlight{
+  background: linear-gradient(90deg, color(display-p3 0.82 0.4374 1) 22.07%, color(display-p3 0.0802 0.0281 0.6802) 98.15%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Cal Sans, serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 102.1%;
+}
+
+.move-dashboard-btn{
+  width: 276px;
+  height: 52px;
+  border-radius: 26px;
+  background: #F2AD13;
+  color: #1C2028;
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
+  border: none;
+  margin-top: 32px;
+}
+
+.blockchain-description{
+  display: grid;
+  grid-template-columns: 439.024px 439.024px;
+  gap: 22px;
+  margin-top: 92px;
+}
+.des-card{
+  width: 439.024px;
+  height: 266.707px;
+  background: #fff;
+  border-radius: 18px;
+
+  .des-card-cont{
+    padding: 28px 28px 28px 28px;
+  }
+
+  .icon-div{
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background: #E6DAFF;
+    justify-content: center;
+
+    .icon1{
+      position: relative;
+      top: 11px;
+      left: 11px;
+    }
+    .icon2{
+      position: relative;
+      top: 11px;
+      left: 17px;
+    }
+    .icon3{
+      position: relative;
+      top: 14px;
+      left: 17px;
+    }
+    .icon4{
+      position: relative;
+      top: 16px;
+      left: 11px;
+    }
+    .icon5{
+      position: relative;
+      top: 16px;
+      left: 17px;
+    }
+    .icon6{
+      position: relative;
+      top: 19px;
+      left: 13px;
+    }
+  }
+
+  .card-title{
+    color: #1C212A;
+    font-family: Cal Sans, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.1%;
+    margin-top: 21px;
+  }
+
+  .development-txt{
+    color: color(display-p3 0.2431 0.1216 0.7529);
+    font-family: Cal Sans, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.1%;
+  }
+
+  .card-des{
+    color: #232323;
+    font-family: Poppins, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin-top: 8px;
+  }
+}
+
+.price-container{
+  display: grid;
+  grid-template-columns: 264.453px 264.453px 264.453px;
+  grid-template-rows: 396px;
+  gap: 22px;
+  margin-top: 55px;
+  border-radius: 18px;
+  background: linear-gradient(100deg, #D3C0FF -6.9%, #5800B0 47.89%, #250A67 95.23%);
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card{
+  width: 264.453px;
+  height: 341.351px;
+  border-radius: 17px;
+  border: 2.813px solid rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(9.565333366394043px);
+  padding: 36px 0 20px 27px;
+
+  .pkg-type{
+    color: #fff;
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .price{
+    color: #fff;
+    font-family: Cal Sans, serif;
+    font-size: 42.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .pkg-item{
+    color: #fff;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.6%;
+
+    ul{
+      list-style: inside !important;
+
+      li{
+        margin-top: 25px;
+      }
+    }
+  }
+  .order-now-btn{
+    width: 214px;
+    height: 41px;
+    border-radius: 16.88px;
+    border: 3px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 14.067px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.6%;
+    margin-top: 51px;
+  }
+}
+
+
+
+
