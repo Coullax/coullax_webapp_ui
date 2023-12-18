@@ -39,10 +39,10 @@ export class SliderBarComponent implements OnInit {
 
   videoList = [
     {
-      id: 'https://www.youtube.com/embed/Rn_xxo6ba4k?showinfo=0&enablejsapi=1&origin=http://localhost:9000'
+      id: 'https://youtu.be/KLL6YRm5Dnc?si=Isai7TSvtRJn7Hsz'
     },
     {
-      id: 'http://www.youtube.com/watch?v=wytv3C6o4AE&ab_channel=CotneusProd.'
+      id: 'https://youtu.be/FCcj5_ReYMg?si=FpJeY8OsY3eSJRHf'
     },
     {
       id: 'http://www.youtube.com/watch?v=RgKAFK5djSk&ab_channel=WizKhalifaMusic'

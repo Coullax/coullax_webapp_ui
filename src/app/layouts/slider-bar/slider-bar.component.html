@@ -2,14 +2,14 @@
   <div class="video_container" *ngFor="let data of videoList">
       <input type="text" value="" hidden>
       <div class="image_wrapper">
-          <img 
-              src="../../../assets/youtube_circle.png" 
-              class="youtube_icon" alt="youtubeIcon" 
+          <img
+              src="assets/youtube/youtube_circle.png"
+              class="youtube_icon" alt="youtubeIcon"
               (click)="playVideo(data.id)"
           >
-          <img 
+          <img
               [src]="data.id | getThumbnail"
-              class="glightbox"  
+              class="glightbox"
               alt=""
               (click)="playVideo(data.id)"
           >

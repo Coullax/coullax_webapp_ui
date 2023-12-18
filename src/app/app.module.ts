@@ -28,6 +28,7 @@ import {NgxSpinnerModule} from "ngx-spinner";
 import { ReviewBarComponent } from './layouts/review-bar/review-bar.component';
 import { GetThumbnailPipe } from './pipes/get-thumbnail.pipe';
 import { BlockchaindevComponent } from './pages/blockchaindev/blockchaindev.component';
+import { ArtModelComponent } from './pages/blockchaindev/art-model/art-model.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { BlockchaindevComponent } from './pages/blockchaindev/blockchaindev.comp
     DashboardComponent,
     ReviewBarComponent,
     GetThumbnailPipe,
-    BlockchaindevComponent
+    BlockchaindevComponent,
+    ArtModelComponent
   ],
   imports: [
     BrowserModule,
