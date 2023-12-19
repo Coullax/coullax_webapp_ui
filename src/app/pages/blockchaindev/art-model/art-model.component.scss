@@ -1,3 +1,11 @@
-canvas {
-    display: block;
-  }
+//canvas {
+//    display: block;
+//  }
+
+light{
+  display: var(--show-canvas-light-mood);
+}
+
+dark{
+  display: var(--show-canvas-dark-mood);
+}

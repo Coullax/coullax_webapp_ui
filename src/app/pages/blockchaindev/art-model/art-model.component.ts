@@ -5,6 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'; // GLTFLoader for Angular
 import { OrbitControls as OrbitControlsType } from 'three/examples/jsm/controls/OrbitControls'; // Import OrbitControls typeimport { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import SplineLoader from '@splinetool/loader';
+import {ThemeService} from "../../../_Services/theme/theme.service";
 
 
 @Component({
@@ -86,12 +87,26 @@ export class ArtModelComponent implements AfterViewInit {
   //   animateFn();
   // }
 
+  constructor(private elementRef: ElementRef, private themeService: ThemeService) {
+  }
   @ViewChild('canvas3d', { static: true }) canvasRef: ElementRef<HTMLCanvasElement>;
 
+  @ViewChild('canvas3dDark', { static: true }) canvasRefDark: ElementRef<HTMLCanvasElement>;
+
   ngAfterViewInit() {
+    let mode = this.themeService.isDarkMode();
     const canvas = this.canvasRef.nativeElement;
+    const canvasDark = this.canvasRefDark.nativeElement;
     const app = new Application(canvas);
+    const appDark = new Application(canvasDark);
     app.load('https://prod.spline.design/g0qjQxb89G0dnY82/scene.splinecode');
+    appDark.load('https://prod.spline.design/y27l7kAcAI9mrGzi/scene.splinecode');
+    // if (!mode){
+    //   app.load('https://prod.spline.design/g0qjQxb89G0dnY82/scene.splinecode');
+    // }else {
+    //   appDark.load('https://prod.spline.design/y27l7kAcAI9mrGzi/scene.splinecode');
+    // }
+
     // app.load('https://prod.spline.design/y27l7kAcAI9mrGzi/scene.splinecode');
   }
 }

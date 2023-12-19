@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {ThemeService} from "../../_Services/theme/theme.service";
+import {NgxSpinnerService} from "ngx-spinner";
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,7 @@ import {ThemeService} from "../../_Services/theme/theme.service";
 export class DashboardComponent {
 
   isDarkMode:boolean;
-  constructor(private themeService: ThemeService) {
+  constructor(private themeService: ThemeService,private spinner: NgxSpinnerService) {
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
   }
@@ -24,6 +25,17 @@ export class DashboardComponent {
       document.body.setAttribute('data-theme', 'light');
       document.documentElement.setAttribute('data-theme', 'light');
     }
+  }
+
+  ngOnInit() {
+    this.spinner.show(undefined, {
+      type: 'ball-scale-multiple',
+      fullScreen: true,
+    });
+
+    setTimeout(() => {
+      this.spinner.hide().then(r => {});
+    }, 2000);
   }
 
 }

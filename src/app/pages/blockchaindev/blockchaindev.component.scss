@@ -3,7 +3,7 @@
 
 
 .blockchaindev{
-  background: #E6ECFF;
+  background: var(--blockchaindev-page-bg-color);
 }
 .blockchaindev-container{
   margin: auto;
@@ -12,7 +12,7 @@
 }
 
 .hero-title{
-  color: #1C212A;
+  color: var(--blockchaindev-page-hero-text-color);
   font-family: Cal Sans, serif;
   font-size: 45px;
   font-style: normal;
@@ -22,7 +22,7 @@
 }
 
 .highlight{
-  background: linear-gradient(90deg, color(display-p3 0.82 0.4374 1) 22.07%, color(display-p3 0.0802 0.0281 0.6802) 98.15%);
+  background: var(--blockchaindev-page-hero-highlight-text-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

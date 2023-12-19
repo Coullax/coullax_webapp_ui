@@ -34,7 +34,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss",
               "node_modules/aos/dist/aos.css",
-              "node_modules/glightbox/dist/css/glightbox.css"
+              "node_modules/glightbox/dist/css/glightbox.css",
+              "node_modules/ngx-spinner/animations/ball-scale-multiple.css"
 
             ],
             "scripts": [
@@ -106,7 +107,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss",
               "node_modules/aos/dist/aos.css",
-              "node_modules/glightbox/dist/css/glightbox.css"
+              "node_modules/glightbox/dist/css/glightbox.css",
+              "node_modules/ngx-spinner/animations/ball-scale-multiple.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
