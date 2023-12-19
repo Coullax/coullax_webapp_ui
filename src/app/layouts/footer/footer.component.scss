@@ -13,6 +13,9 @@
 .footer-sco{
   cursor: pointer;
 }
+.link-text{
+  color: var(--footer-link-text-color);
+}
 @media screen and (max-width: 900px) {
   .footer-container{
     display: none;

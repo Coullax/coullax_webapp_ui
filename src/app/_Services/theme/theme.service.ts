@@ -22,7 +22,7 @@ export class ThemeService{
   isDarkMode(){
     return this.theme === 'dark'
   }
-  getActiveTheme() {
+   getActiveTheme() {
     if (localStorage.getItem('user-theme')) {
       this.theme = String(localStorage.getItem('user-theme'));
     } else {
