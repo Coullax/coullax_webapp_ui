@@ -11,31 +11,29 @@ export class DashboardComponent {
 
   isDarkMode:boolean;
   constructor(private themeService: ThemeService,private spinner: NgxSpinnerService) {
-    this.themeService.initTheme();
-    this.isDarkMode = this.themeService.isDarkMode();
+    // this.themeService.initTheme();
+    // this.isDarkMode = this.themeService.isDarkMode();
   }
   toggle() {
-    const active = this.themeService.isDarkMode() ;
-    if (!active) {
-      this.themeService.setTheme('dark');
-      document.body.setAttribute('data-theme', 'dark');
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      this.themeService.setTheme('light');
-      document.body.setAttribute('data-theme', 'light');
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    // const active = this.themeService.isDarkMode() ;
+    // if (!active) {
+    //   this.themeService.setTheme('dark');
+    //   document.body.setAttribute('data-theme', 'dark');
+    //   document.documentElement.setAttribute('data-theme', 'dark');
+    // } else {
+    //   this.themeService.setTheme('light');
+    //   document.body.setAttribute('data-theme', 'light');
+    //   document.documentElement.setAttribute('data-theme', 'light');
+    // }
   }
 
   ngOnInit() {
-    this.spinner.show(undefined, {
-      type: 'ball-scale-multiple',
-      fullScreen: true,
-    });
+    this.spinner.show();
 
     setTimeout(() => {
-      this.spinner.hide().then(r => {});
-    }, 2000);
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 5000);
   }
 
 }

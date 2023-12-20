@@ -21,7 +21,7 @@
 		"@angular/platform-browser-dynamic": "^16.2.0",
 		"@angular/router": "^16.2.0",
 		"@splinetool/loader": "^0.9.523",
-		"@splinetool/runtime": "^0.9.523",
+		"@splinetool/runtime": "^0.9.526",
 		"@types/gsap": "^3.0.0",
 		"alpinejs": "^3.13.3",
 		"aos": "^2.3.4",
@@ -33,6 +33,7 @@
 		"ngx-spinner": "^16.0.1",
 		"popper.js": "^1.16.1",
 		"rxjs": "~7.8.0",
+		"swiper": "^11.0.5",
 		"three": "^0.159.0",
 		"tslib": "^2.3.0",
 		"zone.js": "~0.13.0"

@@ -34,8 +34,16 @@
 .sss{
   margin-top: 50px;
 }
-
+.mobi-nav{
+  display: none;
+}
 @media screen and (max-width: 900px) {
+  .web-nav{
+    display: none;
+  }
+  .mobi-nav{
+    display: block;
+  }
   .containers{
     max-width: 300px;
     margin: auto;

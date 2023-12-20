@@ -2,11 +2,11 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ThemeService} from "../../_Services/theme/theme.service";
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
+  selector: 'app-navbar-mobile',
+  templateUrl: './navbar-mobile.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent implements OnInit{
+export class NavbarMobileComponent implements OnInit{
 
 
   isDarkMode:boolean;

@@ -2,161 +2,146 @@
 @import 'cal-sans';
 
 
-.blockchaindev{
+.blockchaindev-mobile{
   background: var(--blockchaindev-page-bg-color);
 }
-.blockchaindev-container{
+.blockchaindev-container-mobile{
   margin: auto;
-  max-width: 900px;
-  //height: 100vh;
+  max-width: 300px;
 }
 
-.hero-title{
+.mobile-hero-text {
   color: var(--blockchaindev-page-hero-text-color);
   font-family: Cal Sans, serif;
-  font-size: 45px;
+  text-align: center;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: 102.1%;
-  margin: 142px 0 4px 56px;
 }
 
-.highlight{
+
+.highlight-mobi{
   background: var(--blockchaindev-page-hero-highlight-text-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Cal Sans, serif;
-  font-size: 45px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: 102.1%;
 }
 
-.move-dashboard-btn{
+.move-dashboard-btn-mobi{
   width: 232px;
-  height: 53px;
-  border-radius: 26.5px;
+  height: 43px;
+  border-radius: 26px;
   border: var(--blockchaindev-page-hero-move-dashboard-btn-border);
   background: transparent;
   color: var(--blockchaindev-page-hero-move-dashboard-btn-txt-color);
   text-align: center;
   font-family: Poppins, serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 103.6%;
-  margin-top: 32px;
+  margin-top: 25px;
 }
-.col-4{
-  width: 300px !important;
+
+
+.description-bar-mobile{
+  margin-top: 25px;
 }
-.blockchain-description{
+.grid-items{
   display: grid;
-  grid-template-columns: 439.024px 439.024px;
-  gap: 22px;
-  margin-top: 92px;
+  grid-template-columns: 300px;
+  gap: 15px;
 }
-.des-card{
-  width: 439.024px;
-  height: 266.707px;
+
+
+.description-card-mobile{
+  width: 300px;
+  height: 78px;
+  border-radius: 12px;
   background: var(--blockchaindev-page-des-card-bg-color);
-  border-radius: 18px;
+  align-items: center;
+  padding-left: 18px;
 
-  .des-card-cont{
-    padding: 28px 28px 28px 28px;
-  }
-
-  .icon-div{
-    width: 61px;
-    height: 61px;
-    border-radius: 50%;
-    background: var(--blockchaindev-page-des-card-icon-div-bg-color);
-    justify-content: center;
-    border:var(--blockchaindev-page-des-card-icon-div-border);
-
-    .icons path{
-      fill:var(--blockchaindev-page-des-card-icon-color);
-    }
-    .icons rect{
-      fill:var(--blockchaindev-page-des-card-icon-color);
-    }
-    .icon1{
-      position: relative;
-      top: 10px;
-      left: 10px;
-    }
-    .icon2{
-      position: relative;
-      top: 11px;
-      left: 17px;
-    }
-    .icon3{
-      position: relative;
-      top: 14px;
-      left: 17px;
-    }
-    .icon4{
-      position: relative;
-      top: 16px;
-      left: 11px;
-    }
-    .icon5{
-      position: relative;
-      top: 16px;
-      left: 17px;
-    }
-    .icon6{
-      position: relative;
-      top: 19px;
-      left: 13px;
-    }
-  }
-
-  .card-title{
+  .title-mobile{
     color: var(--blockchaindev-page-des-card-title-color);
     font-family: Cal Sans, serif;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 102.1%;
-    margin-top: 21px;
   }
-
   .development-txt{
     color: var(--blockchaindev-page-des-card-title-development-txt);
     font-family: Cal Sans, serif;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 102.1%;
   }
 
-  .card-des{
-    color: var(--blockchaindev-page-des-card-card-des-text-color);
-    font-family: Poppins, serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%;
-    margin-top: 8px;
+
+  .icons-light{
+    display: var(--blockchaindev-mobile-page-icons-display);
   }
+
+  .icons-dark{
+    display: var(--blockchaindev-mobile-page-icons-display-dark);
+  }
+
+  .icons-dark path:nth-child(1){
+    stroke: #73E69B;
+    stroke-width:2;
+  }
+  .icons-dark circle{
+    stroke: #73E69B;
+    stroke-width:2;
+  }
+
 }
 
-.des-card:hover{
-  background: var(--blockchaindev-page-des-card-hover);
+.description-card-mobile:hover{
+  background: var(--blockchaindev-mobile-page-des-card-hover);
 
-  .icon-div{
-    background: var(--blockchaindev-page-des-hover-icon-div-bg-color);
-    border: none;
+  .icons-light path:nth-child(1){
+    fill: var(--blockchaindev-mobile-page-des-hover-icon-div-bg-color);
   }
-  .icons path{
+  .icons-light circle{
+    fill: var(--blockchaindev-mobile-page-des-hover-icon-div-bg-color);
+  }
+
+  .icons-light path:not(:nth-child(1)){
     fill:var(--blockchaindev-page-des-hover-icon-path);
   }
-  .icons rect{
+  .icons-light rect{
     fill:var(--blockchaindev-page-des-hover-icon-path);
   }
-  .card-title{
+
+  .icons-dark path:nth-child(1){
+    stroke: none;
+    fill: #73E69BFF;
+  }
+
+  .icons-dark path:nth-child(1){
+    stroke: none;
+    fill: #73E69BFF;
+  }
+  .icons-dark circle{
+    stroke: none;
+    fill: #73E69BFF;
+  }
+  .icons-dark path:not(:nth-child(1)){
+    fill: #14161AFF;
+  }
+  .icons-dark rect{
+    fill: #14161AFF;
+  }
+  .title-mobile{
     color: #fff;
   }
 
@@ -169,40 +154,39 @@
   }
 }
 
-.price-container{
+
+.price-grid-items{
   display: grid;
-  grid-template-columns: 264.453px 264.453px 264.453px;
-  grid-template-rows: 396px;
-  gap: 22px;
-  margin-top: 55px;
+  grid-template-columns: 300px;
+  grid-template-rows:341px;
+  gap: 21px;
+  margin-top: 27px;
   border-radius: 18px;
-  background: var(--blockchaindev-page-price-container-bg-color);
   justify-content: center;
   align-items: center;
+
 }
 
-.price-card{
-  width: 264.453px;
-  height: 341.351px;
-  border-radius: 17px;
+.price-card-item{
+  border-radius: 16.88px;
   border: 2.813px solid rgba(255, 255, 255, 0.03);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--blockchaindev-mobile-page-price-card-item);
   backdrop-filter: blur(9.565333366394043px);
-  padding: 36px 0 20px 27px;
+  height: 341px;
+  padding: 35px 0 20px 30px;
 
   .pkg-type{
-    color: #fff;
+    color: var(--blockchaindev-mobile-page-price-card-pkg-type);
     font-family: Cal Sans, serif;
-    font-size: 22.507px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
   }
-
   .price{
-    color: #fff;
+    color: var(--blockchaindev-mobile-page-price-card-pkg-type);
     font-family: Cal Sans, serif;
-    font-size: 42.2px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
@@ -210,7 +194,7 @@
   }
 
   .pkg-item{
-    color: #fff;
+    color: var(--blockchaindev-mobile-page-price-card-pkg-type);
     font-family: Poppins, serif;
     font-size: 16px;
     font-style: normal;
@@ -220,20 +204,20 @@
     ul{
       list-style: inside !important;
       li{
-        margin-top: 25px;
+        margin-top: 30px;
 
       }
     }
   }
   .order-now-btn{
-    width: 214px;
-    height: 41px;
+    width: 242.765px;
+    height: 40.958px;
     border-radius: 16.88px;
-    border: 3px solid #fff;
-    color: #fff;
+    border: var(--blockchaindev-mobile-page-price-card-order-now-btn-border);
     text-align: center;
     font-family: Poppins, serif;
-    font-size: 14.067px;
+    color: var(--blockchaindev-mobile-page-price-card-order-now-btn-text);
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 103.6%;
@@ -241,14 +225,16 @@
   }
 }
 
-.price-card-mid{
-  border-radius: 17px;
-  border: 2.813px solid rgba(255, 255, 255, 0.03);
-  background: rgba(0, 0, 0, 0.43);
-  backdrop-filter: blur(9.565333366394043px);
-  padding: 18px 0 20px 27px;
 
-  .pkg-tag{
+.price-card-mid-mobi{
+  height: 341px;
+  border-radius: 16.88px;
+  //border: 2.813px solid rgba(255, 255, 255, 0.03);
+  background: var(--blockchaindev-mobile-page-price-card-order-now-btn-mid);
+  backdrop-filter: blur(9.565333366394043px);
+  padding: 18px 0 20px 30px;
+
+  .pkg-tag-mid{
     width: 108px;
     height: 23px;
     border-radius: 23px;
@@ -264,7 +250,7 @@
     justify-content: center;
     align-items: center;
   }
-  .pkg-type-mid{
+  .pkg-type-mid-mobi{
     color: #fff;
     font-family: Cal Sans, serif;
     font-size: 22.507px;
@@ -273,17 +259,17 @@
     line-height: 96.6%;
   }
 
-  .price-mid{
+  .price-mid-mobi{
     color: #fff;
     font-family: Cal Sans, serif;
-    font-size: 42.2px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
     margin-top: 4px;
   }
 
-  .pkg-item-mid{
+  .pkg-item-mid-mobi{
     color: #fff;
     font-family: Poppins, serif;
     font-size: 16px;
@@ -299,9 +285,9 @@
       }
     }
   }
-  .order-now-btn-mid{
-    width: 214px;
-    height: 41px;
+  .order-now-btn-mid-mobi{
+    width: 242.765px;
+    height: 40.958px;
     border-radius: 16.88px;
     border: none;
     color: #000;
@@ -317,166 +303,136 @@
 }
 
 
-
-.pricing-table-container {
-  width: 900px;
-  height: 444px;
+.mySwiper{
+  height: 476px;
   border-radius: 14.339px;
-  background: var(--blockchaindev-page-pricing-table-container);
+  background: var(--blockchaindev-mobile-page-price-plan-card-bg);
+  margin-top: 27px;
+}
+.comp-plans-card{
+  justify-content: start;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-top: 34px;
+  grid-template-columns: 300px;
+  padding: 28px 0 0 26px;
 }
-.price-table {
-  width: 810px;;
-  border: none;
-  border-collapse:separate;
-  border-spacing:0 10px;
-}
-.price-table tr:not(:last-child) {
-  border:none;
-}
-.price-table tr td {
-  border-left: none;
-  padding: 8px 24px;
-}
-.price-table tr td:first-child {
-  border-left: none;
+.comp-plans-card-title{
+  color: var(--blockchaindev-mobile-page-price-plan-card-title);
+  font-family: Cal Sans, serif;
+  font-size: 22.507px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
 }
 
-.price-table tr {
-  background: var(--blockchaindev-page-pricing-table-container-tr);
-  width: 810px;
-  height: 52px;
-  border-radius: 5px;
-}
-//.price-table tr:hover {
-//  background-color: #F1F3FF;
-//}
 
-tbody > tr > td:nth-child(3) {
-  background: var(--blockchaindev-page-pricing-table-td-3rd-child);
-  width: 177px;
-}
-tbody > tr > td:nth-child(4) {
-  width: 109px;
-}
-
-tbody > tr > td:nth-child(2) {
-  width: 109px;
-}
-
-.price-table tr.price-table-head {
-  background-color: var(--blockchaindev-page-pricing-table-container);;
-  color: #000;
-}
-
-.table-name{
-  color: var(--blockchaindev-page-table-name-txt-color);
+.comp-plans-card-type{
+  color: var(--blockchaindev-mobile-page-price-plan-card-type);
   text-align: start;
   font-family: Cal Sans, serif;
   font-size: 22.507px;
   font-style: normal;
   font-weight: 600;
   line-height: 96.6%;
+  margin-top: 26px;
 }
-
-.table-col{
-  color: var(--blockchaindev-page-table-col-txt-color);
-  text-align: center;
-  font-family: Cal Sans, serif;
-  font-size: 22.507px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 96.6%;
-}
-
-//.table-col-mid{
-//  color: #310C7E;
-//  text-align: center;
-//  font-family: Cal Sans, serif;
-//  font-size: 22.507px;
-//  font-style: normal;
-//  font-weight: 600;
-//  line-height: 96.6%;
-//}
-.table-items{
-  color: var(--blockchaindev-page-pricing-table-items-color);
+.comp-plans-card-items{
+  color: var(--blockchaindev-mobile-page-price-plan-card-item);
   font-family: Poppins, serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 96.6%;
-  display: list-item;
-  list-style-position: inside;
-  margin-top: 10px;
+
+  ul{
+    //list-style: inside !important;
+
+    li{
+      margin-top: 29px;
+    }
+  }
+
 }
 
-.price-plan-icon path{
-  fill: var(--blockchaindev-page-pricing-table-icon-color);
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
 }
 
+.swiper-container-horizontal > .swiper-pagination > .swiper-pagination-bullet {
+  opacity: 0.2;
+  background: #de0000 !important;
+}
+.swiper-container-horizontal > .swiper-pagination > .swiper-pagination-bullet-active {
+  background: #9f0000 !important;
+  opacity: 1;
+}
+
+
+
+.bold-point{
+  display: list-item !important;
+  list-style-type: disc !Important;
+  list-style: inside;
+}
 
 .question-container{
-  margin-top: 34px;
+  margin-top: 32px;
 }
 .question-container-title{
   color: var(--blockchaindev-page-question-container-title);
   font-family: Cal Sans, serif;
-  font-size: 45px;
+  font-size: 22.507px;
   font-style: normal;
   font-weight: 600;
   line-height: 96.6%;
-  margin-bottom: 31px;
+
 }
 
 
 .mat-expansion-panel{
   margin-top: 20px !important;
-  border-radius: 10px !important;
+  border-radius: 12px !important;
   box-shadow: none !important;
   background: var(--blockchaindev-page-question-container-mat-expansion-panel) !important;
 }
 
 .mat-expansion-panel-header{
-  height: 79px !important;
-  border-radius: 10px !important;
+  height: 81px !important;
+  border-radius: 12px !important;
   box-shadow: none !important;
-  padding: 0 46px !important;
+  padding: 0 25px !important;
 }
 
 .mat-expansion-panel-header-title{
   color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title) !important;
   font-family: Poppins, serif !important;
-  font-size: 21px !important;
+  font-size: 16px !important;
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 144.1% !important;
 }
 
 .mat-expansion-indicator::after {
-   border-style: solid;
-   border-width: 0 2px 2px 0;
-   content: "";
-   display: inline-block;
-   padding: 3px;
-   transform: rotate(45deg);
-   vertical-align: middle;
-   color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title) !important;
-   width: 20px !important;
-   height: 20px !important;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title) !important;
+  width: 12px !important;
+  height: 12px !important;
   border-color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title);
 }
 
 .mat-expansion-panel-body{
   color: var(--blockchaindev-page-question-container-mat-expansion-panel-body);
   font-family: Poppins, serif;
-  font-size: 21px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 144.1%;
-  padding: 0 46px 16px !important;
+  padding: 0 25px 16px !important;
 }
 
 
@@ -486,42 +442,29 @@ tbody > tr > td:nth-child(2) {
   background: var(--blockchaindev-page-call-container);
   justify-content: space-between;
   align-items: center;
-  padding: 0 46px 0 46px;
+  padding: 0 16px 0 33px;
   margin-top: 22px;
   margin-bottom: 40px;
 
   .label{
     color: #FFF;
     font-family: Cal Sans, serif;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
   }
   .book-cl-bnt{
-    width: 225px;
-    height: 52px;
+    width: 139px;
+    height: 38px;
     border-radius: 64px;
     background: #FFF;
     color: var(--blockchaindev-page-call-container-book-cl-btn-text-color);
     text-align: center;
     font-family: Poppins, serif;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 122.1%;
   }
 }
-
-.blockchaindev-mobile{
-  display: none;
-}
-@media screen and (max-width: 900px) {
-  .blockchaindev-mobile{
-    display: block;
-  }
-  .blockchaindev{
-    display: none;
-  }
-}
-

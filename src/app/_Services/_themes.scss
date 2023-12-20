@@ -11,7 +11,7 @@
   --nav-signin-btn-text-color:#fff;
   --nav-coullax-logo-color: black;
 
-  --nav-mobile-container-bg-color:#EDEDED;
+  --nav-mobile-container-bg-color: #ffffff;
 
   --banner-text-color:linear-gradient(180deg, rgb(35, 100, 132) 0%, rgb(125.19, 196.56, 7.37) 100%);
   --banner-dashboard-btn:radial-gradient(50% 50% at 50% 50%, #007A37 0%, #004E53 100%);
@@ -112,6 +112,26 @@
   --blockchaindev-page-question-container-mat-expansion-panel-body:#875CF1;
   --blockchaindev-page-call-container:linear-gradient(180deg, #5827D0 0%, #5827D0 214.94%);
   --blockchaindev-page-call-container-book-cl-btn-text-color:#5827D0;
+
+  --blockchaindev-page-des-card-hover: url("../../../src/assets/svg/services_card_master_light.svg");
+  --blockchaindev-page-des-hover-icon-div-bg-color:#500AA9;
+  --blockchaindev-page-des-hover-icon-path:#E6DAFF;
+  --blockchaindev-page-des-hover-development-txt:color(display-p3 0.7647 0.4078 0.9804);
+
+  --blockchaindev-mobile-page-des-card-hover: url("../../../src/assets/svg/selected_card _ mobile_light.svg");
+  --blockchaindev-mobile-page-des-hover-icon-div-bg-color:#500AA9;
+  --blockchaindev-mobile-page-icons-display:block;
+  --blockchaindev-mobile-page-icons-display-dark:none;
+  --blockchaindev-mobile-page-price-card-item:color(display-p3 1 1 1);
+  --blockchaindev-mobile-page-price-card-pkg-type:#1E1E1E;
+  --blockchaindev-mobile-page-price-card-order-now-btn-text:#5827D0;
+  --blockchaindev-mobile-page-price-card-order-now-btn-border:3px solid #612BD4;
+  --blockchaindev-mobile-page-price-card-order-now-btn-mid:radial-gradient(82.17% 89.89% at 67.88% 18.35%, rgba(51, 0, 190, 0.44) 0%, #5827D0 100%);
+  --blockchaindev-mobile-page-price-card-order-now-btn-mid-border:2.813px solid rgba(255, 255, 255, 0.03);
+  --blockchaindev-mobile-page-price-plan-card-bg: #FFF;
+  --blockchaindev-mobile-page-price-plan-card-title: #612BD4;
+  --blockchaindev-mobile-page-price-plan-card-type: #000;
+  --blockchaindev-mobile-page-price-plan-card-item: #612BD4;
 
 
   --body-color: white;
@@ -240,6 +260,27 @@
   --blockchaindev-page-question-container-mat-expansion-panel-body:#fff;
   --blockchaindev-page-call-container:radial-gradient(129.77% 99.35% at 49.06% 16.23%, #42A246 0%, #004428 100%);
   --blockchaindev-page-call-container-book-cl-btn-text-color:#42A246;
+
+  --blockchaindev-page-des-card-hover: url("../../../src/assets/svg/services_card_master_dark.svg");
+  --blockchaindev-page-des-hover-icon-div-bg-color:radial-gradient(49.33% 49.33% at 50% 50%, #CFEB91 0%, #09D082 100%);
+  --blockchaindev-page-des-hover-icon-path:#14161A;
+  --blockchaindev-page-des-hover-development-txt:color(display-p3 0.3569 0.8118 0.5176);
+
+  --blockchaindev-mobile-page-des-card-hover: url("../../../src/assets/svg/selected_card _ mobile_dark.svg");
+  --blockchaindev-mobile-page-des-hover-icon-div-bg-color:#73E69B;
+  --blockchaindev-mobile-page-icons-display:none;
+  --blockchaindev-mobile-page-icons-display-dark:block;
+  --blockchaindev-mobile-page-price-card-item:#14161A;
+  --blockchaindev-mobile-page-price-card-pkg-type:#fff;
+  --blockchaindev-mobile-page-price-card-order-now-btn-text:#32E994;
+  --blockchaindev-mobile-page-price-card-order-now-btn-border:3px solid #32E994;
+  --blockchaindev-mobile-page-price-card-order-now-btn-mid:radial-gradient(83.6% 97.64% at 93.67% 91.79%, #006625 0%, #002A13 100%);
+  --blockchaindev-mobile-page-price-card-order-now-btn-mid-border:2.813px solid rgba(255, 255, 255, 0.03);
+  --blockchaindev-mobile-page-price-plan-card-bg: #14161A;
+  --blockchaindev-mobile-page-price-plan-card-title: #32E994;
+  --blockchaindev-mobile-page-price-plan-card-type: #fff;
+  --blockchaindev-mobile-page-price-plan-card-item: #fff;
+
 
 
   --body-color: #475569;

@@ -30,6 +30,8 @@ import { GetThumbnailPipe } from './pipes/get-thumbnail.pipe';
 import { BlockchaindevComponent } from './pages/blockchaindev/blockchaindev.component';
 import { ArtModelComponent } from './pages/blockchaindev/art-model/art-model.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {BlockchaindevMobileComponent} from "./pages/blockchaindev/blockchaindev-mobile.component";
+import {NavbarMobileComponent} from "./layouts/navbar/navbar-mobile.component";
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ReviewBarComponent,
     GetThumbnailPipe,
     BlockchaindevComponent,
-    ArtModelComponent
+    ArtModelComponent,
+    BlockchaindevMobileComponent,
+    NavbarMobileComponent
   ],
   imports: [
     BrowserModule,
@@ -65,11 +69,12 @@ import {MatExpansionModule} from '@angular/material/expansion';
       active: 'light'
     }),
     FormsModule,
-    NgxSpinnerModule,
+    NgxSpinnerModule.forRoot({ type: 'ball-atom' }),
     MatExpansionModule
   ],
   providers: [],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[NgxSpinnerModule]
 })
 export class AppModule { }

@@ -345,10 +345,12 @@ input:checked + label svg.moon {
   .nav-bar-bg{
     border-radius: 23.837px;
     background: var(--nav-mobile-container-bg-color);
+    height: 44.186px;
+    padding-left: 16px;
   }
 
   .dark-toggle{
-    margin-top: 8px;
+    margin-top: 5px;
   }
 
   //.navbar{

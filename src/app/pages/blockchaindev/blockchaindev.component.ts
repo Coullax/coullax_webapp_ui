@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ThemeService} from "../../_Services/theme/theme.service";
 
 @Component({
@@ -7,6 +7,8 @@ import {ThemeService} from "../../_Services/theme/theme.service";
   styleUrls: ['./blockchaindev.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class BlockchaindevComponent {
+export class BlockchaindevComponent implements OnInit{
+  ngOnInit() {
 
+  }
 }
