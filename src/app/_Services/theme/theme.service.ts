@@ -1,9 +1,11 @@
 import { Injectable, Inject, EventEmitter } from '@angular/core';
 import { THEMES, ACTIVE_THEME, Theme } from './symbols';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class ThemeService{
-
+  private themeSubject = new BehaviorSubject<string>('light');
+  currentTheme = this.themeSubject.asObservable();
 
   themeChange = new EventEmitter<Theme>();
 
@@ -22,16 +24,20 @@ export class ThemeService{
   isDarkMode(){
     return this.theme === 'dark'
   }
-   getActiveTheme() {
+
+  getActiveTheme() {
     if (localStorage.getItem('user-theme')) {
       this.theme = String(localStorage.getItem('user-theme'));
     } else {
       this.theme = 'light';
     }
+    // this.themeSubject.next(this.theme);
     const theme = this.themes.find(t => t.name === this.theme);
+
     if (!theme) {
       throw new Error(`Theme not found: '${this.theme}'`);
     }
+    this.themeSubject.next(this.theme);
     return theme;
 
   }
@@ -42,4 +48,9 @@ export class ThemeService{
     this.themeChange.emit( this.getActiveTheme());
   }
 
+
+
+ switchTheme(theme: string) {
+
+ }
 }

@@ -86,8 +86,8 @@
   --blockchaindev-page-bg-color:#E6ECFF;
   --blockchaindev-page-hero-text-color: #1C212A;
   --blockchaindev-page-hero-highlight-text-color: linear-gradient(90deg, color(display-p3 0.82 0.4374 1) 22.07%, color(display-p3 0.0802 0.0281 0.6802) 98.15%);
-  --show-canvas-light-mood: block;
-  --show-canvas-dark-mood: none;
+  --dark-mode: block;
+  --light-mode: none;
   --blockchaindev-page-hero-move-dashboard-btn-border:2px solid #320978;
   --blockchaindev-page-hero-move-dashboard-btn-txt-color:#320978;
   --blockchaindev-page-des-card-bg-color:#fff;
@@ -214,8 +214,8 @@
   --blockchaindev-page-bg-color:linear-gradient(180deg, #0A0B0D 0%, #001107 100%);
   --blockchaindev-page-hero-text-color: #F5F5F7;
   --blockchaindev-page-hero-highlight-text-color: linear-gradient(90deg, color(display-p3 0.251 0.7059 0.5421) 22.07%, color(display-p3 0.4275 0.8588 0.4941) 58.13%, color(display-p3 0.7804 0.8863 0.4392) 98.15%);
-  --show-canvas-light-mood: none;
-  --show-canvas-dark-mood: block;
+  --light-mode: none;
+  --dark-mode: block;
   --blockchaindev-page-hero-move-dashboard-btn-border: 2px solid #00BC85;
   --blockchaindev-page-hero-move-dashboard-btn-txt-color:#00BC85;
   --blockchaindev-page-des-card-bg-color:#14161A;
