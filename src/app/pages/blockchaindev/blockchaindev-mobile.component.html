@@ -4,7 +4,7 @@
 
     <div class="hero-section-mobile  justify-center">
       <div class="mobile-model">
-        <app-art-model></app-art-model>
+<!--        <app-art-model></app-art-model>-->
       </div>
       <div class="mobile-hero-text ">
         <p>Creating Waves, <br> One Block at a Time: <br> Our <span class="highlight-mobi">Blockchain Magic</span> </p>
@@ -207,9 +207,15 @@
 
 
     <div class="compaire-palans">
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" space-between="30"
-                        loop="true">
-        <swiper-slide>
+      <swiper
+        [slidesPerView]="1"
+        [spaceBetween]="30"
+        [navigation]="false"
+        [pagination]="{ clickable: true }"
+        [loop]="true"
+        class="mySwiper"
+      >
+        <ng-template swiperSlide>
           <div class="comp-plans-card">
             <div class="comp-plans-card-title">
               Compare Plans
@@ -295,9 +301,8 @@
               </ul>
             </div>
           </div>
-
-        </swiper-slide>
-        <swiper-slide>
+        </ng-template>
+        <ng-template swiperSlide>
           <div class="comp-plans-card">
             <div class="comp-plans-card-title">
               Compare Plans
@@ -383,9 +388,8 @@
               </ul>
             </div>
           </div>
-
-        </swiper-slide>
-        <swiper-slide>
+        </ng-template>
+        <ng-template swiperSlide>
           <div class="comp-plans-card">
             <div class="comp-plans-card-title">
               Compare Plans
@@ -471,9 +475,9 @@
               </ul>
             </div>
           </div>
+        </ng-template>
 
-        </swiper-slide>
-      </swiper-container>
+      </swiper>
     </div>
 
 
@@ -522,7 +526,7 @@
 
 
 
-    <div class="dev-call-container flex">
+    <div class="dev-call-container-mobi flex">
       <div class="label">Have a quick chat with us</div>
       <div class="button-class">
         <button class="btn book-cl-bnt" type="button">Book a call</button>

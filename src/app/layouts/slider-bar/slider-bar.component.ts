@@ -8,7 +8,18 @@ import GLightbox from 'glightbox';
   styleUrls: ['./slider-bar.component.scss'],
 })
 export class SliderBarComponent implements OnInit, AfterViewInit {
-
+  swiperConfig: any = {
+    slidesPerView:1,
+    spaceBetween:30,
+    breakpoints: {
+      900: {
+        slidesPerView:2,
+      }
+    },
+    navigation:true,
+    loop:true,
+    autoplay:{delay: 1000,disableOnInteraction: false},
+  }
   @ViewChild('swiper', { static: false }) swiperEl!: ElementRef;
 
   lightbox: any;

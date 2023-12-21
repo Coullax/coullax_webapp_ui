@@ -7,8 +7,45 @@
       </div>
   </div>
 </div> -->
-<swiper-container class="mySwiper" navigation="true" loop="true">
-  <swiper-slide>
+
+
+
+<!--<swiper-container class="mySwiper-video" navigation="true" loop="true">-->
+<!--  <swiper-slide>-->
+<!--    <div class="vide_container">-->
+<!--      <input type="text" value="" hidden>-->
+<!--      <div class="image_wrapper">-->
+<!--        <img src="assets/youtube/youtube_circle.png" class="youtube_icon" alt="youtubeIcon" (click)="playVideo(videoList[0].id)">-->
+<!--        <img [src]="videoList[0].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[0].id)">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </swiper-slide>-->
+<!--  <swiper-slide>-->
+<!--    <div class="vide_container">-->
+<!--      <input type="text" value="" hidden>-->
+<!--      <div class="image_wrapper">-->
+<!--        <img src="assets/youtube/youtube_circle.png" class="youtube_icon" alt="youtubeIcon" (click)="playVideo(videoList[1].id)">-->
+<!--        <img [src]="videoList[1].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[1].id)">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </swiper-slide>-->
+<!--  <swiper-slide>-->
+<!--    <div class="vide_container">-->
+<!--      <input type="text" value="" hidden>-->
+<!--      <div class="image_wrapper">-->
+<!--        <img src="assets/youtube/youtube_circle.png" class="youtube_icon" alt="youtubeIcon" (click)="playVideo(videoList[2].id)">-->
+<!--        <img [src]="videoList[2].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[2].id)">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </swiper-slide>-->
+<!--</swiper-container>-->
+
+<div class="video-title" >Check out what <br> everyone say about us</div>
+<swiper [config]="swiperConfig"
+
+  class="mySwiper-video"
+>
+  <ng-template swiperSlide>
     <div class="vide_container">
       <input type="text" value="" hidden>
       <div class="image_wrapper">
@@ -16,8 +53,8 @@
         <img [src]="videoList[0].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[0].id)">
       </div>
     </div>
-  </swiper-slide>
-  <swiper-slide>
+  </ng-template>
+  <ng-template swiperSlide>
     <div class="vide_container">
       <input type="text" value="" hidden>
       <div class="image_wrapper">
@@ -25,8 +62,8 @@
         <img [src]="videoList[1].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[1].id)">
       </div>
     </div>
-  </swiper-slide>
-  <swiper-slide>
+  </ng-template>
+  <ng-template swiperSlide>
     <div class="vide_container">
       <input type="text" value="" hidden>
       <div class="image_wrapper">
@@ -34,8 +71,23 @@
         <img [src]="videoList[2].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[2].id)">
       </div>
     </div>
-  </swiper-slide>
-</swiper-container>
-
-
-
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="vide_container">
+      <input type="text" value="" hidden>
+      <div class="image_wrapper">
+        <img src="assets/youtube/youtube_circle.png" class="youtube_icon" alt="youtubeIcon" (click)="playVideo(videoList[0].id)">
+        <img [src]="videoList[0].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[0].id)">
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="vide_container">
+      <input type="text" value="" hidden>
+      <div class="image_wrapper">
+        <img src="assets/youtube/youtube_circle.png" class="youtube_icon" alt="youtubeIcon" (click)="playVideo(videoList[1].id)">
+        <img [src]="videoList[1].id | getThumbnail" class="glightbox" alt="" (click)="playVideo(videoList[1].id)">
+      </div>
+    </div>
+  </ng-template>
+</swiper>

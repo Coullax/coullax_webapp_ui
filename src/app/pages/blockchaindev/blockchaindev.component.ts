@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ThemeService} from "../../_Services/theme/theme.service";
+import AOS from "aos";
 
 @Component({
   selector: 'app-blockchaindev',
@@ -8,6 +9,9 @@ import {ThemeService} from "../../_Services/theme/theme.service";
   encapsulation: ViewEncapsulation.None,
 })
 export class BlockchaindevComponent implements OnInit{
+  constructor() {
+    AOS.init();
+  }
   ngOnInit() {
 
   }

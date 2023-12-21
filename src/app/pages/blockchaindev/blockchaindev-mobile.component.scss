@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
 @import 'cal-sans';
+@import 'swiper/swiper-bundle.min.css';
+
 
 
 .blockchaindev-mobile{
@@ -311,8 +313,8 @@
 }
 .comp-plans-card{
   justify-content: start;
-  display: grid;
-  grid-template-columns: 300px;
+  //display: grid;
+  //grid-template-columns: 300px;
   padding: 28px 0 0 26px;
 }
 .comp-plans-card-title{
@@ -353,16 +355,14 @@
 
 }
 
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 0;
-}
 
-.swiper-container-horizontal > .swiper-pagination > .swiper-pagination-bullet {
+
+.swiper-pagination-bullet {
   opacity: 0.2;
-  background: #de0000 !important;
+  background: var(--blockchaindev-mobile-page-price-plan-card-item) !important;
 }
-.swiper-container-horizontal > .swiper-pagination > .swiper-pagination-bullet-active {
-  background: #9f0000 !important;
+.swiper-pagination-bullet-active {
+  background: var(--blockchaindev-mobile-page-price-plan-card-title) !important;
   opacity: 1;
 }
 
@@ -436,7 +436,7 @@
 }
 
 
-.dev-call-container{
+.dev-call-container-mobi{
   height: 77px;
   border-radius: 91px;
   background: var(--blockchaindev-page-call-container);
