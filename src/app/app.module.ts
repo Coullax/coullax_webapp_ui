@@ -32,6 +32,7 @@ import { ArtModelComponent } from './pages/blockchaindev/art-model/art-model.com
 import {MatExpansionModule} from '@angular/material/expansion';
 import {BlockchaindevMobileComponent} from "./pages/blockchaindev/blockchaindev-mobile.component";
 import {NavbarMobileComponent} from "./layouts/navbar/navbar-mobile.component";
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import {NavbarMobileComponent} from "./layouts/navbar/navbar-mobile.component";
     }),
     FormsModule,
     NgxSpinnerModule.forRoot({ type: 'ball-atom' }),
-    MatExpansionModule
+    MatExpansionModule,
+    SwiperModule
   ],
   providers: [],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

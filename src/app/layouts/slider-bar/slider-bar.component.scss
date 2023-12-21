@@ -23,6 +23,9 @@ swiper-container {
     border: 1px solid #e0e0e0;
     border-radius: 18px;
 }
+.mySwiper-video{
+    background: var(--main-content-background-color)
+}
 .image_wrapper{
     position: relative;
     height: 100%;
@@ -44,4 +47,28 @@ swiper-container {
     height: 100%;
     width: 100%;
     border-radius: 18px;
+}
+
+.video-title{
+  color: var(--supper-power-title-color);
+  font-family: Poppins, serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+  margin-top: 66px;
+  margin-bottom: 54px
+}
+
+@media screen and (max-width: 900px) {
+  .video-title{
+    color: var(--supper-power-title-color);
+    font-family: Poppins, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    margin-top: 31px;
+    margin-bottom: 20px
+  }
 }

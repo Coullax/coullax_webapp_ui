@@ -37,6 +37,9 @@
 .mobi-nav{
   display: none;
 }
+.review-bar{
+  margin-top: 66px;
+}
 @media screen and (max-width: 900px) {
   .web-nav{
     display: none;
@@ -51,6 +54,10 @@
 
   .process-bar{
     margin-top: -2px;
+  }
+
+  .review-bar{
+    margin-top: 66px;
   }
 }
 
