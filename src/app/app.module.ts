@@ -33,6 +33,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {BlockchaindevMobileComponent} from "./pages/blockchaindev/blockchaindev-mobile.component";
 import {NavbarMobileComponent} from "./layouts/navbar/navbar-mobile.component";
 import { SwiperModule } from 'swiper/angular';
+import { SocialmediaComponent } from './pages/socialmedia/socialmedia.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { SwiperModule } from 'swiper/angular';
     BlockchaindevComponent,
     ArtModelComponent,
     BlockchaindevMobileComponent,
-    NavbarMobileComponent
+    NavbarMobileComponent,
+    SocialmediaComponent
   ],
   imports: [
     BrowserModule,
