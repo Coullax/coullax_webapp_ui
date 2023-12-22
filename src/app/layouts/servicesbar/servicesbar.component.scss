@@ -107,12 +107,12 @@ li{
 
   .grid-items{
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 375px;
   }
 
   .service-card{
-    width: 300px;
-    height: 78px;
+    width: 375px;
+    height: 93px;
     background: var(--service-bar-mobile-card-background-color);
     border-radius: 10.465px;
     align-items: center;
@@ -157,7 +157,7 @@ li{
   .service-title{
     color: var(--service-bar-card-text-color);
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
@@ -173,7 +173,7 @@ li{
   .price{
     font-family: 'Poppins', sans-serif;
     color: #777676;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 96.6%;

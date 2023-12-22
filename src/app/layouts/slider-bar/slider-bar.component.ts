@@ -31,26 +31,26 @@ export class SliderBarComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.initSwiper();
+    // this.initSwiper();
   }
 
-  initSwiper(): void {
-    this.swiper = new Swiper(this.swiperEl.nativeElement, {
-      slidesPerView: 'auto',
-      spaceBetween: 1,
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        1920: {
-          slidesPerView: 2,
-        },
-      },
-    });
-  }
+  // initSwiper(): void {
+  //   this.swiper = new Swiper(this.swiperEl.nativeElement, {
+  //     slidesPerView: 'auto',
+  //     spaceBetween: 1,
+  //     breakpoints: {
+  //       640: {
+  //         slidesPerView: 2,
+  //       },
+  //       1024: {
+  //         slidesPerView: 3,
+  //       },
+  //       1920: {
+  //         slidesPerView: 2,
+  //       },
+  //     },
+  //   });
+  // }
 
   playVideo(url: any) {
     debugger;

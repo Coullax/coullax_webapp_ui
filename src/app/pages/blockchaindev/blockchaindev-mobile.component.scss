@@ -9,14 +9,14 @@
 }
 .blockchaindev-container-mobile{
   margin: auto;
-  max-width: 300px;
+  max-width: 375px;
 }
 
 .mobile-hero-text {
   color: var(--blockchaindev-page-hero-text-color);
   font-family: Cal Sans, serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 102.1%;
@@ -29,7 +29,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Cal Sans, serif;
-  font-size: 30px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 102.1%;
@@ -57,14 +57,14 @@
 }
 .grid-items{
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: 375px;
   gap: 15px;
 }
 
 
 .description-card-mobile{
-  width: 300px;
-  height: 78px;
+  width: 375px;
+  height: 93px;
   border-radius: 12px;
   background: var(--blockchaindev-page-des-card-bg-color);
   align-items: center;
@@ -73,7 +73,7 @@
   .title-mobile{
     color: var(--blockchaindev-page-des-card-title-color);
     font-family: Cal Sans, serif;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 102.1%;
@@ -81,7 +81,7 @@
   .development-txt{
     color: var(--blockchaindev-page-des-card-title-development-txt);
     font-family: Cal Sans, serif;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 102.1%;
@@ -109,6 +109,8 @@
 
 .description-card-mobile:hover{
   background: var(--blockchaindev-mobile-page-des-card-hover);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .icons-light path:nth-child(1){
     fill: var(--blockchaindev-mobile-page-des-hover-icon-div-bg-color);
@@ -159,7 +161,7 @@
 
 .price-grid-items{
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: 375px;
   grid-template-rows:341px;
   gap: 21px;
   margin-top: 27px;
@@ -175,7 +177,7 @@
   background: var(--blockchaindev-mobile-page-price-card-item);
   backdrop-filter: blur(9.565333366394043px);
   height: 341px;
-  padding: 35px 0 20px 30px;
+  padding: 35px 30px 20px 30px;
 
   .pkg-type{
     color: var(--blockchaindev-mobile-page-price-card-pkg-type);
@@ -212,9 +214,9 @@
     }
   }
   .order-now-btn{
-    width: 242.765px;
-    height: 40.958px;
-    border-radius: 16.88px;
+    width: 303px;
+    height: 50px;
+    border-radius: 25px;
     border: var(--blockchaindev-mobile-page-price-card-order-now-btn-border);
     text-align: center;
     font-family: Poppins, serif;
@@ -223,28 +225,28 @@
     font-style: normal;
     font-weight: 700;
     line-height: 103.6%;
-    margin-top: 51px;
+    margin-top: 36px;
   }
 }
 
 
 .price-card-mid-mobi{
   height: 341px;
-  border-radius: 16.88px;
+  border-radius: 25px;
   //border: 2.813px solid rgba(255, 255, 255, 0.03);
   background: var(--blockchaindev-mobile-page-price-card-order-now-btn-mid);
   backdrop-filter: blur(9.565333366394043px);
-  padding: 18px 0 20px 30px;
+  padding: 18px 30px 20px 30px;
 
   .pkg-tag-mid{
-    width: 108px;
-    height: 23px;
-    border-radius: 23px;
+    width: 123px;
+    height: 32px;
+    border-radius: 16px;
     background: #F2AD13;
     text-align: center;
     color: #060708;
     font-family: Poppins, serif;
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
@@ -288,9 +290,9 @@
     }
   }
   .order-now-btn-mid-mobi{
-    width: 242.765px;
-    height: 40.958px;
-    border-radius: 16.88px;
+    width: 303px;
+    height: 50px;
+    border-radius: 25px;
     border: none;
     color: #000;
     background: var(--blockchaindev-page-order-now-mid-btn-bg-color);
@@ -300,7 +302,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 103.6%;
-    margin-top: 51px;
+    margin-top: 36px;
   }
 }
 
@@ -405,7 +407,7 @@
 .mat-expansion-panel-header-title{
   color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title) !important;
   font-family: Poppins, serif !important;
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 144.1% !important;
@@ -428,7 +430,7 @@
 .mat-expansion-panel-body{
   color: var(--blockchaindev-page-question-container-mat-expansion-panel-body);
   font-family: Poppins, serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 144.1%;
@@ -442,7 +444,7 @@
   background: var(--blockchaindev-page-call-container);
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px 0 33px;
+  padding: 0 20px 0 37px;
   margin-top: 22px;
   margin-bottom: 40px;
 

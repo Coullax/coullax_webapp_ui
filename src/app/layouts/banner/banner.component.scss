@@ -68,7 +68,7 @@
   background: var(--banner-dashboard-btn);
   margin-top: 38px;
   color: #fff;
-  border: none;
+  border: 2px solid #008C34;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -183,7 +183,7 @@
 
 
   .label {
-    width: 300px;
+    width: 375px;
     height: 76.047px;
   }
 
@@ -229,16 +229,16 @@
   }
 
   .sign-up-btn{
-    width: 179px;
-    height: 38px;
-    border-radius: 19.186px;
-    background: var(--banner-dashboard-btn);
+    width: 232px;
+    height: 43px;
+    border-radius: 26px;
+    background: none;
+    border: 2px solid #008C34;
     margin-top: 20px;
-    color: #fff;
-    border: none;
+    color: #008C34;
     text-align: center;
     font-family: Poppins, serif;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 103.6%;

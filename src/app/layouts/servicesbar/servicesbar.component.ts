@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import AOS from "aos";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-servicesbar',
@@ -7,8 +8,12 @@ import AOS from "aos";
   styleUrls: ['./servicesbar.component.scss']
 })
 export class ServicesbarComponent {
-  constructor() {
+  constructor(private router:Router) {
     AOS.init();
+  }
+
+  navigatePages(){
+    this.router.navigate(["/app/blockchain-dev"]);
   }
 
 }

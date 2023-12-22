@@ -167,7 +167,7 @@
   .title{
     color: var(--supper-power-title-color);
     font-family: Poppins, serif;
-    font-size: 15px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
@@ -175,43 +175,43 @@
 
   .gird-items1{
     display: grid;
-    grid-template-columns:  165.103px 126.313px;
+    grid-template-columns:  206.026px 157.622px;
     grid-template-rows: none;
-    gap: 8px;
+    gap: 10px;
   }
 
   .gird-items2{
     display: grid;
-    grid-template-columns:  156.582px 135.045px;
-    gap: 8px;
-    margin-top: 8px;
+    grid-template-columns:  192px 172px;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .child-grid2{
     display: grid;
-    grid-template-columns:  139.119px 151.925px;
+    grid-template-columns:  174px 192px;
     grid-template-rows: none;
-    gap: 8px;
-    margin-top: 8px;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .card1{
-    width: 165.103px;
-    height: 157px;
+    width: 206.026px;
+    height: 196.209px;
     transform: rotate(-0.141deg);
     border-radius: 10.478px;
     background: var(--supper-power-card1-bg-color);
 
   }
   .wid-card{
-    width: 300px;
-    height: 100.119px;
+    width: 375px;
+    height: 124.935px;
     border-radius: 10.478px;
     background: var(--supper-power-wid-card-bg-color);
   }
   .card3{
-    width: 126.313px;
-    height: 157px;
+    width: 157.622px;
+    height: 196.846px;
     border-radius: 10.478px;
     background: var(--supper-power-card3-bg-color);
   }
@@ -223,21 +223,21 @@
   }
 
   .card4{
-    width: 156.582px;
-    height: 71.015px;
+    width: 192px;
+    height: 120px;
     border-radius: 10.478px;
     background: var(--supper-power-card4-bg-color);
     text-align: center;;
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   .card5{
-    width: 135.045px;
-    height: 71.015px;
+    width: 172px;
+    height: 120px;
     border-radius: 10.478px;
     background: var(--supper-power-card5-bg-color);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 32px;
   }
 
   .card6{
@@ -248,15 +248,15 @@
   }
 
   .card7{
-    width: 139.119px;
-    height: 84.403px;
+    width: 174px;
+    height: 150px;
     border-radius: 10.478px;
     background: var(--supper-power-card7-bg-color);
   }
 
   .card8{
-    width: 151.925px;
-    height: 84.403px;
+    width: 192px;
+    height: 150px;
     border-radius: 10.478px;
     background: var(--supper-power-card8-bg-color);
   }
@@ -264,7 +264,7 @@
   .text1{
     color: var(--supper-power-cards-text-color);
     font-family: Poppins, serif;
-    font-size: 15px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 103.6%; /* 15.54px */
@@ -273,7 +273,7 @@
   .text1-world{
     color: var(--supper-power-cards-text-color);
     font-family: Poppins, serif;
-    font-size: 15px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 103.6%; /* 15.54px */
@@ -282,7 +282,7 @@
   .des1{
     color: var(--supper-power-cards-text-color);
     font-family: Poppins, serif;
-    font-size: 10px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 103.6%;
@@ -292,7 +292,7 @@
     color: var(--supper-power-cards-text-color);
     font-family: Poppins, serif;
     text-align: center;
-    font-size: 15px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 103.6%;
