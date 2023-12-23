@@ -37,6 +37,15 @@ import { SocialmediaComponent } from './pages/socialmedia/socialmedia.component'
 import { UiuxComponent } from './pages/uiux/uiux.component';
 import { NftComponent } from './pages/nft/nft.component';
 import { BrandDevComponent } from './pages/brand-dev/brand-dev.component';
+import { CalendlyComponent } from './layouts/calendly/calendly.component';
+import {MatButtonModule} from "@angular/material/button";
+import {
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogModule,
+  MatDialogTitle
+} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -65,7 +74,9 @@ import { BrandDevComponent } from './pages/brand-dev/brand-dev.component';
     SocialmediaComponent,
     UiuxComponent,
     NftComponent,
-    BrandDevComponent
+    BrandDevComponent,
+    CalendlyComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -81,6 +92,8 @@ import { BrandDevComponent } from './pages/brand-dev/brand-dev.component';
     NgxSpinnerModule.forRoot({ type: 'ball-atom' }),
     MatExpansionModule,
     SwiperModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],

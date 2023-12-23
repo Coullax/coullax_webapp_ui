@@ -5,7 +5,32 @@
 .socialmedia {
   background: var(--socialmedia-page-bg-color);
 }
+.centered-sm{
+  opacity: 1;
+  transform: translate3d(0px, -420px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(358deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  text-align: center;
+}
+.socialmedia-web-thounder{
+  position: relative;
+  top: -9px;
+  left: 294px;
+}
 
+.scm-exp-dash-btn{
+  width: 232px;
+  height: 53px;
+  border-radius: 26.5px;
+  color: #0A0B0D;
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
+  background:radial-gradient(131.29% 119.84% at 47.2% 50.94%, #FFA900 0%, #FF8700 100%);
+  z-index: 999;
+}
 .socialmedia-container {
   margin: auto;
   max-width: 900px;
@@ -402,6 +427,12 @@ tbody > tr > td:nth-child(2) {
     max-width: 375px;
   }
 
+  .socialmedia-web-thounder-mobi{
+    position: relative;
+    top: 48px;
+    left: 69px;
+  }
+
   .mobile-hero-text {
     color: var(--blockchaindev-page-hero-text-color);
     font-family: Cal Sans, serif;
@@ -437,7 +468,7 @@ tbody > tr > td:nth-child(2) {
     font-style: normal;
     font-weight: 500;
     line-height: 103.6%;
-    margin-top: 25px;
+    margin-top: 85px;
   }
 
 

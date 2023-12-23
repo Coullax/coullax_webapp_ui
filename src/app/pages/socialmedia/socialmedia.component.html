@@ -1,7 +1,20 @@
 <div class="socialmedia" *ngIf="showNaveBar">
     <div class="socialmedia-container">
         <app-navbar class=""></app-navbar>
-        <div class="w-full mt-6 ">
+      <div class="socialmedia-banner-web">
+        <!--  <img class="hero-image" alt="Snow" src="assets/svg/banner_bg.svg" class="socialmedia-web-bg"/>-->
+        <div class="socialmedia-hero-image">
+          <img alt="Snow" src="assets/svg/socialmedia_banner_bg.svg" class="socialmedia-web-bg"/>
+        </div>
+        <div class="centered-sm">
+<!--          <div class="GetWorkDoneWithZeroHassle " >Get work done<br/>with Zero hassle.</div>-->
+          <img alt="Snow" src="assets/images/thounder.png" class="socialmedia-web-thounder"/>
+          <button class="scm-exp-dash-btn" type="button" routerLink="/personal/dashboard">Explore Dashboard</button>
+        </div>
+      </div>
+
+
+        <div class="w-full  " style="margin-top: -300px">
             <div class="gap-1 flex">
               <div class="flex flex-col items-stretch w-6/12 ">
                 <div class="flex grow flex-col justify-center items-stretch">
@@ -372,17 +385,29 @@
   <div class="blockchaindev-container-mobile">
     <app-navbar *ngIf="!showNaveBar"></app-navbar>
 
-    <div class="hero-section-mobile  justify-center">
-      <div class="mobile-model">
-        <!--        <app-art-model></app-art-model>-->
+<!--    <div class="hero-section-mobile  justify-center">-->
+<!--      <div class="mobile-model">-->
+<!--        &lt;!&ndash;        <app-art-model></app-art-model>&ndash;&gt;-->
+<!--      </div>-->
+<!--      <div class="mobile-hero-text ">-->
+<!--        <p>Creating Waves, <br> One Block at a Time: <br> Our <span class="highlight-mobi">Blockchain Magic</span> </p>-->
+<!--        <button class="move-dashboard-btn-mobi" type="button" routerLink="/personal/dashboard">Explore Dashboard</button>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <div class="socialmedia-banner-web">
+      <!--  <img class="hero-image" alt="Snow" src="assets/svg/banner_bg.svg" class="socialmedia-web-bg"/>-->
+      <div class="socialmedia-hero-image">
+        <img alt="Snow" src="assets/svg/social_media_banner_bg_mobile.svg" class="socialmedia-web-bg"/>
       </div>
-      <div class="mobile-hero-text ">
-        <p>Creating Waves, <br> One Block at a Time: <br> Our <span class="highlight-mobi">Blockchain Magic</span> </p>
+      <div class="centered-sm">
+        <!--          <div class="GetWorkDoneWithZeroHassle " >Get work done<br/>with Zero hassle.</div>-->
+        <img alt="Snow" src="assets/images/thounder_mobi.png" class="socialmedia-web-thounder-mobi"/>
         <button class="move-dashboard-btn-mobi" type="button" routerLink="/personal/dashboard">Explore Dashboard</button>
       </div>
     </div>
 
-    <div class="description-bar-mobile">
+    <div class="description-bar-mobile" style="margin-top: -340px">
       <div class="grid-items">
 
         <div class="items">

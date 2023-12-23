@@ -1,0 +1,20 @@
+._2eZHnh_PMhyzt7w_zi7::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+._2eZHnh_PMhyzt7w_zi7::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--web-scroller-track);
+}
+
+/* Handle */
+._2eZHnh_PMhyzt7w_zi7::-webkit-scrollbar-thumb {
+  background: var(--web-scroller-track-thumb);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+._2eZHnh_PMhyzt7w_zi7::-webkit-scrollbar-thumb:hover {
+  background: var(--web-scroller-track-thumb-hover);
+}
