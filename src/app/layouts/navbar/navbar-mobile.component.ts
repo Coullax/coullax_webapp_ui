@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ThemeService} from "../../_Services/theme/theme.service";
+import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
 
 @Component({
   selector: 'app-navbar-mobile',
@@ -8,9 +9,9 @@ import {ThemeService} from "../../_Services/theme/theme.service";
 })
 export class NavbarMobileComponent implements OnInit{
 
-
+  showNaveBar:boolean = false;
   isDarkMode:boolean;
-  constructor(private themeService: ThemeService) {
+  constructor(private themeService: ThemeService,public breakpointObserver: BreakpointObserver) {
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
   }
@@ -30,6 +31,15 @@ export class NavbarMobileComponent implements OnInit{
 
   }
   ngOnInit(){
+    this.breakpointObserver
+      .observe(['(min-width: 900px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.showNaveBar = false;
+        } else {
+          this.showNaveBar = true;
+        }
+      });
   }
 
   // updateThemes(theme:any){

@@ -1,8 +1,8 @@
-<div class="blockchaindev">
+<div class="blockchaindev" *ngIf="showNaveBar">
   <div class="blockchaindev-container">
-    <div class="block-dev-nav">
-      <app-navbar></app-navbar>
-    </div>
+<!--    <div class="block-dev-nav">-->
+      <app-navbar *ngIf="showNaveBar"></app-navbar>
+<!--    </div>-->
 <!--    <app-navbar></app-navbar>-->
 <!--    <div class="">-->
 <!--      <app-navbar></app-navbar>-->
@@ -355,7 +355,7 @@
     <div class="dev-call-container flex">
       <div class="label">Have a quick chat with us</div>
       <div class="button-class">
-        <button class="btn book-cl-bnt" type="button">Book a call</button>
+        <button class="book-cl-bnt" type="button">Book a call</button>
       </div>
     </div>
 
@@ -365,6 +365,6 @@
 
 
 
-<div class="blockchaindev-mobile">
+<div class="blockchaindev-mobile" *ngIf="!showNaveBar">
   <app-blockchaindev-mobile></app-blockchaindev-mobile>
 </div>

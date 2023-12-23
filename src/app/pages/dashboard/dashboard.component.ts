@@ -8,7 +8,7 @@ import {NgxSpinnerService} from "ngx-spinner";
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-
+  isLoadFinished:boolean = false;
   isDarkMode:boolean;
   constructor(private themeService: ThemeService,private spinner: NgxSpinnerService) {
     // this.themeService.initTheme();
@@ -31,6 +31,7 @@ export class DashboardComponent {
     this.spinner.show();
 
     setTimeout(() => {
+      this.isLoadFinished = true;
       /** spinner ends after 5 seconds */
       this.spinner.hide();
     }, 5000);

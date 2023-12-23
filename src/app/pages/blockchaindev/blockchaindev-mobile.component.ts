@@ -4,21 +4,31 @@ import {ThemeService} from "../../_Services/theme/theme.service";
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import AOS from "aos";
+import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 @Component({
   selector: 'app-blockchaindev-mobile',
   templateUrl: './blockchaindev-mobile.component.html',
   styleUrls: ['./blockchaindev-mobile.component.scss'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class BlockchaindevMobileComponent implements OnInit{
   isDarkMode:boolean;
-  constructor(private themeService: ThemeService) {
+  showNaveBar:boolean = false;
+  constructor(private themeService: ThemeService,public breakpointObserver: BreakpointObserver) {
     AOS.init();
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
   }
   ngOnInit(){
+    this.breakpointObserver
+      .observe(['(min-width: 900px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.showNaveBar = false;
+        } else {
+          this.showNaveBar = true;
+        }
+      });
   }
 }

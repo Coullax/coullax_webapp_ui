@@ -1,6 +1,6 @@
-<div class="blockchaindev-mobile">
+<div class="blockchaindev-mobile" *ngIf="showNaveBar">
   <div class="blockchaindev-container-mobile">
-    <app-navbar-mobile></app-navbar-mobile>
+    <app-navbar *ngIf="showNaveBar"></app-navbar>
 
     <div class="hero-section-mobile  justify-center">
       <div class="mobile-model">
@@ -482,7 +482,7 @@
 
 
     <div class="question-container">
-      <h1 class="question-container-title">Frequently asked question</h1>
+      <h1 class="question-container-title-mobi">Frequently asked question</h1>
       <mat-accordion class="question-header" multi>
         <mat-expansion-panel class="expantion-panel">
           <mat-expansion-panel-header class="expantion-panel-header">

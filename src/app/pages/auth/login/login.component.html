@@ -1,4 +1,4 @@
-<div class="login-container">
+<div *ngIf="!user" class="login-container">
   <div class="loin-card">
 
     <div class="login-header flex justify-between">
@@ -44,15 +44,31 @@
       <div class="flex justify-center " style="margin-top: 15px">
         <div class="self-stretch flex items-stretch justify-between gap-9 max-md:justify-center">
           <img loading="lazy" src="assets/footer_Social/google.svg"
-               class="aspect-square object-contain object-center w-[29px] overflow-hidden shrink-0 "/>
+               class="aspect-square object-contain object-center w-[29px] overflow-hidden shrink-0 " (click)="signInWithGoogle()"/>
           <img loading="lazy" src="assets/footer_Social/apple.svg"
                class="aspect-square object-contain object-center w-[29px] overflow-hidden shrink-0 max-w-full"/>
           <img loading="lazy" src="assets/footer_Social/Facebook%20(1).svg"
-               class="aspect-square object-contain object-center w-[29px] overflow-hidden shrink-0 max-w-full"/>
+               class="aspect-square object-contain object-center w-[29px] overflow-hidden shrink-0 max-w-full"  (click)="signInWithFB()"/>
         </div>
       </div>
 
     </div>
 
+  </div>
+</div>
+
+
+<div *ngIf="user" class="card text-center">
+  <h6 class="card-header">
+    Social Login Demo
+  </h6>
+  <div class="card-block"></div>
+  <img class="card-img-top img-responsive photo" src="{{ user.photoUrl }}" />
+  <div class="card-block">
+    <h4 class="card-title">{{ user.name }}</h4>
+    <p class="card-text">{{ user.email }}</p>
+  </div>
+  <div class="card-block">
+    <button class="btn btn-danger" (click)="signOut()">Sign out</button>
   </div>
 </div>
