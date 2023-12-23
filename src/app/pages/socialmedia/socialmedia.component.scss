@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
+@import 'cal-sans';
+
+
+.socialmedia {
+  background: var(--socialmedia-page-bg-color);
+}
+
+.socialmedia-container {
+  margin: auto;
+  max-width: 900px;
+}
+.background {
+  background: var(--socialmedia-card-bg-color);
+}
+.marke {
+  color: #857E72;
+}
+.headcard {
+  color: var(--socialmedia-card-head-text);
+}
+.descript {
+  color: var(--socialmedia-card-descript-text);
+}
+.background:hover {
+  background: var(--socialmedia-card-bg-hover-color);
+
+  .descript {
+    color: #232323;
+  }
+  .headcard {
+    color: #0A0B0D;
+  }
+  .marke {
+    color: white;
+  }
+  .pic-svg path{
+    fill: white;
+  }
+  .pic-svg circle{
+    fill: black;
+  }
+}
+
+
+
+
+.price-container{
+  display: grid;
+  grid-template-columns: 264.453px 264.453px 264.453px;
+  grid-template-rows: 396px;
+  gap: 22px;
+  margin-top: 55px;
+  border-radius: 18px;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(255, 195.75, 80.74) 0%, rgb(243.01, 165.95, 10.82) 97.92%);
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card{
+  width: 264.453px;
+  height: 341.351px;
+  border-radius: 17px;
+  border: 2.813px solid rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(19.13px) brightness(100%);
+  background-color: #f3c05b;
+  padding: 36px 0 20px 27px;
+
+  .pkg-type{
+    color: black;
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .price{
+    color: black;
+    font-family: Cal Sans, serif;
+    font-size: 42.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    margin-top: 4px;
+  }
+
+  .pkg-item{
+    color: black;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.6%;
+
+    ul{
+      list-style: inside !important;
+      li{
+        margin-top: 25px;
+
+      }
+    }
+  }
+  .order-now-btn{
+    width: 214px;
+    height: 41px;
+    border-radius: 16.88px;
+    border: 3px solid black;
+    color: black;
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 14.067px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.6%;
+    margin-top: 51px;
+  }
+}
+
+.price-card-mid{
+  border-radius: 17px;
+  border: 2.813px solid rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(19.13px) brightness(100%);
+  background-color: black;
+  padding: 18px 0 20px 27px;
+
+  .pkg-tag{
+    width: 108px;
+    height: 23px;
+    border-radius: 23px;
+    background: #F2AD13;
+    text-align: center;
+    color: #060708;
+    font-family: Poppins, serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pkg-type-mid{
+    color: white;
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .price-mid{
+    color: white;
+    font-family: Cal Sans, serif;
+    font-size: 42.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    margin-top: 4px;
+  }
+
+  .pkg-item-mid{
+    color: white;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.6%;
+
+    ul{
+      list-style: inside !important;
+
+      li{
+        margin-top: 25px;
+      }
+    }
+  }
+  .order-now-btn-mid{
+    width: 214px;
+    height: 41px;
+    border-radius: 16.88px;
+    border: none;
+    color: #000;
+    background: #E8B040;
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 14.067px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.6%;
+    margin-top: 51px;
+  }
+}
+
+
+
+.pricing-table-container {
+  width: 900px;
+  height: 444px;
+  border-radius: 14.339px;
+  background: var(--socialmedia-page-pricing-table-container);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+}
+.price-table {
+  width: 810px;;
+  border: none;
+  border-collapse:separate;
+  border-spacing:0 10px;
+}
+.price-table tr:not(:last-child) {
+  border:none;
+}
+.price-table tr td {
+  border-left: none;
+  padding: 8px 24px;
+}
+.price-table tr td:first-child {
+  border-left: none;
+}
+
+.price-table tr {
+  background: var(--socialmedia-page-pricing-table-container-tr);
+  width: 810px;
+  height: 52px;
+  border-radius: 5px;
+}
+//.price-table tr:hover {
+//  background-color: #F1F3FF;
+//}
+
+tbody > tr > td:nth-child(3) {
+  background: var(--socialmedia-page-pricing-table-td-3rd-child);
+  width: 177px;
+}
+tbody > tr > td:nth-child(4) {
+  width: 109px;
+}
+
+tbody > tr > td:nth-child(2) {
+  width: 109px;
+}
+
+.price-table tr.price-table-head {
+  color: #000;
+}
+
+.table-name{
+  color: var(--blockchaindev-page-table-name-txt-color);
+  text-align: start;
+  font-family: Cal Sans, serif;
+  font-size: 22.507px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+}
+
+.table-col{
+  color: var(--blockchaindev-page-table-col-txt-color);
+  text-align: center;
+  font-family: Cal Sans, serif;
+  font-size: 22.507px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+}
+
+//.table-col-mid{
+//  color: #310C7E;
+//  text-align: center;
+//  font-family: Cal Sans, serif;
+//  font-size: 22.507px;
+//  font-style: normal;
+//  font-weight: 600;
+//  line-height: 96.6%;
+//}
+.table-items{
+  color: var(--blockchaindev-page-pricing-table-items-color);
+  font-family: Poppins, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.6%;
+  display: list-item;
+  list-style-position: inside;
+  margin-top: 10px;
+}
+
+.price-plan-icon path{
+  fill: var(--blockchaindev-page-pricing-table-icon-color);
+}
