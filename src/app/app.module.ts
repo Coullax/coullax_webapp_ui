@@ -37,12 +37,6 @@ import { SocialmediaComponent } from './pages/socialmedia/socialmedia.component'
 import { UiuxComponent } from './pages/uiux/uiux.component';
 import { NftComponent } from './pages/nft/nft.component';
 import { BrandDevComponent } from './pages/brand-dev/brand-dev.component';
-import {
-  FacebookLoginProvider,
-  GoogleLoginProvider,
-  SocialAuthServiceConfig,
-  SocialLoginModule
-} from "angularx-social-login";
 
 @NgModule({
   declarations: [
@@ -87,30 +81,10 @@ import {
     NgxSpinnerModule.forRoot({ type: 'ball-atom' }),
     MatExpansionModule,
     SwiperModule,
-    SocialLoginModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
   exports:[NgxSpinnerModule],
-  providers: [
-    {
-      provide: "SocialAuthServiceConfig",
-      useValue: {
-        autoLogin: false,
-        providers: [
-          {
-            id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider(
-              ""
-            )
-          },
-          {
-            id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider("")
-          }
-        ]
-      } as SocialAuthServiceConfig
-    }
-  ]
+  providers: [ ]
 })
 export class AppModule { }
