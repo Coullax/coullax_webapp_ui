@@ -427,11 +427,10 @@ tbody > tr > td:nth-child(2) {
 
   .move-dashboard-btn-mobi{
     width: 232px;
-    height: 43px;
-    border-radius: 26px;
-    border: var(--blockchaindev-page-hero-move-dashboard-btn-border);
-    background: transparent;
-    color: var(--blockchaindev-page-hero-move-dashboard-btn-txt-color);
+    height: 53px;
+    border-radius: 26.5px;
+    background: linear-gradient(rgba(246, 173, 27, 1), rgba(252, 142, 47, 1));
+    color: #0A0B0D;
     text-align: center;
     font-family: Poppins, serif;
     font-size: 16px;
@@ -456,12 +455,12 @@ tbody > tr > td:nth-child(2) {
     width: 375px;
     height: 93px;
     border-radius: 12px;
-    background: var(--blockchaindev-page-des-card-bg-color);
+    background: var(--socialmedia-page-des-card-bg-color);
     align-items: center;
     padding-left: 18px;
 
     .title-mobile{
-      color: var(--blockchaindev-page-des-card-title-color);
+      color: var(--socialmedia-page-des-card-title-color);
       font-family: Cal Sans, serif;
       font-size: 20px;
       font-style: normal;
@@ -469,7 +468,7 @@ tbody > tr > td:nth-child(2) {
       line-height: 102.1%;
     }
     .development-txt{
-      color: var(--blockchaindev-page-des-card-title-development-txt);
+      color: #857E72;
       font-family: Cal Sans, serif;
       font-size: 20px;
       font-style: normal;
@@ -498,49 +497,30 @@ tbody > tr > td:nth-child(2) {
   }
 
   .description-card-mobile:hover{
-    background: var(--blockchaindev-mobile-page-des-card-hover);
+    background: url("/assets/svg/socialmedia_card_mobile_master_light-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
-    .icons-light path:nth-child(1){
-      fill: var(--blockchaindev-mobile-page-des-hover-icon-div-bg-color);
-    }
-    .icons-light circle{
-      fill: var(--blockchaindev-mobile-page-des-hover-icon-div-bg-color);
-    }
-
-    .icons-light path:not(:nth-child(1)){
-      fill:var(--blockchaindev-page-des-hover-icon-path);
-    }
-    .icons-light rect{
-      fill:var(--blockchaindev-page-des-hover-icon-path);
-    }
-
-    .icons-dark path:nth-child(1){
-      stroke: none;
-      fill: #73E69BFF;
-    }
-
-    .icons-dark path:nth-child(1){
-      stroke: none;
-      fill: #73E69BFF;
-    }
-    .icons-dark circle{
-      stroke: none;
-      fill: #73E69BFF;
-    }
-    .icons-dark path:not(:nth-child(1)){
-      fill: #14161AFF;
+    .pic-svg path{
+        fill: white;
+      }
+    .pic-svg circle{
+        fill: black;
     }
     .icons-dark rect{
       fill: #14161AFF;
     }
     .title-mobile{
-      color: #fff;
+      color: black;
+      font-family: Cal Sans, serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 102.1%;
     }
 
     .development-txt{
-      color: var(--blockchaindev-page-des-hover-development-txt);
+      color: white;
     }
 
     .card-des{
@@ -564,13 +544,13 @@ tbody > tr > td:nth-child(2) {
   .price-card-item{
     border-radius: 16.88px;
     border: 2.813px solid rgba(255, 255, 255, 0.03);
-    background: var(--blockchaindev-mobile-page-price-card-item);
+    background:linear-gradient(hsla(40, 93%, 55%, 1), hsla(31, 97%, 58%, 1));
     backdrop-filter: blur(9.565333366394043px);
     height: 341px;
     padding: 35px 30px 20px 30px;
 
     .pkg-type{
-      color: var(--blockchaindev-mobile-page-price-card-pkg-type);
+      color: #1e1e1e;
       font-family: Cal Sans, serif;
       font-size: 23px;
       font-style: normal;
@@ -578,7 +558,7 @@ tbody > tr > td:nth-child(2) {
       line-height: 96.6%;
     }
     .price{
-      color: var(--blockchaindev-mobile-page-price-card-pkg-type);
+      color: #1e1e1e;
       font-family: Cal Sans, serif;
       font-size: 30px;
       font-style: normal;
@@ -588,7 +568,7 @@ tbody > tr > td:nth-child(2) {
     }
 
     .pkg-item{
-      color: var(--blockchaindev-mobile-page-price-card-pkg-type);
+      color: #1e1e1e;
       font-family: Poppins, serif;
       font-size: 16px;
       font-style: normal;
@@ -607,10 +587,10 @@ tbody > tr > td:nth-child(2) {
       width: 303px;
       height: 50px;
       border-radius: 25px;
-      border: var(--blockchaindev-mobile-page-price-card-order-now-btn-border);
       text-align: center;
       font-family: Poppins, serif;
-      color: var(--blockchaindev-mobile-page-price-card-order-now-btn-text);
+      background-color: #1e1e1e;
+      color: white;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -623,8 +603,7 @@ tbody > tr > td:nth-child(2) {
   .price-card-mid-mobi{
     height: 341px;
     border-radius: 25px;
-    //border: 2.813px solid rgba(255, 255, 255, 0.03);
-    background: var(--blockchaindev-mobile-page-price-card-order-now-btn-mid);
+    background-color: black;
     backdrop-filter: blur(9.565333366394043px);
     padding: 18px 30px 20px 30px;
 
@@ -685,7 +664,7 @@ tbody > tr > td:nth-child(2) {
       border-radius: 25px;
       border: none;
       color: #000;
-      background: var(--blockchaindev-page-order-now-mid-btn-bg-color);
+      background-color: #f9a625;
       text-align: center;
       font-family: Poppins, serif;
       font-size: 14.067px;
@@ -700,7 +679,7 @@ tbody > tr > td:nth-child(2) {
   .mySwiper{
     height: 476px;
     border-radius: 14.339px;
-    background: var(--blockchaindev-mobile-page-price-plan-card-bg);
+    background: var(--socialmedia-mobile-page-price-plan-card-bg);
     margin-top: 27px;
   }
   .comp-plans-card{
@@ -710,7 +689,7 @@ tbody > tr > td:nth-child(2) {
     padding: 28px 0 0 26px;
   }
   .comp-plans-card-title{
-    color: var(--blockchaindev-mobile-page-price-plan-card-title);
+    color: var(--socialmedia-mobile-page-price-plan-card-title);
     font-family: Cal Sans, serif;
     font-size: 22.507px;
     font-style: normal;
@@ -720,17 +699,17 @@ tbody > tr > td:nth-child(2) {
 
 
   .comp-plans-card-type{
-    color: var(--blockchaindev-mobile-page-price-plan-card-type);
+    color: var(--socialmedia-mobile-page-price-plan-card-title);
     text-align: start;
     font-family: Cal Sans, serif;
     font-size: 22.507px;
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
-    margin-top: 26px;
+    margin-top: 18px;
   }
   .comp-plans-card-items{
-    color: var(--blockchaindev-mobile-page-price-plan-card-item);
+    color: var(--socialmedia-mobile-page-price-plan-card-title);
     font-family: Poppins, serif;
     font-size: 16px;
     font-style: normal;
@@ -751,10 +730,10 @@ tbody > tr > td:nth-child(2) {
 
   .swiper-pagination-bullet {
     opacity: 0.2;
-    background: var(--blockchaindev-mobile-page-price-plan-card-item) !important;
+    background: var(--socialmedia-mobile-page-price-plan-card-item) !important;
   }
   .swiper-pagination-bullet-active {
-    background: var(--blockchaindev-mobile-page-price-plan-card-title) !important;
+    background: var(--socialmedia-mobile-page-price-plan-card-title) !important;
     opacity: 1;
   }
 
@@ -784,7 +763,7 @@ tbody > tr > td:nth-child(2) {
     margin-top: 20px !important;
     border-radius: 12px !important;
     box-shadow: none !important;
-    background: var(--blockchaindev-page-question-container-mat-expansion-panel) !important;
+    background: var(--socialmedia-page-question-container-mat-expansion-panel) !important;
   }
 
   .mat-expansion-panel-header{
@@ -795,7 +774,7 @@ tbody > tr > td:nth-child(2) {
   }
 
   .mat-expansion-panel-header-title{
-    color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title) !important;
+    color: var(--socialmedia-page-question-container-mat-expansion-panel-header-title) !important;
     font-family: Poppins, serif !important;
     font-size: 18px !important;
     font-style: normal !important;
@@ -831,7 +810,7 @@ tbody > tr > td:nth-child(2) {
   .dev-call-container-mobi{
     height: 77px;
     border-radius: 91px;
-    background: var(--blockchaindev-page-call-container);
+    background-color: #F4A910;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 0 37px;
@@ -839,7 +818,7 @@ tbody > tr > td:nth-child(2) {
     margin-bottom: 40px;
 
     .label{
-      color: #FFF;
+      color: #000000;
       font-family: Cal Sans, serif;
       font-size: 16px;
       font-style: normal;
@@ -850,8 +829,8 @@ tbody > tr > td:nth-child(2) {
       width: 139px;
       height: 38px;
       border-radius: 64px;
-      background: #FFF;
-      color: var(--blockchaindev-page-call-container-book-cl-btn-text-color);
+      background: black;
+      color: #E8B040;
       text-align: center;
       font-family: Poppins, serif;
       font-size: 16px;
