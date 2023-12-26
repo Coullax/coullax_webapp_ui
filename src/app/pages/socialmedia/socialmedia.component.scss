@@ -758,12 +758,11 @@ tbody > tr > td:nth-child(2) {
   }
 
 
-
-  .swiper-pagination-bullet {
+  ::ng-deep .socialmedia-mobi-swiper .swiper-pagination-bullet {
     opacity: 0.2;
     background: var(--socialmedia-mobile-page-price-plan-card-item) !important;
   }
-  .swiper-pagination-bullet-active {
+  ::ng-deep .socialmedia-mobi-swiper .swiper-pagination-bullet-active {
     background: var(--socialmedia-mobile-page-price-plan-card-title) !important;
     opacity: 1;
   }
@@ -797,6 +796,11 @@ tbody > tr > td:nth-child(2) {
     background: var(--socialmedia-page-question-container-mat-expansion-panel) !important;
   }
 
+  .mat-expansion-panel:not(.mat-expanded)
+  .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+    background-color: var(--socialmedia-page-question-container-mat-expansion-panel) !important;
+  }
+
   .mat-expansion-panel-header{
     height: 81px !important;
     border-radius: 12px !important;
@@ -813,7 +817,7 @@ tbody > tr > td:nth-child(2) {
     line-height: 144.1% !important;
   }
 
-  .mat-expansion-indicator::after {
+  ::ng-deep .expantion-panel-socailmedia .mat-expansion-indicator::after {
     border-style: solid;
     border-width: 0 2px 2px 0;
     content: "";
@@ -821,14 +825,14 @@ tbody > tr > td:nth-child(2) {
     padding: 3px;
     transform: rotate(45deg);
     vertical-align: middle;
-    color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title) !important;
+    color: var(--socialmedia-page-question-container-mat-expansion-panel-header-title) !important;
     width: 12px !important;
     height: 12px !important;
-    border-color: var(--blockchaindev-page-question-container-mat-expansion-panel-header-title);
+    border-color: var(--socialmedia-page-question-container-mat-expansion-panel-header-title);
   }
 
-  .mat-expansion-panel-body{
-    color: var(--blockchaindev-page-question-container-mat-expansion-panel-body);
+  ::ng-deep .expantion-panel-socailmedia .mat-expansion-panel-body{
+    color: var(--socialmedia-page-question-container-mat-expansion-panel-body);
     font-family: Poppins, serif;
     font-size: 18px;
     font-style: normal;
