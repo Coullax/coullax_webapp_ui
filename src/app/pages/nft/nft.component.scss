@@ -182,7 +182,7 @@
   background: var(--nft-price-container-bg);
   justify-content: center;
   align-items: center;
-  box-shadow:  #020202 12px 12px;
+  box-shadow:  var(--nft-page-price-card-background-shadow) 12px 12px;
 }
 
 .price-card{
