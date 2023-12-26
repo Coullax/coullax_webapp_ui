@@ -169,3 +169,24 @@
 .descript {
     color: var(--nft-cards-description-text-color);
 }
+
+.cards-background {
+    background-color: var(--nft-cards-head-text-color);
+}
+
+.do-it {
+    color: var(--nft-do-it-text-color);
+    font-family: Cal Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+}
+
+.text-changing {
+    color: var(--nft-small-cards-main-text-color);
+}
+
+.svg-changing path{
+    fill: var(--nft-small-cards-svg-color);
+}
