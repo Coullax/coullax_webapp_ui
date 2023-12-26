@@ -339,7 +339,11 @@ tbody > tr > td:nth-child(2) {
   margin-top: 20px !important;
   border-radius: 10px !important;
   box-shadow: none !important;
-  background: var(--blockchaindev-page-question-container-mat-expansion-panel) !important;
+  background: var(--socialmedia-page-question-container-mat-expansion-panel) !important;
+}
+.mat-expansion-panel:not(.mat-expanded)
+.mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+  background-color: var(--socialmedia-page-question-container-mat-expansion-panel) !important;
 }
 
 .mat-expansion-panel-header{
@@ -358,7 +362,7 @@ tbody > tr > td:nth-child(2) {
   line-height: 144.1% !important;
 }
 
-.mat-expansion-indicator::after {
+::ng-deep .socialmedia-expantion-panel .mat-expansion-indicator::after {
   border-style: solid;
   border-width: 0 2px 2px 0;
   content: "";
@@ -372,7 +376,7 @@ tbody > tr > td:nth-child(2) {
   border-color: var(--socialmedia-page-table-name-txt-color);
 }
 
-.mat-expansion-panel-body{
+::ng-deep .socialmedia-expantion-panel .mat-expansion-panel-body{
   color: var(--socialmedia-page-table-name-txt-color);
   font-family: Poppins, serif;
   font-size: 21px;
