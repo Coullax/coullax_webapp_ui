@@ -1,3 +1,7 @@
+.nfts {
+    background: var(--nft-page-bg-color);
+}
+
 .nft-container {
     margin: auto;
     max-width: 900px;
@@ -36,3 +40,27 @@
 //     background-color: aliceblue;
     
 // }
+.background {
+    width: 439.02px;
+    height: 266.71px;
+    outline-width: 4px;
+    outline-color: var(--nft-cards-outline-color);
+    outline-style: solid;
+}
+
+.background:hover {
+    width: 426.12px;
+    height: 251.71px;
+    box-shadow:  var(--nft-cards-box-shadow-color) 15px 15px;
+}
+.marke {
+    color: #B4B4B4;
+}
+
+.headcard {
+    color: var(--nft-cards-head-text-color);
+}
+
+.descript {
+    color: var(--nft-cards-description-text-color);
+}
