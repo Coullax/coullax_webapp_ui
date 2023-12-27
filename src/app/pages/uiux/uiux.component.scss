@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Poppins:wght@500;600&display=swap');
+@import 'cal-sans';
+
+
+.uiux-web-page{
+  background: var(--uiux-page-bg-color);
+}
+.uiux-web-container{
+  margin: auto;
+  max-width: 900px;
+}
+.uiux-banner-web{
+  height: 520px;
+  background: var(--uiux-page-banner-web-bg-color);
+  border-radius: 22px;
+}
+.uiux-hero-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uiux-hero-image rect{
+  stroke: var(--uiux-page-banner-web-bg-image-stroke);
+}
+.GetWorkDoneWithZeroHassle{
+  color: #FFF;
+  font-family: Cal Sans, serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 102.1%;
+  word-wrap: break-word;
+}
+
+.special-text{
+  color: var(--uiux-page-banner-web-special-text);
+  font-family: Cal Sans, serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 102.1%;
+}
+
+.centered {
+  position: absolute;
+  top: 54%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.uiux-web-arrow{
+  position: relative;
+  top: -150px;
+  left: -15px;
+}
+.uiux-web-arrow img{
+  width: 589.52px;
+  height: 160.45px;
+}
+.uiux-exp-dash-btn{
+  width: 232px;
+  height: 53px;
+  color: var(--uiux-page-banner-web-dashboard-btn-text);
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
+  border: 2px solid #181D33;
+  background: var(--uiux-page-banner-web-dashboard-btn);
+  box-shadow: var(--uiux-page-banner-web-dashboard-btn-shadow) 3px 5px;
+  border-radius: 25px;
+  position: relative;
+  top: -166px;
+  left: 166px;
+}
+
+
+
+
+.uiux-description{
+  display: grid;
+  grid-template-columns: 439.024px 439.024px;
+  gap: 22px;
+  margin-top: 92px;
+}
+.des-card{
+  width: 439.024px;
+  height: 266.707px;
+  background: var(--uiux-page-des-card-bg-color);
+  border-radius: 18px;
+
+  .des-card-cont{
+    padding: 28px 28px 28px 28px;
+  }
+
+  .icon-div{
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background: var(--blockchaindev-page-des-card-icon-div-bg-color);
+    justify-content: center;
+    border:var(--blockchaindev-page-des-card-icon-div-border);
+
+    .icons path{
+      fill:var(--blockchaindev-page-des-card-icon-color);
+    }
+    .icons rect{
+      fill:var(--blockchaindev-page-des-card-icon-color);
+    }
+    .icon1{
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+    .icon2{
+      position: relative;
+      top: 11px;
+      left: 17px;
+    }
+    .icon3{
+      position: relative;
+      top: 14px;
+      left: 17px;
+    }
+    .icon4{
+      position: relative;
+      top: 16px;
+      left: 11px;
+    }
+    .icon5{
+      position: relative;
+      top: 16px;
+      left: 17px;
+    }
+    .icon6{
+      position: relative;
+      top: 19px;
+      left: 13px;
+    }
+  }
+
+  .card-title{
+    color: var(--uiux-page-des-card-title-color);
+    font-family: Cal Sans, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.1%;
+    margin-top: 21px;
+  }
+
+  .development-txt{
+    color: var(--blockchaindev-page-des-card-title-development-txt);
+    font-family: Cal Sans, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.1%;
+  }
+
+  .card-des{
+    color: var(--blockchaindev-page-des-card-card-des-text-color);
+    font-family: Poppins, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin-top: 8px;
+  }
+
+  .icons-light{
+    display: var(--blockchaindev-mobile-page-icons-display);
+  }
+
+  .icons-dark{
+    display: var(--blockchaindev-mobile-page-icons-display-dark);
+  }
+
+  .icons-dark path:nth-child(1){
+    stroke: #73E69B;
+    stroke-width:2;
+  }
+  .icons-dark circle{
+    stroke: #73E69B;
+    stroke-width:2;
+  }
+}
+
+.des-card:hover{
+  background: #181D33;;
+
+  .card-title{
+    color: #fff;
+  }
+
+  .development-txt{
+    color: var(--blockchaindev-page-des-hover-development-txt);
+  }
+
+  .card-des{
+    color: #FFF;
+  }
+}
+
+
+.price-container{
+  display: grid;
+  grid-template-columns: 264.453px 264.453px 264.453px;
+  grid-template-rows: 396px;
+  gap: 22px;
+  margin-top: 55px;
+  border-radius: 18px;
+  background: var(--uiux-page-banner-web-bg-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card{
+  width: 264.453px;
+  height: 341.351px;
+  border-radius: 17px;
+  border: 2.813px solid #FFF;
+  background: transparent;
+  padding: 36px 0 20px 27px;
+
+  .pkg-type{
+    color: var(--uiux-page-order-now-type-color);
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .price{
+    color: #fff;
+    font-family: Cal Sans, serif;
+    font-size: 42.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    margin-top: 4px;
+  }
+
+  .pkg-item{
+    color: #fff;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.6%;
+
+    ul{
+      list-style: inside !important;
+      li{
+        margin-top: 25px;
+
+      }
+    }
+  }
+  .order-now-btn{
+    width: 214px;
+    height: 41px;
+    border-radius: 16.88px;
+    border: none;
+    color: #fff;
+    background: var(--uiux-page-order-now-btn-bg-color);
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 14.067px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.6%;
+    margin-top: 51px;
+  }
+}
+
+.price-card-mid{
+  border-radius: 17px;
+  border: 2.813px solid rgba(255, 255, 255, 0.03);
+  background: var(--uiux-page-price-card-mid);
+  backdrop-filter: blur(9.565333366394043px);
+  padding: 18px 0 20px 27px;
+
+  .pkg-tag{
+    width: 108px;
+    height: 23px;
+    border-radius: 23px;
+    background: var(--uiux-page-price-card-mid-pkg-tag-bg);
+    text-align: center;
+    color: var(--uiux-page-price-card-mid-pkg-tag-text);
+    font-family: Poppins, serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pkg-type-mid{
+    color: #fff;
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .price-mid{
+    color: #fff;
+    font-family: Cal Sans, serif;
+    font-size: 42.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    margin-top: 4px;
+  }
+
+  .pkg-item-mid{
+    color: #fff;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.6%;
+
+    ul{
+      list-style: inside !important;
+
+      li{
+        margin-top: 25px;
+      }
+    }
+  }
+  .order-now-btn-mid{
+    width: 214px;
+    height: 41px;
+    border-radius: 16.88px;
+    border: none;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 14.067px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.6%;
+    margin-top: 51px;
+  }
+}

@@ -12,6 +12,8 @@ export class ContactusComponent {
   constructor(public dialog: MatDialog) {
     AOS.init();
   }
+
+
   url ='https://calendly.com/ushansan99/30min'
   // sheduleCall(){
   //   window.Calendly.initInlineWidget({
@@ -24,6 +26,12 @@ export class ContactusComponent {
       width:'600px',   // Set width to 600px
       height:'auto',
     });
+  }
+
+  visible: boolean = false;
+
+  showDialog() {
+    this.visible = true;
   }
 }
 export {};

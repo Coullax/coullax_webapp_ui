@@ -8,6 +8,7 @@ import {DashboardComponent} from "./pages/dashboard/dashboard.component";
 import {BlockchaindevComponent} from "./pages/blockchaindev/blockchaindev.component";
 import { SocialmediaComponent } from './pages/socialmedia/socialmedia.component';
 import { NftComponent } from './pages/nft/nft.component';
+import {UiuxComponent} from "./pages/uiux/uiux.component";
 
 const routes: Routes = [
 
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path:'app/nft',
     component: NftComponent
+  },
+  {
+    path:'app/uiux',
+    component: UiuxComponent
   },
   {
     path: '',

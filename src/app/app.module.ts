@@ -46,6 +46,13 @@ import {
   MatDialogModule,
   MatDialogTitle
 } from "@angular/material/dialog";
+import { SkeletonModule } from 'primeng/skeleton';
+import { DialogModule } from 'primeng/dialog';
+import { SidebarModule } from 'primeng/sidebar';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { BadgeModule } from 'primeng/badge';
+
 
 @NgModule({
   declarations: [
@@ -93,7 +100,13 @@ import {
     MatExpansionModule,
     SwiperModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    SkeletonModule,
+    DialogModule,
+    SidebarModule,
+    AvatarModule,
+    AvatarGroupModule,
+    BadgeModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
