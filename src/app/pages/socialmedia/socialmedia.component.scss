@@ -821,7 +821,7 @@ tbody > tr > td:nth-child(2) {
     line-height: 144.1% !important;
   }
 
-  ::ng-deep .expantion-panel-socailmedia .mat-expansion-indicator::after {
+  ::ng-deep .expantion-panel-socailmedia-mobi .mat-expansion-indicator::after {
     border-style: solid;
     border-width: 0 2px 2px 0;
     content: "";
@@ -835,10 +835,10 @@ tbody > tr > td:nth-child(2) {
     border-color: var(--socialmedia-page-question-container-mat-expansion-panel-header-title);
   }
 
-  ::ng-deep .expantion-panel-socailmedia .mat-expansion-panel-body{
+  ::ng-deep .expantion-panel-socailmedia-mobi .mat-expansion-panel-body{
     color: var(--socialmedia-page-question-container-mat-expansion-panel-body);
     font-family: Poppins, serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 144.1%;

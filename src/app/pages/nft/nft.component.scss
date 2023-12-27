@@ -488,3 +488,413 @@ tbody > tr > td:nth-child(2) {
 .svg-changing path{
     fill: var(--nft-small-cards-svg-color);
 }
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .nft-mobile {
+    background: var(--nft-page-bg-color);
+  }
+  .nft-container-mobile {
+    margin: auto;
+    max-width: 375px;
+  }
+
+  .nft-banner-mobi{
+    width: 375px;
+    height: 396px;
+    border-radius: 18px;
+    background: #0E0E0C;
+  }
+  .nft-hero-title-mobile{
+    color: color(display-p3 1 1 1);
+    font-family: Poppins, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    text-align: center;
+    padding-top: 150px;
+  }
+  .nft-highlight-mobile{
+    color: #C5EF00;
+    font-family: Poppins, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+  .nft-move-dashboard-btn-mobile{
+    width: 232px;
+    height: 43px;
+    color: #0A0B0D;
+    border: 2px solid #000;
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 103.6%;
+    background: #C5EF00;
+    border-radius: 26.5px;
+    margin-top: 15px;
+  }
+
+
+  .description-bar-mobile{
+    margin-top: 25px;
+  }
+  .grid-items{
+    display: grid;
+    grid-template-columns: 375px;
+    gap: 20px;
+  }
+
+
+  .description-card-mobile{
+    width: 375px;
+    height: 93px;
+    border-radius: 12px;
+    background: var(--nft-page-mobile-des-card-bg-color);
+    align-items: center;
+    padding-left: 18px;
+
+
+    .title-mobile{
+      color: var(--nft-cards-head-text-color);
+      font-family: Cal Sans, serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 102.1%;
+    }
+    .development-txt{
+      color: color(display-p3 0.7059 0.7059 0.7059);
+      font-family: Cal Sans, serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 102.1%;
+    }
+
+  }
+
+  .description-card-mobile:hover{
+    width: 365px;
+    height: 83px;
+    box-shadow:  var(--nft-cards-box-shadow-color) 10px 10px;
+    outline-width: 4px;
+    outline-color: var(--nft-cards-outline-color);
+    outline-style: solid;
+  }
+
+
+
+  .price-grid-items{
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows:341px;
+    gap: 21px;
+    margin-top: 27px;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .price-card-item{
+    border-radius: 16.88px;
+    border: 3px solid #000;
+    background:var(--nft-page-mobile-price-card-background);
+    height: 341px;
+    padding: 35px 30px 20px 30px;
+
+    .pkg-type{
+      color: var(--nft-page-mobile-price-card-text-color);
+      font-family: Cal Sans, serif;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.6%;
+    }
+    .price{
+      color: var(--nft-page-mobile-price-card-price-text-color);
+      font-family: Cal Sans, serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.6%;
+      margin-top: 4px;
+    }
+
+    .pkg-item{
+      color: var(--nft-page-mobile-price-card-text-color);
+      font-family: Poppins, serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 96.6%;
+
+      ul{
+        list-style: inside !important;
+        li{
+          margin-top: 30px;
+
+        }
+      }
+    }
+    .order-now-btn{
+      width: 303px;
+      height: 50px;
+      border-radius: 25px;
+      text-align: center;
+      font-family: Poppins, serif;
+      //background-color: #1e1e1e;
+      color: var(--nft-page-mobile-price-card-price-text-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 103.6%;
+      margin-top: 36px;
+      border: 3px solid var(--nft-page-mobile-price-card-price-text-color);
+    }
+  }
+
+
+  .price-card-mid-mobi{
+    height: 341px;
+    border-radius: 25px;
+    background-color: var(--nft-page-mobile-price-card-mid-bg-color);
+    padding: 18px 30px 20px 30px;
+
+    .pkg-tag-mid{
+      width: 123px;
+      height: 32px;
+      border-radius: 16px;
+      background: var(--nft-page-mobile-price-card-mid-price-text-color);
+      text-align: center;
+      color: var(--nft-page-mobile-price-card-price-text-color);
+      font-family: Poppins, serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.6%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .pkg-type-mid-mobi{
+      color: var(--nft-page-mobile-price-card-mid-text-color);
+      font-family: Cal Sans, serif;
+      font-size: 22.507px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.6%;
+    }
+
+    .price-mid-mobi{
+      color: var(--nft-page-mobile-price-card-mid-price-text-color);
+      font-family: Cal Sans, serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.6%;
+      margin-top: 4px;
+    }
+
+    .pkg-item-mid-mobi{
+      color: var(--nft-page-mobile-price-card-mid-text-color);
+      font-family: Poppins, serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 96.6%;
+
+      ul{
+        list-style: inside !important;
+
+        li{
+          margin-top: 25px;
+        }
+      }
+    }
+    .order-now-btn-mid-mobi{
+      width: 303px;
+      height: 50px;
+      border-radius: 25px;
+      color: #000;
+      border: 3px solid #0F0F0F;
+      background: #C5EF00;
+      text-align: center;
+      font-family: Poppins, serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 103.6%;
+      margin-top: 36px;
+    }
+  }
+
+  .mySwiper{
+    height: 476px;
+    border-radius: 14.339px;
+    background: var(--nft-mobile-page-price-plan-card-bg);
+    margin-top: 27px;
+    border: var(--nft-mobile-page-price-plan-card-border);
+  }
+  .comp-plans-card{
+    justify-content: start;
+    //display: grid;
+    //grid-template-columns: 300px;
+    padding: 28px 0 0 26px;
+  }
+  .comp-plans-card-title{
+    color: var(--nft-page-mobile-price-card-price-text-color);
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+
+  .comp-plans-card-type{
+    color: var(--nft-page-mobile-price-card-text-color);
+    text-align: start;
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+    margin-top: 18px;
+  }
+  .comp-plans-card-items{
+    color: var(--nft-page-mobile-price-card-text-color);
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.6%;
+
+    ul{
+      //list-style: inside !important;
+
+      li{
+        margin-top: 29px;
+      }
+    }
+
+  }
+
+
+  ::ng-deep .nft-mobi-swiper .swiper-pagination-bullet {
+    opacity: 0.2;
+    background: rgba(226, 226, 226, 1) !important;
+  }
+  ::ng-deep .nft-mobi-swiper .swiper-pagination-bullet-active {
+    background: rgba(205, 238, 45, 1) !important;
+    opacity: 1;
+  }
+
+  .price-plan-icon path{
+    fill: var(--nft-page-mobile-price-card-text-color);
+  }
+
+  .nft-question-container-title{
+    color: var(--socialmedia-page-table-name-txt-color);
+    font-family: Cal Sans, serif;
+    font-size: 22.507px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+
+
+
+  .mat-expansion-panel{
+    margin-top: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    background: #141414 !important;
+  }
+  .mat-expansion-panel:not(.mat-expanded)
+  .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+    background-color: #141414 !important;
+  }
+
+  .mat-expansion-panel-header{
+    height: 79px !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    padding: 25px 18px !important;
+  }
+
+  .mat-expansion-panel-header-title{
+    color: #C5EF00 !important;
+    font-family: Poppins, serif !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 144.1% !important;
+  }
+
+  ::ng-deep .nft-expantion-panel-mobi .mat-expansion-indicator::after {
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    color: #C5EF00 !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-color: #C5EF00;
+  }
+
+  ::ng-deep .nft-expantion-panel-mobi .mat-expansion-panel-body{
+    color: #FAF5EB;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 144.1%;
+    padding: 0 25px 16px !important;
+  }
+
+  .dev-call-container-mobi{
+    height: 77px;
+    border-radius: 91px;
+    background-color: #C5EF00;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 37px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+
+    .label{
+      color: #000;
+      font-family: Cal Sans, serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.6%;
+    }
+    .book-cl-bnt{
+      width: 139px;
+      height: 38px;
+      border-radius: 64px;
+      background: black;
+      color: #C5EF00;
+      text-align: center;
+      font-family: Poppins, serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 122.1%;
+    }
+  }
+}
