@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit{
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
+   // let audio = new Audio()
+   //  audio.src = '../assets/music.mp3';
+   // audio.load();
+   //  audio.play();
     this.spinner.show(undefined, {
       type: 'ball-scale-multiple',
       fullScreen: true,
