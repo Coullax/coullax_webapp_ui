@@ -22,6 +22,18 @@
   mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
 }
 
+.background {
+  background-color: var(--home-page-review-bar-background);
+}
+.review-text {
+  color: var(--home-page-review-bar-text-color);
+  font-family: Poppins;
+}
+
+.review-text-font-size{
+  font-size: 24px;
+}
+
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
