@@ -1,3 +1,8 @@
+
+.review-mobile {
+  display: none;
+}
+
 .scroller {
   max-width: 900px;
 }
@@ -82,4 +87,17 @@
 }
 .flickity-enabled:focus {
   outline: none;
+}
+
+
+@media (max-width: 900px) {
+  .review-mobile{
+    display: block;
+  }
+  .review {
+    display: none;
+  }
+  .review-text-font-size {
+    font-size: 23px;
+  }
 }

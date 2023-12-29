@@ -8,8 +8,6 @@ import Flickity from 'flickity';
 })
 export class ReviewBarComponent implements OnInit {
 
-
-
   ngOnInit(): void {
     const scrollers = document.querySelectorAll(".scroller");
 
