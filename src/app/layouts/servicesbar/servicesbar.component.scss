@@ -8,7 +8,16 @@
   grid-template-columns: 438.056px 438.056px;
   gap: 21px;
 }
-
+.title{
+  color: var(--supper-power-title-color);
+  font-family: Poppins, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 116%; /* 37.12px */
+  letter-spacing: -1.6px;
+  margin-bottom: 18px;
+}
 .mat-mdc-card-content{
   padding: 0 5px 0 16px;
 }
@@ -17,15 +26,17 @@
   height: 261px;
   background: var(--service-bar-card-background-color);
   border-radius: 18px;
-  box-shadow: var(--service-bar-card-shadow);
+  box-shadow: none;
+  //box-shadow: var(--service-bar-card-shadow);
   padding: 15px 15px 15px 15px;
-  border: var(--service-bar-card-border);
+  //border: var(--service-bar-card-border);
 
   &:hover{
-    border: 2px solid #4CD05F;;
+    //border: 2px solid #4CD05F;
+    background: var(--service-bar-card-background-hover-color);
     .order-btn{
       border: none;
-      background: radial-gradient(86.92% 80.73% at 47.25% 19.32%, #58D35A 0%, #00A587 100%);
+      background: #1A76F1;
       color: #fff;
     }
 
@@ -45,14 +56,14 @@
 
 
 .order-btn{
-  border: 2px solid #24252A;
+  border:  2px solid #1A76F1;
   width: 176.996px;
   height: 44px;
   border-radius: 22px;
-  color: var(--service-bar-card-text-color);
+  color: #1A76F1;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 103.6%;
@@ -105,6 +116,18 @@ li{
     display: none;
   }
 
+  .title{
+    color: var(--supper-power-title-color);
+    font-family: Poppins, serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%; /* 37.12px */
+    letter-spacing: -1.6px;
+    margin-bottom: 18px;
+    padding-left:30px;
+  }
+
   .grid-items{
     display: grid;
     grid-template-columns: 375px;
@@ -127,17 +150,20 @@ li{
     }
 
     &:hover{
-      background: #E5F3F1;
-      color: #000;
-      box-shadow: 0 1.744px 3.081px 0 rgba(0, 0, 0, 0.13);
-      border: none;
+      background: var(--service-bar-card-mobile-background-hover-color);
 
-      .service-title{
-        color:#000;
+      .mobile-arow path{
+        fill: var(--service-bar-card-mobile-arow-hover);
       }
-      .price{
-        color: #777676;;
-      }
+      //box-shadow: 0 1.744px 3.081px 0 rgba(0, 0, 0, 0.13);
+      //border: none;
+
+      //.service-title{
+      //  color:#000;
+      //}
+      //.price{
+      //  color: #777676;;
+      //}
 
       .mobile-order-arrow-light {
         display: none;
@@ -152,6 +178,10 @@ li{
 
     }
 
+  }
+
+  .mobile-arow path{
+    fill: var(--service-bar-card-mobile-arow);
   }
 
   .service-title{
