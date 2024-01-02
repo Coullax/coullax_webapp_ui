@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ThemeService} from "../../_Services/theme/theme.service";
 import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +11,17 @@ import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
 export class NavbarComponent implements OnInit{
 
   showNaveBar:boolean = true;
+  showsun:boolean = true;
 
   isDarkMode:boolean;
-  constructor(private themeService: ThemeService,public breakpointObserver: BreakpointObserver) {
+  constructor(private themeService: ThemeService,public breakpointObserver: BreakpointObserver, private router: Router) {
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
+    if(this.isDarkMode){
+      this.showsun = false;
+    }else{
+      this.showsun = true;
+    }
   }
   toggle() {
     const active = this.themeService.isDarkMode() ;
@@ -23,11 +30,14 @@ export class NavbarComponent implements OnInit{
       this.themeService.setTheme('dark');
       document.body.setAttribute('data-theme', 'dark');
       document.documentElement.setAttribute('data-theme', 'dark');
+      this.showsun = false;
     } else {
       this.themeService.setTheme('light');
       document.body.setAttribute('data-theme', 'light');
       document.documentElement.setAttribute('data-theme', 'light');
+      this.showsun = true;
     }
+
 
 
   }
@@ -60,5 +70,15 @@ export class NavbarComponent implements OnInit{
         document.documentElement.setAttribute('data-theme', 'light');
       }
   }
+  getNavbarStyles() {
+    if (this.router.url === '/app/blockchain-dev') {
+      return 'theme-switch__container_blockchain';
+    } else if (this.router.url === '/route2') {
+      return 'background-color: green;';
+    } else if (this.router.url === '/route3') {
+      return 'background-color: red;';
+    }
 
+    return 'theme-switch__container';
+  }
 }
