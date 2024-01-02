@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import AOS from "aos";
+
 @Component({
   selector: 'app-superpowers',
   templateUrl: './superpowers.component.html',
@@ -7,6 +7,6 @@ import AOS from "aos";
 })
 export class SuperpowersComponent {
   constructor() {
-    AOS.init();
+
   }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import AOS from "aos";
+
 @Component({
   selector: 'app-redirect-cards',
   templateUrl: './redirect-cards.component.html',
@@ -7,6 +7,5 @@ import AOS from "aos";
 })
 export class RedirectCardsComponent {
   constructor() {
-    AOS.init();
   }
 }

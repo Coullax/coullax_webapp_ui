@@ -13,6 +13,8 @@
   height: 187px;
   border-radius: 18px;
   background: var(--supper-power-wid-card-bg-color);
+  transform: translateY(0);
+  transition: .3s ease-in-out;
 }
 .card3{
   width: 235px;
@@ -51,6 +53,8 @@
   height: 202px;
   border-radius: 18px;
   background: var(--supper-power-card7-bg-color);
+  transform: translateY(0);
+  transition: .3s ease-in-out;
 }
 
 .card8{
@@ -58,6 +62,8 @@
   height: 202px;
   border-radius: 18px;
   background: var(--supper-power-card8-bg-color);
+  transform: translateY(0);
+  transition: .3s ease-in-out;
 }
 
 
@@ -152,7 +158,22 @@
   letter-spacing: -1.6px;
   margin-bottom: 20px;
 }
-
+.items {
+  transform: translateY(0);
+  transition: .3s ease-in-out;
+}
+.items:hover{
+  transform: translateY(-10px);
+}
+.wid-card:hover {
+  transform: translateY(-10px);
+}
+.card7:hover {
+  transform: translateY(-10px);
+}
+.card8:hover{
+  transform: translateY(-10px);
+}
 .superpower-bar-mobile{
   display: none;
 }

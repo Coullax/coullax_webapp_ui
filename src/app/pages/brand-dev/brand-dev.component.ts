@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
 
 @Component({
@@ -6,7 +6,7 @@ import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
   templateUrl: './brand-dev.component.html',
   styleUrls: ['./brand-dev.component.scss']
 })
-export class BrandDevComponent {
+export class BrandDevComponent implements OnInit{
   showNaveBar:boolean=true;
   constructor(public breakpointObserver: BreakpointObserver) {
   }

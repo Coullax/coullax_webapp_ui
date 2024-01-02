@@ -10,6 +10,7 @@ import { SocialmediaComponent } from './pages/socialmedia/socialmedia.component'
 import { NftComponent } from './pages/nft/nft.component';
 import {UiuxComponent} from "./pages/uiux/uiux.component";
 import {BrandDevComponent} from "./pages/brand-dev/brand-dev.component";
+import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.component";
 
 const routes: Routes = [
 
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path:'app/branddev',
     component: BrandDevComponent
+  },
+  {
+    path:'app/web-softwared-dev',
+    component: WebdevSoftwareComponent
   },
   {
     path: '',

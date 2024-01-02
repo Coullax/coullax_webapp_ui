@@ -52,6 +52,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { BadgeModule } from 'primeng/badge';
+import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.component";
 
 
 @NgModule({
@@ -83,7 +84,7 @@ import { BadgeModule } from 'primeng/badge';
     NftComponent,
     BrandDevComponent,
     CalendlyComponent,
-
+    WebdevSoftwareComponent
   ],
   imports: [
     BrowserModule,

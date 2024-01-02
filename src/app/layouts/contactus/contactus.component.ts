@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import AOS from "aos";
 import {MatDialog} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 import {CalendlyComponent} from "../calendly/calendly.component";
@@ -10,7 +9,7 @@ import {CalendlyComponent} from "../calendly/calendly.component";
 })
 export class ContactusComponent {
   constructor(public dialog: MatDialog) {
-    AOS.init();
+
   }
 
 

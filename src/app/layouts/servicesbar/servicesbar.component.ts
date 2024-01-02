@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import AOS from "aos";
 import {Router} from "@angular/router";
 
 @Component({
@@ -9,7 +8,6 @@ import {Router} from "@angular/router";
 })
 export class ServicesbarComponent {
   constructor(private router:Router) {
-    AOS.init();
   }
 
   navigatePages(){
