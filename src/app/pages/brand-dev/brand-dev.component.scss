@@ -62,9 +62,10 @@
   display: flex;
   margin-left:300px;
   overflow: hidden;
+  border-right: .15em solid orange;
   animation: typewriter 2s steps(18) 1s 1 normal both,
   blinkTextCursor .8s steps(18) infinite normal;
-  border-right: .15em solid orange;
+
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -632,10 +633,6 @@ tbody > tr > td:nth-child(2) {
   @keyframes typewriter{
     from{width: 0;}
     to{width: 100%}
-  }
-  @keyframes blinkTextCursor{
-    from { border-color: transparent }
-    to { border-color: orange; }
   }
 
   .centered {
