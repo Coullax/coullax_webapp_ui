@@ -71,10 +71,7 @@
   from{width: 0;}
   to{width: 360px}
 }
-@keyframes blinkTextCursor{
-  from { border-color: transparent }
-  to { border-color: orange; }
-}
+
 
 
 .centered {
@@ -1049,4 +1046,8 @@ tbody > tr > td:nth-child(2) {
       line-height: 122.1%;
     }
   }
+}
+@keyframes blinkTextCursor{
+  from { border-color: transparent }
+  to { border-color: orange; }
 }
