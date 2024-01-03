@@ -64,14 +64,14 @@
   overflow: hidden;
   border-right: .15em solid orange;
   animation: typewriter 2s steps(18) 1s 1 normal both,
-  blinkTextCursor .8s steps(18) infinite normal;
+  blinkTextCursors .8s steps(18) infinite normal;
 
 }
 @keyframes typewriter{
   from{width: 0;}
   to{width: 360px}
 }
-@keyframes blinkTextCursor{
+@keyframes blinkTextCursors{
   from { border-color: transparent }
   to { border-color: orange; }
 }
@@ -635,6 +635,10 @@ tbody > tr > td:nth-child(2) {
     to{width: 100%}
   }
 
+  @keyframes blinkTextCursor{
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
   .centered {
     opacity: 1;
     transform: translate3d(0px, -325px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(358deg) rotateZ(0deg) skew(0deg, 0deg);
