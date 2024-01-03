@@ -60,10 +60,9 @@
 }
 .anim-typewriter{
   display: flex;
-  margin-left:300px;
+  margin-left:290px;
   overflow: hidden;
-  animation: typewriter 2s steps(18) 1s 1 normal both,
-  blinkTextCursor .8s steps(18) infinite;
+  animation: typewriter 2s steps(18) 1s 1 normal both, blinkTextCursor .8s steps(18) infinite !important;
   border-right: .15em solid orange;
 
 }
