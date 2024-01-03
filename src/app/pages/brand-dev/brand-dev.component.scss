@@ -55,8 +55,26 @@
   font-weight: 600;
   line-height: 102.1%;
   background-color: var(--branddev-page-hero-section-text-highlight);
-  padding: 10px 20px 6px 20px;
+  padding: 0 20px 0 20px;
+  margin-left:20px
 }
+.anim-typewriter{
+  display: flex;
+  margin-left:300px;
+  overflow: hidden;
+  animation: typewriter 2s steps(18) 1s 1 normal both,
+  blinkTextCursor .8s steps(18) infinite normal;
+  border-right: .15em solid orange;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 360px}
+}
+@keyframes blinkTextCursor{
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
 
 .centered {
   opacity: 1;
@@ -599,7 +617,25 @@ tbody > tr > td:nth-child(2) {
     font-weight: 600;
     line-height: 102.1%;
     background-color: var(--branddev-page-hero-section-text-highlight);
-    padding: 5px 15px 1px 15px;
+    padding: 0 15px 0 15px;
+  }
+
+  .anim-typewriter{
+    margin-left: -10px;
+    padding-left:50px;
+    overflow: hidden;
+    animation: typewriter 2s steps(18) 1s 1 normal both,
+    blinkTextCursor .8s steps(18) infinite normal;
+    border-right: .15em solid orange;
+
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%}
+  }
+  @keyframes blinkTextCursor{
+    from { border-color: transparent }
+    to { border-color: orange; }
   }
 
   .centered {

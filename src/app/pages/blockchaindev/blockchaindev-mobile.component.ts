@@ -3,7 +3,6 @@ import {ThemeService} from "../../_Services/theme/theme.service";
 
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import AOS from "aos";
 import {BreakpointObserver, BreakpointState} from "@angular/cdk/layout";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -16,7 +15,6 @@ export class BlockchaindevMobileComponent implements OnInit{
   isDarkMode:boolean;
   showNaveBar:boolean = false;
   constructor(private themeService: ThemeService,public breakpointObserver: BreakpointObserver) {
-    AOS.init();
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
   }
