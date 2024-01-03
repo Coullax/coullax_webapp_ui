@@ -633,15 +633,18 @@ tbody > tr > td:nth-child(2) {
     blinkTextCursor .8s steps(18) infinite normal;
 
   }
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 100%}
-  }
 
   @keyframes blinkTextCursor{
     from { border-color: transparent }
     to { border-color: orange; }
   }
+
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%}
+  }
+
+
 
   .centered {
     opacity: 1;
@@ -1059,7 +1062,4 @@ tbody > tr > td:nth-child(2) {
     }
   }
 }
-@keyframes blinkTextCursor{
-  from { border-color: transparent }
-  to { border-color: orange; }
-}
+
