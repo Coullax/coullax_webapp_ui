@@ -53,6 +53,9 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { BadgeModule } from 'primeng/badge';
 import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.component";
+import { AboutComponent } from './pages/about/about.component';
+import { TermsComponent } from './pages/about/terms/terms.component';
+import { PrivacyComponent } from './pages/about/privacy/privacy.component';
 
 
 @NgModule({
@@ -84,7 +87,10 @@ import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.c
     NftComponent,
     BrandDevComponent,
     CalendlyComponent,
-    WebdevSoftwareComponent
+    WebdevSoftwareComponent,
+    AboutComponent,
+    TermsComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

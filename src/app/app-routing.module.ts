@@ -11,12 +11,27 @@ import { NftComponent } from './pages/nft/nft.component';
 import {UiuxComponent} from "./pages/uiux/uiux.component";
 import {BrandDevComponent} from "./pages/brand-dev/brand-dev.component";
 import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.component";
+import {PrivacyComponent} from "./pages/about/privacy/privacy.component";
+import {TermsComponent} from "./pages/about/terms/terms.component";
+import {AboutComponent} from "./pages/about/about.component";
 
 const routes: Routes = [
 
   {
     path:'home',
     component: HomeComponent
+  },
+  {
+    path:'home/about',
+    component: AboutComponent
+  },
+  {
+    path:'home/terms&condition',
+    component: TermsComponent
+  },
+  {
+    path:'home/privacypolicy',
+    component: PrivacyComponent
   },
   {
     path:'auth/login',
