@@ -67,6 +67,12 @@
   border-right: .15em solid orange;
 
 }
+
+@keyframes blinkTextCursor{
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
 @keyframes typewriter{
   from{width: 0;}
   to{width: 360px}
@@ -619,6 +625,7 @@ tbody > tr > td:nth-child(2) {
   }
 
   .anim-typewriter{
+    display: flex;
     margin-left: -10px;
     padding-left:50px;
     overflow: hidden;
@@ -629,6 +636,11 @@ tbody > tr > td:nth-child(2) {
   @keyframes typewriter{
     from{width: 0;}
     to{width: 100%}
+  }
+
+  @keyframes blinkTextCursor{
+    from { border-color: transparent }
+    to { border-color: orange; }
   }
 
   .centered {
