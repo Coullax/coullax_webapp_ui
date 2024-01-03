@@ -56,6 +56,7 @@ import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.c
 import { AboutComponent } from './pages/about/about.component';
 import { TermsComponent } from './pages/about/terms/terms.component';
 import { PrivacyComponent } from './pages/about/privacy/privacy.component';
+import { ModelComponent } from './pages/nft/model/model.component';
 
 
 @NgModule({
@@ -91,6 +92,8 @@ import { PrivacyComponent } from './pages/about/privacy/privacy.component';
     AboutComponent,
     TermsComponent,
     PrivacyComponent
+    WebdevSoftwareComponent,
+    ModelComponent
   ],
   imports: [
     BrowserModule,
