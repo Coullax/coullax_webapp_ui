@@ -16,7 +16,10 @@
   font-weight: 600;
   line-height: 116%; /* 37.12px */
   letter-spacing: -1.6px;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mat-mdc-card-content{
   padding: 0 5px 0 16px;
@@ -125,7 +128,10 @@ li{
     line-height: 116%; /* 37.12px */
     letter-spacing: -1.6px;
     margin-bottom: 18px;
-    padding-left:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .grid-items{

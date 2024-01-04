@@ -156,7 +156,10 @@
   font-weight: 600;
   line-height: 116%;
   letter-spacing: -1.6px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .items {
   transform: translateY(0);

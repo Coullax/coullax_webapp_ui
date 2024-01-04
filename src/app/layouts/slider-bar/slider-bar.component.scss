@@ -57,7 +57,10 @@ swiper-container {
   font-weight: 600;
   line-height: 103.6%;
   margin-top: 66px;
-  margin-bottom: 54px
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -69,6 +72,10 @@ swiper-container {
     font-weight: 600;
     line-height: 96.6%;
     margin-top: 31px;
-    margin-bottom: 20px
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

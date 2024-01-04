@@ -477,11 +477,14 @@ tbody > tr > td:nth-child(2) {
 .question-container-title{
   color: var(--uiux-page-table-name-txt-color);
   font-family: Cal Sans, serif;
-  font-size: 45px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 96.6%;
   margin-bottom: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

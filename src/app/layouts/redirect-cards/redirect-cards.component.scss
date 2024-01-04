@@ -101,7 +101,7 @@ $animationSpeed: 40s;
 // Animation
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-185px * 7))}
+  100% { transform: translateX(calc(-156px * 7))}
 }
 
 
@@ -142,7 +142,7 @@ $animationSpeed: 40s;
 
   .slide {
     height: 100px;
-    width: 185px;
+    width: 156px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
