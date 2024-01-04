@@ -93,6 +93,9 @@
       </li>
     </ul>
   </div>
+  <div class="read-more">
+    <div (click)="showDialog()" class="read-more-btn">Read more reviews</div>
+  </div>
 </div>
 
 <div class="review-mobile">
@@ -175,4 +178,53 @@
       </li>
     </ul>
   </div>
+
+  <div class="read-more">
+    <div (click)="showDialog()" class="read-more-btn">Read more reviews</div>
+  </div>
 </div>
+
+
+
+
+<p-dialog  [(visible)]="visible" [maximizable]="true" styleClass="bgColorChange" [modal]="true" class="dialog-container" [style]="{ width: '900px', height:'650px'}" [draggable]="false" [resizable]="false">
+  <div class="review-popup-title">Check out what the <br/> Folks are saying</div>
+  <div class="item-grid-large" >
+    <div class="item-grid-small" >
+      <div class="item" *ngFor="let review of reviews1">
+        <div class="flex w-[383px] flex-col pl-5 pr-5 background rounded-2xl cards-item">
+          <div class="flex w-full  justify-between  mt-4">
+            <div class="flex items-stretch justify-between gap-4">
+              <img loading="lazy" srcset="{{review.profile}}" class="aspect-square object-contain object-center w-[41px] overflow-hidden shrink-0 max-w-full rounded-[50%]" />
+              <div class="review-text review-text-font-size font-semibold leading-6 mt-1">{{review.name}}</div>
+            </div>
+            <div class="flex gap-1.5 mt-1 self-start items-start">
+              <div class="review-text text-2xl font-semibold leading-6">{{review.ratings}}</div>
+              <img loading="lazy" src="assets/client-reviews/star.svg" class="aspect-square object-contain object-center w-[19px] overflow-hidden self-stretch shrink-0 max-w-full" />
+            </div>
+          </div>
+          <div class="review-text text-lg leading-5 mt-4 mb-4 mr-3">{{review.feedback}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="item-grid-small" >
+      <div class="items" *ngFor="let review of reviews2">
+        <div class="flex w-[383px] flex-col  pl-5 pr-5 background rounded-2xl">
+          <div class="flex w-full  justify-between  mt-4">
+            <div class="flex items-stretch justify-between gap-4">
+              <img loading="lazy" srcset="{{review.profile}}" class="aspect-square object-contain object-center w-[41px] overflow-hidden shrink-0 max-w-full rounded-[50%]" />
+              <div class="review-text review-text-font-size font-semibold leading-6 mt-1">{{review.name}}</div>
+            </div>
+            <div class="flex gap-1.5 mt-1 self-start items-start">
+              <div class="review-text text-2xl font-semibold leading-6">{{review.ratings}}</div>
+              <img loading="lazy" src="assets/client-reviews/star.svg" class="aspect-square object-contain object-center w-[19px] overflow-hidden self-stretch shrink-0 max-w-full" />
+            </div>
+          </div>
+          <div class="review-text text-lg leading-5 mt-4 mb-4 mr-3">{{review.feedback}}</div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</p-dialog>

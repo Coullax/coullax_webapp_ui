@@ -90,6 +90,87 @@
 }
 
 
+
+
+
+
+.item-grid-large{
+  //display: grid;
+  //grid-template-columns: 392px 392px;
+  //gap:15px;
+  //justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.item{
+  margin-bottom: 15px;
+}
+.items{
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.item-grid-small{
+  //display: grid;
+  //grid-template-columns: 392px;
+  //gap:15px;
+  //justify-content: center;
+}
+
+.review-popup-title{
+  color: var(--supper-power-title-color);
+  text-align: center;
+  font-family: Poppins, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 103.6%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:30px;
+}
+
+:host ::ng-deep{
+  .p-dialog {
+    width: 900px;
+    height:650px;
+  }
+  .p-dialog-header {
+    background-color: var(--home-page-review-bar-popup-background) !important;
+  }
+
+  .p-dialog .p-dialog-content {
+    background-color: var(--home-page-review-bar-popup-background) !important;
+  }
+  .p-dialog .p-dialog-footer {
+    background-color: var(--home-page-review-bar-popup-background) !important;
+  }
+  button.p-ripple.p-element.p-dialog-header-icon.p-dialog-header-close {
+    color: var(--supper-power-title-color) !important;
+  }
+}
+
+.read-more{
+  display: flex;
+  justify-content: end;
+}
+.read-more-btn{
+  color: #4F92F6;
+  text-align: center;
+  font-family: Poppins, serif;
+  cursor: pointer;
+}
+.read-more-btn:hover{
+  color: #4F92F6;
+  text-align: center;
+  font-family: Poppins, serif;
+  cursor: pointer;
+  text-underline: #4F92F6;
+  text-decoration: underline;
+}
+
+
 @media (max-width: 900px) {
   .review-mobile{
     display: block;
@@ -99,5 +180,66 @@
   }
   .review-text-font-size {
     font-size: 23px;
+  }
+
+
+  .item-grid-large{
+    //display: grid;
+    //grid-template-columns: 392px 392px;
+    //gap:15px;
+    //justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .item{
+    margin-bottom: 15px;
+  }
+  .items{
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .item-grid-small{
+    //display: grid;
+    //grid-template-columns: 392px;
+    //gap:15px;
+    //justify-content: center;
+  }
+
+  .review-popup-title{
+    color: var(--supper-power-title-color);
+    text-align: center;
+    font-family: Poppins, serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 103.6%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
+  }
+
+  :host ::ng-deep {
+    .p-dialog {
+      width: 350px;
+      height: 650px;
+    }
+
+    .p-dialog-header {
+      background-color: var(--home-page-review-bar-popup-background) !important;
+    }
+
+    .p-dialog .p-dialog-content {
+      background-color: var(--home-page-review-bar-popup-background) !important;
+    }
+
+    .p-dialog .p-dialog-footer {
+      background-color: var(--home-page-review-bar-popup-background) !important;
+    }
+
+    button.p-ripple.p-element.p-dialog-header-icon.p-dialog-header-close {
+      color: var(--supper-power-title-color) !important;
+    }
   }
 }
