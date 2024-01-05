@@ -30,6 +30,11 @@
   font-weight: 600;
   line-height: 102.1%;
   word-wrap: break-word;
+  text-align: start;
+  width: 580.119px;
+  height: 146px;
+  position: relative;
+  left: 159px;
 }
 
 .special-text{
@@ -79,17 +84,17 @@
 
 .phone-image{
   position: relative;
-  top: -199px;
+  top: -210px;
   left: 298px;
 }
 
-.uiux-banner-web:hover{
-  .phone-image{
-    position: relative;
-    top: -199px;
-    left: 298px;
-  }
-}
+//.uiux-banner-web:hover{
+//  .phone-image{
+//    position: relative;
+//    top: -199px;
+//    left: 298px;
+//  }
+//}
 
 .uiux-description{
   display: grid;

@@ -36,7 +36,7 @@
 }
 
 .review-text-font-size{
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .scroller[data-animated="true"] .scroller__inner {
@@ -121,7 +121,7 @@
   color: var(--supper-power-title-color);
   text-align: center;
   font-family: Poppins, serif;
-  font-size: 32px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 103.6%;
@@ -169,7 +169,13 @@
   text-underline: #4F92F6;
   text-decoration: underline;
 }
-
+.des-text{
+  font-family: Poppins, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%;
+}
 
 @media (max-width: 900px) {
   .review-mobile{

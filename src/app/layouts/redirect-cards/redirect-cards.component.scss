@@ -101,7 +101,7 @@ $animationSpeed: 40s;
 // Animation
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-156px * 7))}
+  100% { transform: translateX(calc(-156px * 9))}
 }
 
 
@@ -278,7 +278,7 @@ $animationSpeed: 40s;
   // Animation
   @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-140px * 7))}
+    100% { transform: translateX(calc(-156px * 9))}
   }
 
 
@@ -319,7 +319,7 @@ $animationSpeed: 40s;
 
     .slide {
       height: 100px;
-      width: 140px;
+      width: 156px;
     }
   }
 
