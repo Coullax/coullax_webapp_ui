@@ -93,7 +93,7 @@ import { ModelComponent } from './pages/nft/model/model.component';
     TermsComponent,
     PrivacyComponent,
     WebdevSoftwareComponent,
-    ModelComponent
+    ModelComponent,
   ],
   imports: [
     BrowserModule,
