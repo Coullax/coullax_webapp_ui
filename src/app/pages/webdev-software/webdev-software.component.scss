@@ -46,7 +46,7 @@
 }
 .model-container{
   border-radius: 24px;
-  background: #181D33;
+  //background: #181D33;
   width: 300px;
   height: 300px;
   margin-left: 45px;
@@ -500,6 +500,45 @@ tbody > tr > td:nth-child(2) {
 
 
 
+
+.animation {
+  height: 280px;
+  position: relative;
+  left: -44px;
+  top: -1px;
+}
+
+#webdev-animation {
+
+  * {
+    transform-box: fill-box;
+  }
+
+  #in-browser {
+    opacity: 0;
+    transform-origin: center bottom;
+
+    #hero, #Logo, #menu, #h1 {
+      opacity: 0;
+      transform-origin: left top;
+    }
+
+    #body_text * {
+      opacity: 0;
+      transform-origin: left top;
+    }
+
+    #image {
+      opacity: 0;
+      transform-origin: center center;
+    }
+  }
+
+  #Code * {
+    transform-origin: left center; /* or transform-origin: 50% */
+  }
+
+}
 
 
 
@@ -1104,6 +1143,12 @@ tbody > tr > td:nth-child(2) {
 
   .price-plan-icon path{
     fill: var(--webdev-page-price-card-mid);
+  }
+
+  .bold-point{
+    display: list-item !important;
+    list-style-type: disc !Important;
+    list-style: inside;
   }
 
   .webdev-question-container-title{

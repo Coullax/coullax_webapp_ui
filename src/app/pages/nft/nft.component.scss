@@ -809,6 +809,12 @@ tbody > tr > td:nth-child(2) {
     fill: var(--nft-page-mobile-price-card-text-color);
   }
 
+  .bold-point{
+    display: list-item !important;
+    list-style-type: disc !Important;
+    list-style: inside;
+  }
+
   .nft-question-container-title{
     color: var(--socialmedia-page-table-name-txt-color);
     font-family: Cal Sans, serif;

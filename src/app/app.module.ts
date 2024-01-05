@@ -116,7 +116,7 @@ import { ModelComponent } from './pages/nft/model/model.component';
     SidebarModule,
     AvatarModule,
     AvatarGroupModule,
-    BadgeModule
+    BadgeModule,
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],

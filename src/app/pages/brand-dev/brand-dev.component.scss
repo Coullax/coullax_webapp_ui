@@ -968,6 +968,12 @@ tbody > tr > td:nth-child(2) {
     fill: var(--branddev-page-order-now-type-color);
   }
 
+  .bold-point{
+    display: list-item !important;
+    list-style-type: disc !Important;
+    list-style: inside;
+  }
+
   .branddev-question-container-title{
     color: var(--socialmedia-page-table-name-txt-color);
     font-family: Cal Sans, serif;

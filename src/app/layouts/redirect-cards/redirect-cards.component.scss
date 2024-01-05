@@ -7,7 +7,7 @@
   background: var(--process-bar-bg);
   width: 900px;
   height: 244px;
-  padding: 24px 33px 0 43px;
+  padding: 24px 43px 0 43px;
 }
 
 .progress-bar-title{
@@ -112,7 +112,7 @@ $animationSpeed: 40s;
   margin: auto;
   overflow:hidden;
   position: relative;
-  width: 840px;
+  width: 805px;
 
   &::before,
   &::after {

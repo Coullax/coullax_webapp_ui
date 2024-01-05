@@ -13,7 +13,6 @@
   height: 520px;
   background: var(--uiux-page-banner-web-bg-color);
   border-radius: 22px;
-  transition:  all 0.5s ease-out;
 }
 .uiux-hero-image{
   display: flex;
@@ -922,6 +921,10 @@ tbody > tr > td:nth-child(2) {
     font-style: normal;
     font-weight: 600;
     line-height: 96.6%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
   }
 
 
