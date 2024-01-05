@@ -164,6 +164,15 @@
     height: 251.71px;
     box-shadow:  var(--nft-cards-box-shadow-color) 15px 15px;
 }
+.family {
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+}
+.poppins{
+  font-weight: 300;
+  font-family: Poppins;
+}
 .marke {
     color: #B4B4B4;
 }
@@ -571,7 +580,7 @@ tbody > tr > td:nth-child(2) {
 
     .title-mobile{
       color: var(--nft-cards-head-text-color);
-      font-family: Cal Sans, serif;
+      font-family: Cal Sans;
       font-size: 20px;
       font-style: normal;
       font-weight: 600;

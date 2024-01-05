@@ -12,7 +12,7 @@ export class ModelComponent {
   ngAfterViewInit() {
     const canvas = this.canvasRef.nativeElement;
     const app = new Application(canvas);
-    app.load('https://prod.spline.design/bTc5FpGPHFnvuO2l/scene.splinecode');
+    app.load('https://prod.spline.design/4gmN44zbQezkELdq/scene.splinecode');
   }
 
 }
