@@ -54,6 +54,9 @@
   font-weight: 600;
   line-height: 103.6%; /* 38.125px */
   letter-spacing: -1.84px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
 }
 
 .p-tit{

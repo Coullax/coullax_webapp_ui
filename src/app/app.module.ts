@@ -57,6 +57,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { TermsComponent } from './pages/about/terms/terms.component';
 import { PrivacyComponent } from './pages/about/privacy/privacy.component';
 import { ModelComponent } from './pages/nft/model/model.component';
+import { AiComponent } from './pages/ai/ai.component';
 
 
 @NgModule({
@@ -94,6 +95,7 @@ import { ModelComponent } from './pages/nft/model/model.component';
     PrivacyComponent,
     WebdevSoftwareComponent,
     ModelComponent,
+    AiComponent,
   ],
   imports: [
     BrowserModule,

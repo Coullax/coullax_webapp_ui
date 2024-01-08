@@ -158,15 +158,29 @@
   --blockchaindev-mobile-page-price-plan-card-item: #612BD4;
 
 
-  --socialmedia-page-bg-color: #fff6e6;
-  --socialmedia-card-bg-color: #F5E9D5;
-  --socialmedia-card-bg-hover-color: url("../../../src/assets/svg/socialmedia_card_master_light.svg");
+  --socialmedia-page-bg-color: #FFF;
+  --socialmedia-page-hero-page-show: block;
+  --socialmedia-page-hero-page-show-dark:none;
+  --ai-page-hero-page-scm-exp-dash-btn-text:#FFF;
+  --ai-page-hero-page-scm-exp-dash-btn-bg:#000F44;
+  --socialmedia-card-bg-color: linear-gradient(57deg, #E6F0FF 64.17%, #CDDEFF 106.9%);
+  --socialmedia-card-bg-border: none;
+  --socialmedia-card-icon-circle: rgba(0, 10, 61, 1);
+  --socialmedia-card-icon-path: rgba(64, 232, 202, 1);
+  --socialmedia-card-bg-hover-color: radial-gradient(323.51% 184.73% at 34.39% 81.93%, #000B40 0%, #11564C 58.67%, #073247 77%, #000B40 100%);
   --socialmedia-card-head-text: #0A0B0D;
+  --socialmedia-card-head-text-marke:color(display-p3 0 0 0);
   --socialmedia-card-descript-text: #232323;
-  --socialmedia-page-pricing-table-container:#F5E9D5;
-  --socialmedia-page-pricing-table-container-tr: #E9D1A1;
-  --socialmedia-page-pricing-table-td-3rd-child: #ECE3D4;
-  --socialmedia-page-table-name-txt-color:#000;
+  --ai-page-price-container-bg:radial-gradient(128.42% 120.16% at 47.28% 46.34%, #BEBEBE 0%, #000E47 100%);
+  --ai-page-price-container-border: none;
+  --ai-page-price-container-pkg-type-mid:#FFF;
+  --ai-page-price-container-order-now-btn-mid-bg:#00ECC9;
+  --ai-page-price-container-order-now-btn-mid-text:#1E1E1E;
+  --socialmedia-page-pricing-table-container:radial-gradient(50% 50% at 50% 50%, #FFF 0%, #E6ECFF 100%);
+  --socialmedia-page-pricing-table-container-tr: #DDE5FF;
+  --socialmedia-page-pricing-table-td-3rd-child: #c5d0fd;
+  --socialmedia-page-table-name-txt-color:#000B40;
+  --socialmedia-page-table-icon-txt-color:#000B40;
   --socialmedia-page-table-call-container:#FFA500;
 
   --socialmedia-page-des-card-bg-color: #F5E9D5;
@@ -175,9 +189,11 @@
   --socialmedia-mobile-page-price-plan-card-title: #1d2027;
   --socialmedia-mobile-page-price-plan-card-item: #BCB5A7;
   --socialmedia-mobile-page-price-plan-card-title: #1D2027;
-  --socialmedia-page-question-container-mat-expansion-panel: #F5E9D5;
+  --socialmedia-page-question-container-mat-expansion-panel: #EBF0FF;
+  --socialmedia-page-question-container-mat-expansion-panel-border: none;
   --socialmedia-page-question-container-mat-expansion-panel-header-title: #1D2027;
   --socialmedia-page-question-container-mat-expansion-panel-body:#1C2028;
+  --ai-page-price-container-book-call-socialmedia-label:#FFF;
 
 
 
@@ -456,15 +472,29 @@
   --blockchaindev-mobile-page-price-plan-card-item: #fff;
 
 
-  --socialmedia-page-bg-color: #181818;
-  --socialmedia-card-bg-color:url("../../../src/assets/svg/socialmedia_card_master_dark.svg");
-  --socialmedia-card-bg-hover-color: url("../../../src/assets/svg/socialmedia_card_master_light.svg");
-  --socialmedia-card-head-text: white;
+  --socialmedia-page-bg-color: #000312;
+  --socialmedia-page-hero-page-show: none;
+  --socialmedia-page-hero-page-show-dark:block;
+  --ai-page-hero-page-scm-exp-dash-btn-text:#000312;
+  --ai-page-hero-page-scm-exp-dash-btn-bg:#00ECC9;
+  --socialmedia-card-bg-color:#000312;
+  --socialmedia-card-bg-border: 1px solid #00ECC9;
+  --socialmedia-card-icon-circle: rgba(64, 232, 202, 1);
+  --socialmedia-card-icon-path: rgba(10, 11, 13, 1);
+  --socialmedia-card-bg-hover-color: radial-gradient(323.51% 184.73% at 34.39% 81.93%, #000B40 0%, #11564C 58.67%, #073247 77%, #000B40 100%);
+  --socialmedia-card-head-text: color(display-p3 0.9098 0.9412 1);
+  --socialmedia-card-head-text-marke:color(display-p3 0.251 0.9098 0.7912);
   --socialmedia-card-descript-text: #EAE4D9;
-  --socialmedia-page-pricing-table-container:#222222;
-  --socialmedia-page-pricing-table-container-tr: #313131;
-  --socialmedia-page-pricing-table-td-3rd-child: #B3B3B3;
-  --socialmedia-page-table-name-txt-color:#fff;
+  --ai-page-price-container-bg:#000312;
+  --ai-page-price-container-border: 1px solid rgba(64, 232, 202, 1);
+  --ai-page-price-container-pkg-type-mid:#000B40;
+  --ai-page-price-container-order-now-btn-mid-bg:#000B40;
+  --ai-page-price-container-order-now-btn-mid-text: #FFF;
+  --socialmedia-page-pricing-table-container:#000312;
+  --socialmedia-page-pricing-table-container-tr: rgba(0, 236, 201, 0.09);
+  --socialmedia-page-pricing-table-td-3rd-child: rgba(0, 194, 163, 0.09);
+  --socialmedia-page-table-name-txt-color:#FFF;
+  --socialmedia-page-table-icon-txt-color:#00ECC9;
 
   --socialmedia-page-des-card-bg-color:url("../../../src/assets/svg/socialmedia_card_mobile_master_dark.svg");
   --socialmedia-page-des-card-title-color: white;
@@ -472,9 +502,11 @@
   --socialmedia-mobile-page-price-plan-card-title: #F2EBDF;
   --socialmedia-mobile-page-price-plan-card-item: #3B3B3B;
   --socialmedia-mobile-page-price-plan-card-title:#EAA134;
-  --socialmedia-page-question-container-mat-expansion-panel: #222222;
+  --socialmedia-page-question-container-mat-expansion-panel: #000312;
+  --socialmedia-page-question-container-mat-expansion-panel-border: 1px solid rgba(64, 232, 202, 1);
   --socialmedia-page-question-container-mat-expansion-panel-header-title: #F2EBDF;
   --socialmedia-page-question-container-mat-expansion-panel-body:#F4EBDE;
+  --ai-page-price-container-book-call-socialmedia-label:#000312;
 
 
 

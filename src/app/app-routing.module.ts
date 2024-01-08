@@ -14,6 +14,7 @@ import {WebdevSoftwareComponent} from "./pages/webdev-software/webdev-software.c
 import {PrivacyComponent} from "./pages/about/privacy/privacy.component";
 import {TermsComponent} from "./pages/about/terms/terms.component";
 import {AboutComponent} from "./pages/about/about.component";
+import {AiComponent} from "./pages/ai/ai.component";
 
 const routes: Routes = [
 
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path:'app/web-softwared-dev',
     component: WebdevSoftwareComponent
+  },
+  {
+    path:'app/ai',
+    component: AiComponent
   },
   {
     path: '',

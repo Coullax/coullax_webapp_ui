@@ -166,18 +166,6 @@ button {
 
 }
 
-[type='checkbox'] {
-  justify-self: end;
-  margin: 5px;
-  width: 1em;
-  aspect-ratio: 1;
-
-  &, & + label {
-    align-self: center;
-    font: 1.25em orbitron, monospace;
-    cursor: pointer
-  }
-}
 
 
 //////////////////////////
