@@ -175,7 +175,7 @@
     border-radius: 23px;
     background: #fff;
     text-align: center;
-    color: #060708;;
+    color: #060708;
     font-family: Poppins, serif;
     font-size: 11px;
     font-style: normal;
@@ -447,6 +447,90 @@ tbody > tr > td:nth-child(2) {
 }
 
 
+$t: 1s;
+
+@property --k {
+  syntax: '<number>';
+  initial-value: -1;
+  inherits: true
+}
+
+
+.book-call {
+  --m: 3;
+  grid-area: 2/ 1/ span 1/ span 2;
+  position: relative;
+  //border: solid 2em transparent;
+  //padding: 0.5em 3.25em;
+  border-radius: 5em;
+  box-shadow: inset 0 0 1px #00B467;
+  background: var(--ai-page-price-container-order-now-btn-mid-bg);
+  color: var(--socialmedia-page-table-icon-txt-color);
+  font: 700 1.5em/ 1 montserrat, sans-serif;
+
+  #slow:checked ~ & { --m: 5 }
+  width: 225px;
+  height: 52px;
+  //color: var(--call-bar-btn-text-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 103.6%;
+  //border: var(--call-bar-btn-border-color);
+}
+
+@keyframes k { 0%, 33.3% { --k: 1 } }
+
+.particle {
+  --f: 1;
+  --pos-k: max(0, var(--k));
+  --neg-k: max(0, -1*var(--k));
+  --low-c: min(1, 4*(1 - var(--pos-k)));
+  --abs-d: max(var(--neg-k) - .5, .5 - var(--neg-k));
+  --mov-f: var(--pos-k);
+  display: grid;
+  position: absolute;
+  left: var(--x); top: var(--y);
+  rotate: var(--a);
+  animation: k calc(var(--m)*#{$t}) linear calc(var(--m)*var(--t, 0)*#{$t}) infinite;
+
+  @supports (scale: sqrt(4)) { --mov-f: sqrt(var(--pos-k)) }
+
+  &::before, &::after {
+    grid-area: 1/ 1;
+    width: .75em;
+    aspect-ratio: 1
+  }
+
+  &::before {
+    --sa: calc(min(1, 1 - 2*min(.5, var(--mov-f)))*45deg);
+    border-radius: calc(1.25*min(.8, var(--mov-f))*50%) 50% 50%;
+    transform-origin: 0 0;
+    translate: calc(var(--mov-f)*var(--d));
+    rotate: -45deg;
+    scale: var(--f);
+    transform: skew(var(--sa), var(--sa));
+    opacity: var(--low-c);
+    filter: Saturate(var(--low-c));
+    background: radial-gradient(at 85% 85%, #000B40FF, #00ECC9FF 75%);
+    content: ''
+  }
+
+  &::after {
+    translate: -50% -50%;
+    scale: calc(var(--f)*(1 - 2*var(--abs-d)));
+    text-align: center;
+    filter: blur(.5px);
+    content: '✦'
+  }
+
+}
+
+
+
+//////////////////////////
+
 
 
 @media screen and (max-width: 900px) {
@@ -491,15 +575,15 @@ tbody > tr > td:nth-child(2) {
     width: 232px;
     height: 53px;
     border-radius: 26.5px;
-    background: linear-gradient(rgba(246, 173, 27, 1), rgba(252, 142, 47, 1));
-    color: #0A0B0D;
     text-align: center;
     font-family: Poppins, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 103.6%;
-    margin-top: 85px;
+    margin-top: 105px;
+    color: var(--ai-page-hero-page-scm-exp-dash-btn-text);
+    background:var(--ai-page-hero-page-scm-exp-dash-btn-bg);
   }
 
 
@@ -517,12 +601,13 @@ tbody > tr > td:nth-child(2) {
     width: 375px;
     height: 93px;
     border-radius: 12px;
-    background: var(--socialmedia-page-des-card-bg-color);
+    background: var(--socialmedia-card-bg-color);
+    border: var(--socialmedia-card-bg-border);
     align-items: center;
     padding-left: 18px;
 
     .title-mobile{
-      color: var(--socialmedia-page-des-card-title-color);
+      color: var(--socialmedia-card-head-text);
       font-family: Cal Sans, serif;
       font-size: 20px;
       font-style: normal;
@@ -530,50 +615,30 @@ tbody > tr > td:nth-child(2) {
       line-height: 102.1%;
     }
     .development-txt{
-      color: #857E72;
+      color:var(--socialmedia-card-head-text-marke);
       font-family: Cal Sans, serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
       line-height: 102.1%;
-    }
-
-
-    .icons-light{
-      display: var(--blockchaindev-mobile-page-icons-display);
-    }
-
-    .icons-dark{
-      display: var(--blockchaindev-mobile-page-icons-display-dark);
-    }
-
-    .icons-dark path:nth-child(1){
-      stroke: #73E69B;
-      stroke-width:2;
-    }
-    .icons-dark circle{
-      stroke: #73E69B;
-      stroke-width:2;
     }
 
   }
 
   .description-card-mobile:hover{
-    background: url("/assets/svg/socialmedia_card_mobile_master_light-hover.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--socialmedia-card-bg-hover-color);
+    border: none;
 
     .pic-svg path{
-      fill: white;
+      fill: #0A0B0D;
+
     }
     .pic-svg circle{
-      fill: black;
+      fill: #40E8CA;
     }
-    .icons-dark rect{
-      fill: #14161AFF;
-    }
+
     .title-mobile{
-      color: black;
+      color: #ECF3FF;
       font-family: Cal Sans, serif;
       font-size: 20px;
       font-style: normal;
@@ -582,12 +647,9 @@ tbody > tr > td:nth-child(2) {
     }
 
     .development-txt{
-      color: white;
+      color: color(display-p3 0.251 0.9098 0.7912);
     }
 
-    .card-des{
-      color: #FFF;
-    }
   }
 
 
@@ -605,14 +667,14 @@ tbody > tr > td:nth-child(2) {
 
   .price-card-item{
     border-radius: 16.88px;
-    border: 2.813px solid rgba(255, 255, 255, 0.03);
-    background:linear-gradient(hsla(40, 93%, 55%, 1), hsla(31, 97%, 58%, 1));
+    border: var(--ai-page-price-container-mobile-background-border);
+    background:var(--ai-page-price-container-mobile-background);
     backdrop-filter: blur(9.565333366394043px);
     height: 341px;
     padding: 35px 30px 20px 30px;
 
     .pkg-type{
-      color: #1e1e1e;
+      color: var(--ai-page-price-container-mobile-text);
       font-family: Cal Sans, serif;
       font-size: 23px;
       font-style: normal;
@@ -620,7 +682,7 @@ tbody > tr > td:nth-child(2) {
       line-height: 96.6%;
     }
     .price{
-      color: #1e1e1e;
+      color: var(--ai-page-price-container-mobile-text);
       font-family: Cal Sans, serif;
       font-size: 30px;
       font-style: normal;
@@ -630,7 +692,7 @@ tbody > tr > td:nth-child(2) {
     }
 
     .pkg-item{
-      color: #1e1e1e;
+      color: var(--ai-page-price-container-mobile-text);
       font-family: Poppins, serif;
       font-size: 16px;
       font-style: normal;
@@ -651,8 +713,8 @@ tbody > tr > td:nth-child(2) {
       border-radius: 25px;
       text-align: center;
       font-family: Poppins, serif;
-      background-color: #1e1e1e;
-      color: white;
+      background-color: var(--ai-page-price-container-btn-background);
+      color: var(--ai-page-price-container-btn-text);
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -664,8 +726,8 @@ tbody > tr > td:nth-child(2) {
 
   .price-card-mid-mobi{
     height: 341px;
-    border-radius: 25px;
-    background-color: black;
+    border-radius: 12px;
+    background-color: var(--socialmedia-card-icon-circle);
     backdrop-filter: blur(9.565333366394043px);
     padding: 18px 30px 20px 30px;
 
@@ -673,9 +735,9 @@ tbody > tr > td:nth-child(2) {
       width: 123px;
       height: 32px;
       border-radius: 16px;
-      background: #F2AD13;
+      background: #fff;
       text-align: center;
-      color: #060708;
+      color:  #060708;
       font-family: Poppins, serif;
       font-size: 14px;
       font-style: normal;
@@ -686,7 +748,7 @@ tbody > tr > td:nth-child(2) {
       align-items: center;
     }
     .pkg-type-mid-mobi{
-      color: #fff;
+      color:var(--ai-page-price-container-pkg-type-mid);
       font-family: Cal Sans, serif;
       font-size: 22.507px;
       font-style: normal;
@@ -695,7 +757,7 @@ tbody > tr > td:nth-child(2) {
     }
 
     .price-mid-mobi{
-      color: #fff;
+      color: var(--ai-page-price-container-pkg-type-mid);
       font-family: Cal Sans, serif;
       font-size: 30px;
       font-style: normal;
@@ -705,7 +767,7 @@ tbody > tr > td:nth-child(2) {
     }
 
     .pkg-item-mid-mobi{
-      color: #fff;
+      color: var(--ai-page-price-container-pkg-type-mid);
       font-family: Poppins, serif;
       font-size: 16px;
       font-style: normal;
@@ -725,8 +787,8 @@ tbody > tr > td:nth-child(2) {
       height: 50px;
       border-radius: 25px;
       border: none;
-      color: #000;
-      background-color: #f9a625;
+      color: var(--ai-page-price-container-order-now-btn-mid-text);
+      background: var(--ai-page-price-container-order-now-btn-mid-bg);
       text-align: center;
       font-family: Poppins, serif;
       font-size: 14.067px;
@@ -790,7 +852,7 @@ tbody > tr > td:nth-child(2) {
 
 
   ::ng-deep .socialmedia-mobi-swiper .swiper-pagination-bullet {
-    opacity: 0.2;
+    opacity: 1;
     background: var(--socialmedia-mobile-page-price-plan-card-item) !important;
   }
   ::ng-deep .socialmedia-mobi-swiper .swiper-pagination-bullet-active {
@@ -878,7 +940,7 @@ tbody > tr > td:nth-child(2) {
   .dev-call-container-mobi{
     height: 77px;
     border-radius: 91px;
-    background-color: #F4A910;
+    background-color: var(--socialmedia-page-table-icon-txt-color);
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 0 37px;
@@ -886,7 +948,7 @@ tbody > tr > td:nth-child(2) {
     margin-bottom: 40px;
 
     .label{
-      color: #000000;
+      color:var(--ai-page-price-container-book-call-socialmedia-label);
       font-family: Cal Sans, serif;
       font-size: 16px;
       font-style: normal;
@@ -897,14 +959,37 @@ tbody > tr > td:nth-child(2) {
       width: 139px;
       height: 38px;
       border-radius: 64px;
-      background: black;
-      color: #E8B040;
+      background:var(--ai-page-price-container-order-now-btn-mid-bg);
+      color: var(--socialmedia-page-table-icon-txt-color);
       text-align: center;
       font-family: Poppins, serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
       line-height: 122.1%;
+    }
+    .book-call {
+      --m: 3;
+      grid-area: 2/ 1/ span 1/ span 2;
+      position: relative;
+      //border: solid 2em transparent;
+      //padding: 0.5em 3.25em;
+      border-radius: 5em;
+      box-shadow: inset 0 0 1px #00B467;
+      background:var(--ai-page-price-container-order-now-btn-mid-bg);
+      color: var(--socialmedia-page-table-icon-txt-color);
+      font: 700 1.5em/ 1 montserrat, sans-serif;
+
+      #slow:checked ~ & { --m: 5 }
+      width: 139px;
+      height: 38px;
+      //color: var(--call-bar-btn-text-color);
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 122.1%;
+      //border: var(--call-bar-btn-border-color);
     }
   }
 }

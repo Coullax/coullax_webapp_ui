@@ -185,15 +185,21 @@
 
   --socialmedia-page-des-card-bg-color: #F5E9D5;
   --socialmedia-page-des-card-title-color: black;
-  --socialmedia-mobile-page-price-plan-card-bg: #F5E9D5;
+  --socialmedia-mobile-page-price-plan-card-bg: #E8EEFF;
   --socialmedia-mobile-page-price-plan-card-title: #1d2027;
   --socialmedia-mobile-page-price-plan-card-item: #BCB5A7;
-  --socialmedia-mobile-page-price-plan-card-title: #1D2027;
+  //--socialmedia-mobile-page-price-plan-card-title: #1D2027;
   --socialmedia-page-question-container-mat-expansion-panel: #EBF0FF;
   --socialmedia-page-question-container-mat-expansion-panel-border: none;
   --socialmedia-page-question-container-mat-expansion-panel-header-title: #1D2027;
   --socialmedia-page-question-container-mat-expansion-panel-body:#1C2028;
   --ai-page-price-container-book-call-socialmedia-label:#FFF;
+
+  --ai-page-price-container-mobile-background:rgba(255, 255, 255, 0.03);
+  --ai-page-price-container-mobile-background-border:3px solid #E9E9E9;
+  --ai-page-price-container-mobile-text:#1E1E1E;
+  --ai-page-price-container-btn-background:#1E1E1E;
+  --ai-page-price-container-btn-text:#FFF;
 
 
 
@@ -498,16 +504,24 @@
 
   --socialmedia-page-des-card-bg-color:url("../../../src/assets/svg/socialmedia_card_mobile_master_dark.svg");
   --socialmedia-page-des-card-title-color: white;
-  --socialmedia-mobile-page-price-plan-card-bg: #212121;
-  --socialmedia-mobile-page-price-plan-card-title: #F2EBDF;
-  --socialmedia-mobile-page-price-plan-card-item: #3B3B3B;
-  --socialmedia-mobile-page-price-plan-card-title:#EAA134;
+  --socialmedia-mobile-page-price-plan-card-bg: #011923;
+  --socialmedia-mobile-page-price-plan-card-title: #40e8ca;
+  --socialmedia-mobile-page-price-plan-card-item: #3b3b3b;
+  //--socialmedia-mobile-page-price-plan-card-title:#EAA134;
   --socialmedia-page-question-container-mat-expansion-panel: #000312;
   --socialmedia-page-question-container-mat-expansion-panel-border: 1px solid rgba(64, 232, 202, 1);
   --socialmedia-page-question-container-mat-expansion-panel-header-title: #F2EBDF;
   --socialmedia-page-question-container-mat-expansion-panel-body:#F4EBDE;
   --ai-page-price-container-book-call-socialmedia-label:#000312;
 
+  --ai-page-price-container-mobile-background:rgba(255, 255, 255, 0.03);
+  --ai-page-price-container-mobile-background-border:3px solid rgba(190, 190, 190, 0.18);
+
+  --ai-page-price-container-mobile-text:#fff;
+
+
+  --ai-page-price-container-btn-background:#00ECC9;
+  --ai-page-price-container-btn-text:#000B40;
 
 
 
