@@ -161,7 +161,22 @@
     margin-top: 51px;
   }
 }
-
+.upwards{
+  color:black;
+  font-family: Cal Sans, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+}
+.upwards-mid{
+  color:var(--ai-page-price-container-pkg-type-mid);
+  font-family: Cal Sans, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+}
 .price-card-mid{
   border-radius: 17px;
   border: 2.813px solid rgba(255, 255, 255, 0.03);
@@ -723,6 +738,22 @@ $t: 1s;
     }
   }
 
+  .upwards{
+    color:var(--ai-page-price-container-mobile-text);
+    font-family: Cal Sans, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+  .upwards-mid{
+    color:var(--ai-page-price-container-pkg-type-mid);
+    font-family: Cal Sans, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
 
   .price-card-mid-mobi{
     height: 341px;

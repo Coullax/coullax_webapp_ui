@@ -1,5 +1,44 @@
 <div class="socialmedia" *ngIf="showNaveBar">
   <div class="socialmedia-container">
+    <div class="top-gradiant">
+      <svg width="900" height="148" viewBox="0 0 900 148" fill="none" xmlns="http://www.w3.org/2000/svg" class="ai-web-bg-dark">
+        <mask id="mask0_2358_8567" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="148">
+          <rect width="900" height="148" fill="#D9D9D9" style="fill:#D9D9D9;fill:color(display-p3 0.8510 0.8510 0.8510);fill-opacity:1;"/>
+        </mask>
+        <g mask="url(#mask0_2358_8567)">
+          <g filter="url(#filter0_f_2358_8567)">
+            <ellipse cx="476.5" cy="-50" rx="390.5" ry="73" fill="#40E8CA" style="fill:#40E8CA;fill:color(display-p3 0.2510 0.9098 0.7912);fill-opacity:1;"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_f_2358_8567" x="-60.3" y="-269.3" width="1073.6" height="438.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="73.15" result="effect1_foregroundBlur_2358_8567"/>
+          </filter>
+        </defs>
+      </svg>
+
+      <svg width="900" height="148" viewBox="0 0 900 148" fill="none" xmlns="http://www.w3.org/2000/svg" class="ai-web-bg-light">
+        <mask id="mask0_2358_8649" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="148">
+          <rect width="900" height="148" fill="#D9D9D9" style="fill:#D9D9D9;fill:color(display-p3 0.8510 0.8510 0.8510);fill-opacity:1;"/>
+        </mask>
+        <g mask="url(#mask0_2358_8649)">
+          <g filter="url(#filter0_f_2358_8649)">
+            <ellipse cx="476.5" cy="-50" rx="390.5" ry="73" fill="#020F41" style="fill:#020F41;fill:color(display-p3 0.0078 0.0588 0.2549);fill-opacity:1;"/>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_f_2358_8649" x="-60.3" y="-269.3" width="1073.6" height="438.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="73.15" result="effect1_foregroundBlur_2358_8649"/>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <div style="margin-top: -144px">
     <app-navbar class=""></app-navbar>
     <div class="socialmedia-banner-web">
       <!--  <img class="hero-image" alt="Snow" src="assets/svg/banner_bg.svg" class="socialmedia-web-bg"/>-->
@@ -155,7 +194,7 @@
           <p>Basic</p>
         </div>
         <div class="price">
-          <p>99$</p>
+          <p>99$ <span class="upwards">upwards</span></p>
         </div>
         <div class="pkg-item">
           <ul>
@@ -165,7 +204,7 @@
           </ul>
         </div>
 
-        <button class="order-now-btn" type="button" >Order Now</button>
+        <button class="order-now-btn" type="button" >Get Started</button>
 
       </div>
 
@@ -177,7 +216,7 @@
           <p>Standard</p>
         </div>
         <div class="price-mid">
-          <p>99$</p>
+          <p>99$ <span class="upwards-mid">upwards</span></p>
         </div>
         <div class="pkg-item-mid">
           <ul>
@@ -187,7 +226,7 @@
           </ul>
         </div>
 
-        <button class="order-now-btn-mid" type="button" >Order Now</button>
+        <button class="order-now-btn-mid" type="button" >Get Started</button>
       </div>
 
       <div class="price-card">
@@ -195,7 +234,7 @@
           <p>Pro</p>
         </div>
         <div class="price">
-          <p>99$</p>
+          <p>99$ <span class="upwards">upwards</span></p>
         </div>
         <div class="pkg-item">
           <ul>
@@ -205,7 +244,7 @@
           </ul>
         </div>
 
-        <button class="order-now-btn" type="button" >Order Now</button>
+        <button class="order-now-btn" type="button" >Get Started</button>
 
       </div>
     </div>
@@ -376,7 +415,7 @@
     </div>
 
     <app-footer></app-footer>
-
+    </div>
   </div>
 </div>
 
@@ -508,7 +547,7 @@
             <p>Basic</p>
           </div>
           <div class="price">
-            <p>99$</p>
+            <p>99$ <span class="upwards">upwards</span></p>
           </div>
           <div class="pkg-item">
             <ul>
@@ -518,7 +557,7 @@
             </ul>
           </div>
 
-          <button class="order-now-btn ml-1" type="button" >Order Now</button>
+          <button class="order-now-btn ml-1" type="button" >Get Started</button>
         </div>
 
         <div class="price-card-mid-mobi">
@@ -529,7 +568,7 @@
             <p>Standard</p>
           </div>
           <div class="price-mid-mobi">
-            <p>99$</p>
+            <p>99$ <span class="upwards-mid">upwards</span></p>
           </div>
           <div class="pkg-item-mid-mobi">
             <ul>
@@ -539,7 +578,7 @@
             </ul>
           </div>
 
-          <button class="order-now-btn-mid-mobi ml-1" type="button" >Order Now</button>
+          <button class="order-now-btn-mid-mobi ml-1" type="button" >Get Started</button>
         </div>
 
 
@@ -548,7 +587,7 @@
             <p>Pro</p>
           </div>
           <div class="price">
-            <p>99$</p>
+            <p>99$ <span class="upwards">upwards</span></p>
           </div>
           <div class="pkg-item">
             <ul>
@@ -558,7 +597,7 @@
             </ul>
           </div>
 
-          <button class="order-now-btn ml-1" type="button" >Order Now</button>
+          <button class="order-now-btn ml-1" type="button" >Get Started</button>
         </div>
       </div>
     </div>

@@ -259,13 +259,30 @@
     margin-top: 51px;
   }
 }
-
+.upwards{
+  color: black;
+  font-family: Cal Sans, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+}
+.upwards-mid{
+  color: #C5EF00;
+  font-family: Cal Sans, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96.6%;
+}
 .price-card-mid{
   border-radius: 17px;
   border: 2.813px solid rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(9.565333366394043px);
   background-color: #020202;
   padding: 18px 0 20px 27px;
+  width: 264.453px;
+  height: 341.351px;
 
   .pkg-tag{
     width: 108px;
@@ -331,7 +348,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 103.6%;
-    margin-top: 51px;
+    margin-top: 47px;
   }
 }
 
@@ -763,6 +780,22 @@ $t: 1s;
     }
   }
 
+  .upwards{
+    color: var(--nft-page-mobile-price-card-price-text-color);
+    font-family: Cal Sans, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
+  .upwards-mid{
+    color: var(--nft-page-mobile-price-card-mid-price-text-color);
+    font-family: Cal Sans, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.6%;
+  }
 
   .price-card-mid-mobi{
     height: 341px;

@@ -239,13 +239,17 @@
   border-radius: 18px;
   background: url("/assets/svg/pro_card1.svg");
   padding:18px 0 0 22px;
+  transition:2.5s;
 }
+
+
 .card-item-green{
   width: 268px;
   height: 208px;
   border-radius: 18px;
   background: url("/assets/svg/pro_card2.svg");
   padding:18px 0 0 22px;
+  transition:2.5s;
 }
 .card-item-yellow{
   width: 268px;
@@ -253,6 +257,7 @@
   border-radius: 18px;
   background: url("/assets/svg/pro_card3.svg");
   padding:18px 0 0 22px;
+  transition:2.5s;
 }
 
 .pro_text1{
@@ -264,6 +269,7 @@
   line-height: 103.6%; /* 24.864px */
   letter-spacing: -1.2px;
 }
+
 
 .pro_text2{
   color: #007A41;
@@ -286,6 +292,37 @@
 }
 .icon{
   margin-bottom:55px;
+
+}
+.rotate-icon{
+  transition:2.5s;
+}
+.card-item-blue:hover{
+  .rotate-icon{
+    --o-transform:rotate(720deg);
+    -ms-transform:rotate(720deg);
+    --moz-transform:rotate(720deg);
+    --webkit-transform:rotate(720deg);
+    transform:rotate(720deg);
+  }
+}
+.card-item-green:hover{
+  .rotate-icon{
+    --o-transform:rotate(720deg);
+    -ms-transform:rotate(720deg);
+    --moz-transform:rotate(720deg);
+    --webkit-transform:rotate(720deg);
+    transform:rotate(720deg);
+  }
+}
+.card-item-yellow:hover{
+  .rotate-icon{
+    --o-transform:rotate(720deg);
+    -ms-transform:rotate(720deg);
+    --moz-transform:rotate(720deg);
+    --webkit-transform:rotate(720deg);
+    transform:rotate(720deg);
+  }
 }
 ////////////////////////////////////////////////////////////////
 
