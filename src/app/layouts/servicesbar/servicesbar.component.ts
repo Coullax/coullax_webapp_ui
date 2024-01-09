@@ -11,7 +11,8 @@ export class ServicesbarComponent {
   }
 
   navigatePages(){
-    this.router.navigate(["/app/blockchain-dev"]);
+    // this.router.navigate(["/app/blockchain-dev"]);
+    this.router.navigateByUrl('/app/nft')
   }
 
 }

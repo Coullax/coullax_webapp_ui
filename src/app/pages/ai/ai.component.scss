@@ -563,7 +563,7 @@ $dur: 10s;
   right: 0;
   bottom: 0;
   perspective: $p;
-  z-index: -1;
+  z-index: -99;
 }
 @mixin center {
   position: absolute;
